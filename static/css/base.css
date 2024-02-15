@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/faceless_marketing_digital_creator_laptop.mp4') no-repeat center center fixed;
+    background: url('/media/pexels-ken-tomita-389818.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -58,6 +58,16 @@ body {
 
 .bg-black {
     background: #000 !important;
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
 }
 
 /* -------------------------------- Media Queries */
