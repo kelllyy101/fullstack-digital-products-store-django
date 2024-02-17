@@ -5,9 +5,9 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=rating&direction=asc" class="dropdown-item ">By Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
@@ -17,7 +17,7 @@
                 Journals
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="{% url 'products' %}?category=yearly_journals" class="dropdown-item">Yearly Journals &amp; Essentials</a>
+                <a href="{% url 'products' %}?category=yearly_journals_essentials" class="dropdown-item">Yearly Journals &amp; Essentials</a>
                 <a href="{% url 'products' %}?category=weekly_journals" class="dropdown-item">Weekly Journals</a>
                 <a href="{% url 'products' %}?category=weight_loss_journals" class="dropdown-item">Weight Loss Journals</a>
                 <a href="{% url 'products' %}?category=meditation_journals" class="dropdown-item">Meditation Journals</a>
@@ -29,8 +29,8 @@
                 Guides
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="{% url 'products' %}?category=marketing" class="dropdown-item">Marketing &amp; MRR</a>
-                <a href="{% url 'products' %}?category=financial_freedom" class="dropdown-item">Financial Freedom &amp; Independence</a>
+                <a href="{% url 'products' %}?category=marketing_mrr" class="dropdown-item">Marketing &amp; MRR</a>
+                <a href="{% url 'products' %}?category=financial_freedom_independence" class="dropdown-item">Financial Freedom &amp; Independence</a>
                 <a href="{% url 'products' %}?category=social_media" class="dropdown-item">Social Media</a>
             </div>
         </li>
