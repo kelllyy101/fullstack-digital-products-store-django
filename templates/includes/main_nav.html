@@ -17,10 +17,10 @@
                 Journals
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Yearly Journals &amp; Essentials</a>
-                <a href="" class="dropdown-item">Weekly Journals</a>
-                <a href="" class="dropdown-item">Weight Loss Journals</a>
-                <a href="" class="dropdown-item">Meditation Journals</a>
+                <a href="{% url 'products' %}?category=yearly_journals" class="dropdown-item">Yearly Journals &amp; Essentials</a>
+                <a href="{% url 'products' %}?category=weekly_journals" class="dropdown-item">Weekly Journals</a>
+                <a href="{% url 'products' %}?category=weight_loss_journals" class="dropdown-item">Weight Loss Journals</a>
+                <a href="{% url 'products' %}?category=meditation_journals" class="dropdown-item">Meditation Journals</a>
             </div>
         </li>
 
@@ -29,9 +29,9 @@
                 Guides
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Marketing &amp; MRR</a>
-                <a href="" class="dropdown-item">Financial Freedom &amp; Independence</a>
-                <a href="" class="dropdown-item">Social Media</a>
+                <a href="{% url 'products' %}?category=marketing" class="dropdown-item">Marketing &amp; MRR</a>
+                <a href="{% url 'products' %}?category=financial_freedom" class="dropdown-item">Financial Freedom &amp; Independence</a>
+                <a href="{% url 'products' %}?category=social_media" class="dropdown-item">Social Media</a>
             </div>
         </li>
 
