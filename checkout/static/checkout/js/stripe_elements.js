@@ -48,23 +48,24 @@ card.addEventListener('change', function (event) {
 var form = document.getElementById('payment-form');
 
 form.addEventListener('submit', function(ev) {
-    ev.preventDefault();
-    card.update({ 'disabled': true});
+    ev.preventDefault(); //prevents form from submitting
+    card.update({ 'disabled': true}); //disables card element
     $('#submit-button').attr('disabled', true);
     $('#payment-form').fadeToggle(100);
-    $('#loading-overlay').fadeToggle(100);
+    $('#loading-overlay').fadeToggle(100); //triggers loading overlay
 
+    //variables to capture the form data that can't be put in payment intent
     var saveInfo = Boolean($('#id-save-info').attr('checked'));
     // From using {% csrf_token %} in the form
-    var csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
+    var csrfToken = $('input[name="csrfmiddlewaretoken"]').val(); //input that Django generates on the form
     var postData = {
         'csrfmiddlewaretoken': csrfToken,
         'client_secret': clientSecret,
         'save_info': saveInfo,
-    };
+    }; //pass info for new view, pass info for payment intent
     var url = '/checkout/cache_checkout_data/';
 
-    $.post(url, postData).done(function () {
+    $.post(url, postData).done(function () { //JQuery telling us we're posting to the URL and to post the data cache above, confirming payment method from Stripe, if 200, submit form
         stripe.confirmCardPayment(clientSecret, {
             payment_method: {
                 card: card,
@@ -94,7 +95,7 @@ form.addEventListener('submit', function(ev) {
                 }
             },
         }).then(function(result) {
-            if (result.error) {
+            if (result.error) { //if error in form, card element re-enabled and error displayed for the user
                 var errorDiv = document.getElementById('card-errors');
                 var html = `
                     <span class="icon" role="alert">
@@ -113,7 +114,9 @@ form.addEventListener('submit', function(ev) {
             }
         });
     }).fail(function () {
-        // just reload the page, the error will be in django messages
+        //triggered if view sends a 400 back request response, just reload the page to show user the view, the error will be in django messages
         location.reload();
     })
 });
+
+//passing data back and forth between the frontend and the back is essential -REVIEW
