@@ -82,14 +82,14 @@
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
-                            {% if request.user.is_superuser %}
-                            <a href="" class="dropdown-item">Product Management</a>
-                            {% endif %}
-                            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                                {% if request.user.is_superuser %}
+                                    <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                                {% endif %}
+                                <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                             {% else %}
-                            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
                             {% endif %}
                         </div>
                     </li>
@@ -238,7 +238,8 @@
                         <h5>Section</h5>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Blog</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terms and Conditions</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terms and
+                                    Conditions</a></li>
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Shipping</a></li>
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Subscriptions</a></li>
@@ -301,7 +302,8 @@
                     </ul>
                     <div class="credits text-center text-info">
                         Designed by kelllyy101 <a class="text-muted footer-link" href="https://github.com/kelllyy101"
-                            target="_blank" rel="noopener" aria-label="GitHub repository for this project (opens in a new tab)">
+                            target="_blank" rel="noopener"
+                            aria-label="GitHub repository for this project (opens in a new tab)">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                                 class="bi bi-github text-info" viewBox="0 0 16 16">
                                 <path
