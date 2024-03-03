@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
@@ -69,7 +70,12 @@ def product_description(request, product_id):
 
     return render(request, 'products/product_description.html', context)
 
+@login_required
 def add_product(request):
+    if not request.user.is_superuser:
+        messages.error(request, 'Only store owners have permission.')
+        return redirect(reverse('home'))
+
     """ Add a product to the store """
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
@@ -89,7 +95,11 @@ def add_product(request):
 
     return render(request, template, context)
 
+@login_required
 def edit_product(request, product_id):
+    if not request.user.is_superuser:
+        messages.error(request, 'Only store owners have permission.')
+        return redirect(reverse('home'))
     """ Edit a product in the store """
     product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
@@ -112,8 +122,11 @@ def edit_product(request, product_id):
 
     return render(request, template, context)
 
-
+@login_required
 def delete_product(request, product_id):
+    if not request.user.is_superuser:
+        messages.error(request, 'Only store owners have permission.')
+        return redirect(reverse('home'))
     """ Delete a product from the store """
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
