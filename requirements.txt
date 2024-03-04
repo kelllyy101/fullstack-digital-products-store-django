@@ -15,7 +15,6 @@ dbus-python==1.2.16
 decorator==4.4.2
 defusedxml==0.7.1
 distro==1.4.0
-distro-info===0.23ubuntu1
 dj-database-url==2.1.0
 Django==3.2.23
 django-allauth==0.41.0
