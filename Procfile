@@ -1,1 +1,1 @@
-web: gunicorn the-best-me.wsgi:application
+web: gunicorn best_me.wsgi:application
