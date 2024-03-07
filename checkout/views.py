@@ -175,9 +175,14 @@ def checkout_success(request, order_number):
     if 'bag' in request.session:
         del request.session['bag']
 
+    urls = []
+    for item in order.lineitems.all():
+        urls.append(item.product.url)
+
     template = 'checkout/checkout_success.html'
     context = {
         'order': order,
+        'urls': json.dumps(urls),
     }
 
     return render(request, template, context)
