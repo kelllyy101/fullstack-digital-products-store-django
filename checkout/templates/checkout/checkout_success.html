@@ -23,6 +23,9 @@
             <hr>
             <p class="text-black">Your order information is below. A confirmation email will be sent to <strong>{{
                     order.email }}</strong>.</p>
+
+            <br>
+            <p><strong>Please click on the product name to download.</strong></p>
         </div>
     </div>
 
@@ -65,6 +68,13 @@
                         <a target="_blank" class="small mb-0 text-black font-weight-bold dynamicLink">
                             {{ item.product.name }}
                         </a>
+                        <td class="p-3 w-25">
+                            {% if item.product.image %}
+                            <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                            {% else %}
+                            <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+                            {% endif %}
+                        </td>
                     </div>
                     <div class="col-12 col-md-8 text-md-right">
                         <p class="small mb-0">{{ item.quantity }} @ ${{ item.product.price }} each</p>

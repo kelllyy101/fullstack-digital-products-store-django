@@ -4,7 +4,7 @@
         "model": "products.product",
         "fields": {
             "name": "Ombre Blue Green Resolution Journal - Monthly Planner with To-Do Lists, Calendar, Goals, and Reflections",
-            "description": "<p><strong>Description:</strong> Elevate your year with our Ombre Blue Green Resolution Journal! This beautifully designed digital planner is your go-to tool for organizing your months, setting goals, and reflecting on your journey. The ombre blue-green cover sets a calming tone, creating the perfect backdrop for your aspirations.</p> <p><strong>Features:</strong></p> <ul> <li><strong>Monthly Layouts:</strong> Plan your month with dedicated sections for to-do lists, calendar events, and goal-setting.</li> <li><strong>Goals &amp; Notes:</strong> Set achievable goals and capture important notes to stay on track.</li> <li><strong>Monthly Review:</strong> Reflect on your experiences, emotions, and identify areas for improvement.</li> </ul> <p><strong>Details:</strong></p> <ul> <li>Format: Digital Download</li> <li>Resolution: High-quality for crisp printing</li> <li>Compatibility: PDF format for easy accessibility on various devices</li> </ul> <p>Embrace productivity and self-reflection with our Resolution Journal. Download now and embark on a journey of personal growth!</p>",
+            "description": "Description: Elevate your year with our Ombre Blue Green Resolution Journal! This beautifully designed digital planner is your go-to tool for organizing your months, setting goals, and reflecting on your journey. The ombre blue-green cover sets a calming tone, creating the perfect backdrop for your aspirations.</p> <p><strong>Features:</strong></p> <ul> <li><strong>Monthly Layouts:</strong> Plan your month with dedicated sections for to-do lists, calendar events, and goal-setting.</li> <li><strong>Goals &amp; Notes:</strong> Set achievable goals and capture important notes to stay on track.</li> <li><strong>Monthly Review:</strong> Reflect on your experiences, emotions, and identify areas for improvement.</li> </ul> <p><strong>Details:</strong></p> <ul> <li>Format: Digital Download</li> <li>Resolution: High-quality for crisp printing</li> <li>Compatibility: PDF format for easy accessibility on various devices</li> </ul> <p>Embrace productivity and self-reflection with our Resolution Journal. Download now and embark on a journey of personal growth!",
             "sku": "OBG-RES-JRN-001",
             "image": "blue_green_journal_flower.png",
             "price": 123.99,
@@ -16,7 +16,7 @@
         "model": "products.product",
         "fields": {
             "name": "6-Week Weight Loss Journal - Meal Plans, Shopping Lists, Goals & Measurements",
-            "description": "<p>Transform your health journey with our 6-Week Weight Loss Journal, a meticulously crafted digital planner designed to guide you through each week of your wellness transformation. The clean and motivating design, coupled with comprehensive features, makes it your essential companion on the path to a healthier you.</p> <p><strong>Features:</strong></p> <ul> <li><strong>Week-by-Week Meal Plans:</strong> Tailored to support effective weight loss, ensuring each week is filled with delicious and nutritious meals.</li> <li><strong>Shopping List Page:</strong> Streamline your grocery shopping with organized lists aligned with your personalized meal plans.</li> <li><strong>Goals Page:</strong> Strategically plan and achieve your health goals with dedicated pages to keep you focused and motivated.</li> <li><strong>Measurements Page:</strong> Track your progress with precision, documenting key body measurements to celebrate milestones.</li> </ul> <p><strong>Details:</strong></p> <ul> <li><strong>Format:</strong> Digital Download</li> <li><strong>Resolution:</strong> High-quality for clear visuals and printing</li> <li><strong>Compatibility:</strong> PDF format for easy access across various devices</li> </ul> <p>Embrace a healthier lifestyle with our 6-Week Weight Loss Journal. Download now and embark on a transformative journey towards your fitness goals!</p>",
+            "description": "Transform your health journey with our 6-Week Weight Loss Journal, a meticulously crafted digital planner designed to guide you through each week of your wellness transformation. The clean and motivating design, coupled with comprehensive features, makes it your essential companion on the path to a healthier you.</p> <p><strong>Features:</strong></p> <ul> <li><strong>Week-by-Week Meal Plans:</strong> Tailored to support effective weight loss, ensuring each week is filled with delicious and nutritious meals.</li> <li><strong>Shopping List Page:</strong> Streamline your grocery shopping with organized lists aligned with your personalized meal plans.</li> <li><strong>Goals Page:</strong> Strategically plan and achieve your health goals with dedicated pages to keep you focused and motivated.</li> <li><strong>Measurements Page:</strong> Track your progress with precision, documenting key body measurements to celebrate milestones.</li> </ul> <p><strong>Details:</strong></p> <ul> <li><strong>Format:</strong> Digital Download Resolution:High-quality for clear visuals and printing. Compatibility: PDF format for easy access across various devices</li> </ul> <p>Embrace a healthier lifestyle with our 6-Week Weight Loss Journal. Download now and embark on a transformative journey towards your fitness goals!</p>",
             "sku": "6WK-WL-JRN-002",
             "image": "6_week_weight_loss_tracker.png",
             "price": 10.99,
@@ -28,11 +28,11 @@
         "model": "products.product",
         "fields": {
             "name": "Grow Your Online Business",
-            "description": "<p>Unlock the potential for digital prosperity with our eBook &ndash; not just a guide, but your trusted companion on the journey to success. With 44 pages filled with insights, strategies, and actionable advice, it serves as the roadmap to achieving your growth objectives.</p> <p>For entrepreneurs looking to share this knowledge treasure, our eBook is available in a convenient PDF format with an 8.5 x 11-inch layout &ndash; perfect for resale.</p> <p>Your dreams of online business success are at your fingertips. Don't hesitate; take the first step toward unprecedented growth today. Grab your copy of \"How To Grow Your Online Business\" and witness your digital empire flourish! ???</p> <p>Elevate Your Online Business with \"How To Grow Your Online Business\" eBook!</p> <p>Ready to transform your online business aspirations into reality? Look no further! This comprehensive eBook is your secret weapon, tailored for small business owners, course creators, business coaches, and anyone eager to elevate their online enterprise. Plus, it's an excellent resource for those who want to share this invaluable guide with their audience.</p> <p>What You'll Discover Inside:</p> <p>Introduction: Dive into the world of online business growth and set the stage for your journey to digital success.</p> <p>Guide Outline: Get a bird's-eye view of what lies ahead, ensuring you're well-prepared to absorb every nugget of wisdom.</p> <p>Growth Goals: Learn the art of setting SMART goals and steering your business toward unprecedented expansion.</p> <p>Growth Phases: Understand the distinct stages of growth and tailor your strategies for maximum results.</p> <p>Business Strategy: Craft a solid game plan that aligns with your growth ambitions, setting you on the path to success.</p> <p>Making Sense of Data: Demystify the world of analytics, harness the power of data, and make informed decisions that fuel your growth.</p> <p>Digital Marketing: Master the art of digital promotion, from social media wizardry to content that converts.</p> <p>Streamlining Processes: Optimize your operations for efficiency, freeing up more time and resources for growth initiatives.</p> <p>Financial Fitness: Manage your finances like a pro, ensuring every dollar invested yields maximum returns.</p> <p>Keeping Customers: Cultivate customer loyalty and build lasting relationships that drive sustained growth.</p> <p>Overcoming Challenges: Equip yourself with tools and mindset to tackle obstacles head-on, turning challenges into opportunities.</p> <p>Conclusion and Next Steps: Summarize your journey and chart your course for continued online business success.</p>",
+            "description": "Unlock the potential for digital prosperity with our eBook &ndash; not just a guide, but your trusted companion on the journey to success. With 44 pages filled with insights, strategies, and actionable advice, it serves as the roadmap to achieving your growth objectives.</p> <p>For entrepreneurs looking to share this knowledge treasure, our eBook is available in a convenient PDF format with an 8.5 x 11-inch layout &ndash; perfect for resale.</p> <p>Your dreams of online business success are at your fingertips. Don't hesitate; take the first step toward unprecedented growth today. Grab your copy of \"How To Grow Your Online Business\" and witness your digital empire flourish! ???</p> <p>Elevate Your Online Business with \"How To Grow Your Online Business\" eBook!</p> <p>Ready to transform your online business aspirations into reality? Look no further! This comprehensive eBook is your secret weapon, tailored for small business owners, course creators, business coaches, and anyone eager to elevate their online enterprise. Plus, it's an excellent resource for those who want to share this invaluable guide with their audience.</p> <p>What You'll Discover Inside:</p> <p>Introduction: Dive into the world of online business growth and set the stage for your journey to digital success.</p> <p>Guide Outline: Get a bird's-eye view of what lies ahead, ensuring you're well-prepared to absorb every nugget of wisdom.</p> <p>Growth Goals: Learn the art of setting SMART goals and steering your business toward unprecedented expansion.</p> <p>Growth Phases: Understand the distinct stages of growth and tailor your strategies for maximum results.</p> <p>Business Strategy: Craft a solid game plan that aligns with your growth ambitions, setting you on the path to success.</p> <p>Making Sense of Data: Demystify the world of analytics, harness the power of data, and make informed decisions that fuel your growth.</p> <p>Digital Marketing: Master the art of digital promotion, from social media wizardry to content that converts.</p> <p>Streamlining Processes: Optimize your operations for efficiency, freeing up more time and resources for growth initiatives.Financial Fitness: Manage your finances like a pro, ensuring every dollar invested yields maximum returns.</p> <p>Keeping Customers: Cultivate customer loyalty and build lasting relationships that drive sustained growth.</p> <p>Overcoming Challenges: Equip yourself with tools and mindset to tackle obstacles head-on, turning challenges into opportunities.</p> <p>Conclusion and Next Steps: Summarize your journey and chart your course for continued online business success.",
             "sku": "GYOB-EBOOK-003",
-            "image": "DP0709201205510679M.jpg",
+            "image": "planner_journal_tracker_pink.jpg",
             "price": 10.99,
-            "url": "https://the-best-me.s3.eu-west-1.amazonaws.com/MRR+-+How+To+Growing+Your+Online+Business+WITH+PHOTOS.pdf"
+            "url": "https://the-best-me.s3.eu-west-1.amazonaws.com/MRR+The+Ultimate+Social+Media+Marketing+Blueprint+-+WITHOUT+PHOTOS.pdf"
         }
     },
     {
@@ -40,10 +40,11 @@
         "model": "products.product",
         "fields": {
             "name": "The Ultimate Social Media Marketing Blueprint",
-            "description": "<p>Set at a minimum selling price of $37 with MRR, this invaluable resource, The Ultimate Social Media Marketing Blueprint Ebook, equipped with a Canva Ebook Template and exclusive Master Resell Rights, is a game-changer for anyone aiming to generate income through digital product sales. <p>Unveil the secrets of making money online by learning effective strategies for social media marketing on Instagram. This comprehensive guide covers every aspect necessary for your online business to thrive.</p> <p>What makes this guide even more enticing is the inclusion of Master Resell Rights, allowing you to resell it as your own. Customize the colors and design to align with your brand, creating an additional revenue stream effortlessly.</p> <p>Explore a wealth of knowledge on social media marketing, specifically tailored for Instagram success, including: ✨ Identifying your target audience with a useful worksheet<br />✨ Crafting compelling content to attract and retain followers<br />✨ Developing a strategic content plan with an accompanying worksheet<br />✨ Leveraging Instagram's algorithm to your advantage<br />✨ Maximizing SEO and hashtags for increased visibility</p> <p>Unlock the full potential of digital marketing on Instagram and propel your online business to new heights. Dive into the detailed Table of Contents for more insights.</p>",
+            "description": "Set at a minimum selling price of $37 with MRR, this invaluable resource, The Ultimate Social Media Marketing Blueprint Ebook, equipped with a Canva Ebook Template and exclusive Master Resell Rights, is a game-changer for anyone aiming to generate income through digital product sales. <p>Unveil the secrets of making money online by learning effective strategies for social media marketing on Instagram. This comprehensive guide covers every aspect necessary for your online business to thrive.</p> <p>What makes this guide even more enticing is the inclusion of Master Resell Rights, allowing you to resell it as your own. Customize the colors and design to align with your brand, creating an additional revenue stream effortlessly.</p> <p>Explore a wealth of knowledge on social media marketing, specifically tailored for Instagram success, including: ✨ Identifying your target audience with a useful worksheet<br />✨ Crafting compelling content to attract and retain followers<br />✨ Developing a strategic content plan with an accompanying worksheet<br />✨ Leveraging Instagram's algorithm to your advantage<br />✨ Maximizing SEO and hashtags for increased visibility</p> <p>Unlock the full potential of digital marketing on Instagram and propel your online business to new heights. Dive into the detailed Table of Contents for more insights.",
             "sku": "TUSMMPB-EBOOK-004",
-            "image": "DP0709201205510679M.jpg",
-            "price": 10.99
+            "image": "social_media_templatesdigitalproduct_instagram.png",
+            "price": 10.99,
+            "url": "https://the-best-me.s3.eu-west-1.amazonaws.com/MRR+The+Ultimate+Social+Media+Marketing+Blueprint+-+WITHOUT+PHOTOS.pdf"
         }
     },
     {
@@ -53,8 +54,9 @@
             "name": "Turn Your Social Media into a Source of Income with Digital Marketing",
             "description": "<p data-pm-slice=\"1 1 []\">This stylish 44 page eBook will teach you everything you need to achieve your goals.</p> <p><strong>This guide is for you if you&rsquo;re looking to:</strong></p> <ul> <li> <p><strong>Build an income online</strong></p> </li> <li> <p><strong>Want a 90 days of Social Media content ideas</strong></p> </li> <li> <p><strong>101 Social Media Hooks</strong></p> </li> <li> <p><strong>101 Call to Action ideas for social media</strong></p> </li> </ul> <p>Unlock the potential of your social media platforms with our 44-page 'Turn Your Social Media Into an Income Source' eBook. This meticulously crafted resource is a game-changer for your digital products business, providing you with ready-made content to seamlessly integrate into your online strategy.</p> <p>Discover the power of promoting your digital products effectively on social media with this comprehensive guide.</p> <p>? Learn about social media hooks, complete with 101 examples, and understand the significance of CTAs (Call to Action) in every post, accompanied by practical examples.</p> <p>What sets this eBook apart is the inclusion of Master Resell Rights, allowing you to offer this valuable content to your customers.</p> <p>? Additionally, get a 90-day treasure trove of content ideas to effortlessly promote your digital products and boost sales on social media.</p> <p>Whether you choose to customize the content or sell it as is, this stylish 44-page eBook is tailored for success. It includes 101 Social Media Hooks, 101 Call to Action ideas, and a 90-day Content Calendar designed with short-form video platforms like TikTok, Instagram Reels, and YouTube Shorts in mind. ?</p> <p>Harness the immense potential of these social media platforms to monetize organic traffic without spending on ads. Our eBook serves as your guide to creating engaging content that attracts audiences and drives them to your offers.</p> <p>Join the digital products revolution and kickstart your passive income journey today!</p> <p>? This eBook is versatile &ndash; sell it on platforms like Etsy, Shopify, TikTok, Stan store, or use it as an enticing incentive for your audience. Seize the opportunity to turn your social media presence into a lucrative income stream! ?</p>",
             "sku": "TYSM-DM-EBOOK-005",
-            "image": "DP0709201205510679M.jpg",
-            "price": 10.99
+            "image": "3_months_social_media_content.png",
+            "price": 10.99,
+            "url": "https://the-best-me.s3.eu-west-1.amazonaws.com/MRR+The+Ultimate+Social+Media+Marketing+Blueprint+-+WITHOUT+PHOTOS.pdf"
         }
     },
     {
@@ -65,7 +67,8 @@
             "description": "<p>Unlock the power of social media with our comprehensive guide! Learn how to build a strong presence on popular platforms, engage with your audience effectively, and convert followers into loyal customers. Whether you're a business owner or a digital marketer, this blueprint will help you achieve success in the competitive world of social media.</p>",
             "sku": "SMSB-EBOOK-001",
             "image": "social_media_blueprint.jpg",
-            "price": 24.99
+            "price": 24.99,
+            "url": "https://the-best-me.s3.eu-west-1.amazonaws.com/MRR+The+Ultimate+Social+Media+Marketing+Blueprint+-+WITHOUT+PHOTOS.pdf"
         }
     },
     {
@@ -75,8 +78,9 @@
             "name": "Email Marketing Mastery Course",
             "description": "<p>Master the art of email marketing with our comprehensive course! Learn how to build an email list, create engaging campaigns, and maximize your ROI. With practical tips and real-world examples, this course will take your email marketing skills to the next level.</p>",
             "sku": "EMM-COURSE-001",
-            "image": "email_marketing_course.jpg",
-            "price": 49.99
+            "image": "social_media_templatesdigitalproduct_instagram.png",
+            "price": 49.99,
+            "url": "https://the-best-me.s3.eu-west-1.amazonaws.com/MRR+The+Ultimate+Social+Media+Marketing+Blueprint+-+WITHOUT+PHOTOS.pdf"
         }
     },
     {
@@ -86,8 +90,10 @@
             "name": "Content Creation Guidebook",
             "description": "<p>Create compelling content that resonates with your audience with our Content Creation Guidebook! Learn how to brainstorm ideas, structure your content effectively, and optimize it for different platforms. Whether you're a blogger, YouTuber, or social media influencer, this guidebook is your go-to resource for content creation success.</p>",
             "sku": "CCG-GUIDE-001",
-            "image": "content_creation_guidebook.jpg",
-            "price": 29.99
+            "image": "ultimate_social_media_marketing.png.png",
+            "price": 29.99,
+            "url": "https://the-best-me.s3.eu-west-1.amazonaws.com/MRR+The+Ultimate+Social+Media+Marketing+Blueprint+-+WITHOUT+PHOTOS.pdf"
+    
         }
     },
     {
@@ -97,8 +103,9 @@
             "name": "Financial Freedom Masterclass",
             "description": "<p>Take control of your finances and achieve true financial freedom with our masterclass! Learn how to budget effectively, invest wisely, and build multiple streams of passive income. Whether you're just starting your financial journey or looking to accelerate your wealth-building efforts, this masterclass will provide you with the knowledge and tools you need to succeed.</p>",
             "sku": "FFM-MASTERCLASS-001",
-            "image": "financial_freedom_masterclass.jpg",
-            "price": 79.99
+            "image": "achieve_financial_freedom.png",
+            "price": 79.99,
+            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Turn+Your+Social+Media+Into+An+Income+Source+eBook+-+NO+PHOTOS.pdf"
         }
     },
     {
@@ -109,7 +116,8 @@
             "description": "<p>Learn the fundamentals of investing and start building wealth for the future with our beginner's guide! Understand different investment vehicles, risk management strategies, and portfolio diversification techniques. Whether you're interested in stocks, bonds, real estate, or cryptocurrency, this guide will help you make informed investment decisions.</p>",
             "sku": "INV-101-GUIDE-001",
             "image": "investing_beginners_guide.jpg",
-            "price": 34.99
+            "price": 34.99,
+            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Turn+Your+Social+Media+Into+An+Income+Source+eBook+-+NO+PHOTOS.pdf"
         }
     },
     {
@@ -120,7 +128,8 @@
             "description": "<p>Plan for a secure and comfortable retirement with our comprehensive workshop! Learn how to calculate your retirement needs, optimize your savings, and create a retirement income strategy. Whether you're nearing retirement age or just starting to think about your future, this workshop will help you make the most of your golden years.</p>",
             "sku": "RPW-WORKSHOP-001",
             "image": "6_week_weight_loss_tracker.png",
-            "price": 59.99
+            "price": 59.99,
+            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Turn+Your+Social+Media+Into+An+Income+Source+eBook+-+NO+PHOTOS.pdf"
         }
     },
     {
@@ -128,10 +137,11 @@
         "model": "products.product",
         "fields": {
             "name": "Yearly Reflection Journal - Guided Planner",
-            "description": "<p>Reflect on your year and set meaningful goals with our Yearly Reflection Journal! This guided planner helps you review your achievements, challenges, and lessons learned, while also providing prompts to plan for the year ahead. Start each year with clarity and purpose using this essential tool for personal growth.</p>",
+            "description": "Reflect on your year and set meaningful goals with our Yearly Reflection Journal! This guided planner helps you review your achievements, challenges, and lessons learned, while also providing prompts to plan for the year ahead. Start each year with clarity and purpose using this essential tool for personal growth.</p>",
             "sku": "YRJ-GUIDED-001",
-            "image": "yearly_reflection_journal.jpg",
-            "price": 19.99
+            "image": "white_green_elegant_A4_planner.png",
+            "price": 19.99,
+            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf"
         }
     },
     {
@@ -142,7 +152,8 @@
             "description": "<p>Achieve your dreams and aspirations with our Goal Setting Workbook! This yearly edition is designed to help you set actionable goals, track your progress, and celebrate your achievements. Whether you're striving for personal or professional growth, this workbook will keep you motivated and focused throughout the year.</p>",
             "sku": "GSW-YEARLY-001",
             "image": "goal_setting_workbook_yearly.jpg",
-            "price": 14.99
+            "price": 14.99,
+            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Turn+Your+Social+Media+Into+An+Income+Source+eBook+-+NO+PHOTOS.pdf"
         }
     },
     {
@@ -164,7 +175,8 @@
             "description": "<p>Stay organized and productive with our Weekly Planner! Featuring a minimalist design and ample space for scheduling tasks, appointments, and goals, this planner is perfect for keeping your week on track. Simplify your life and enhance your productivity with our Weekly Planner.</p>",
             "sku": "WP-MINIMALIST-001",
             "image": "weekly_planner_minimalist.jpg",
-            "price": 9.99
+            "price": 9.99,
+            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf"
         }
     },
     {
@@ -174,8 +186,9 @@
             "name": "Habit Tracker Journal - Weekly Edition",
             "description": "<p>Cultivate positive habits and track your progress with our Habit Tracker Journal! This weekly edition allows you to set goals, track your habits, and analyze your results. Whether you're working on fitness goals, personal development, or building new routines, this journal will keep you accountable and motivated.</p>",
             "sku": "HTJ-WEEKLY-001",
-            "image": "habit_tracker_journal_weekly.jpg",
-            "price": 12.99
+            "image": "black_white_elegant_aesthetic_flowers_A4_planner.png.png",
+            "price": 12.99,
+            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf"
         }
     },
     {
@@ -186,7 +199,8 @@
             "description": "<p>Simplify meal planning and grocery shopping with our Meal Planning Notebook! Featuring a weekly layout with space to plan meals, create shopping lists, and track your favorite recipes, this notebook is a must-have for busy individuals and families. Take the stress out of mealtime prep with our Meal Planning Notebook.</p>",
             "sku": "MPN-WEEKLY-001",
             "image": "meal_planning_notebook_weekly.jpg",
-            "price": 11.99
+            "price": 11.99,
+            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf"
         }
     },
     {
@@ -197,7 +211,8 @@
             "description": "<p>Embark on a journey to a healthier you with our Weight Loss Tracker Journal! This 12-week edition allows you to set weight loss goals, track your progress, and celebrate your achievements. With motivational quotes and practical tips, this journal will keep you motivated and focused on your fitness journey.</p>",
             "sku": "WLTJ-12WEEK-001",
             "image": "weight_loss_tracker_journal_12_week.jpg",
-            "price": 14.99
+            "price": 14.99,
+            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf"
         }
     },
     {
@@ -207,8 +222,9 @@
             "name": "Fitness Planner - Workout & Meal Log",
             "description": "<p>Take your fitness journey to the next level with our Fitness Planner! This comprehensive planner includes workout logs, meal plans, and progress trackers to help you reach your health and fitness goals. Whether you're a beginner or a seasoned athlete, this planner will keep you accountable and on track.</p>",
             "sku": "FP-WORKOUTMEAL-001",
-            "image": "fitness_planner_workout_meal.jpg",
-            "price": 19.99
+            "image": "daily_fitness_journal.png",
+            "price": 19.99,
+            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf"
         }
     },
     {
@@ -216,10 +232,11 @@
         "model": "products.product",
         "fields": {
             "name": "Healthy Living Journal - Weight Loss Edition",
-            "description": "<p>Transform your lifestyle and achieve lasting weight loss with our Healthy Living Journal! This edition is packed with motivational prompts, meal planning templates, and exercise trackers to support your weight loss journey. Make healthy choices, stay consistent, and reach your goals with our Healthy Living Journal.</p>",
+            "description": "Transform your lifestyle and achieve lasting weight loss with our Healthy Living Journal! This edition is packed with motivational prompts, meal planning templates, and exercise trackers to support your weight loss journey. Make healthy choices, stay consistent, and reach your goals with our Healthy Living Journal.</p>",
             "sku": "HLJ-WEIGHTLOSS-001",
-            "image": "healthy_living_journal_weight_loss.jpg",
-            "price": 17.99
+            "image": "weight_loss_planner.png",
+            "price": 17.99,
+            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf"
         }
     },
     {
@@ -227,10 +244,11 @@
         "model": "products.product",
         "fields": {
             "name": "Mindfulness Meditation Journal - Daily Reflections",
-            "description": "<p>Cultivate mindfulness and inner peace with our Mindfulness Meditation Journal! This journal features daily reflection prompts, gratitude exercises, and mindfulness practices to help you stay present and centered. Start each day with intention and create a life filled with joy and tranquility with our Mindfulness Meditation Journal.</p>",
+            "description": "Cultivate mindfulness and inner peace with our Mindfulness Meditation Journal! This journal features daily reflection prompts, gratitude exercises, and mindfulness practices to help you stay present and centered. Start each day with intention and create a life filled with joy and tranquility with our Mindfulness Meditation Journal.</p>",
             "sku": "MMJ-DAILYREFLECTIONS-001",
-            "image": "gratitude_journal_meditation.jpg",
-            "price": 16.99
+            "image": "mindfullness_meditation_journal.png",
+            "price": 16.99,
+            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf"
         }
     },
     {
@@ -240,8 +258,9 @@
             "name": "Gratitude Journal - Meditation Edition",
             "description": "<p>Cultivate a grateful heart and find inner peace with our Gratitude Journal! This meditation edition includes daily gratitude prompts, mindfulness exercises, and inspirational quotes to uplift your spirit. Embrace the power of gratitude and transform your life with our Gratitude Journal.</p>",
             "sku": "GJ-MEDITATION-001",
-            "image": "gratitude_journal_meditation.jpg",
-            "price": 13.99
+            "image": "gratitude_journal_yearly_planner.png",
+            "price": 13.99,
+            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf"
         }
     },
     {
@@ -249,10 +268,11 @@
         "model": "products.product",
         "fields": {
             "name": "Zen Meditation Notebook - Guided Practice",
-            "description": "<p>Find serenity and tranquility in your daily life with our Zen Meditation Notebook! This guided practice notebook includes meditation prompts, breathing exercises, and space for reflection. Whether you're a beginner or an experienced practitioner, this notebook will support you on your journey to inner peace.</p>",
-            "sku": "ZMN-GUIDEDPRACTICE-001",
+            "description": "Find serenity and tranquility in your daily life with our Zen Meditation Notebook! This guided practice notebook includes meditation prompts, breathing exercises, and space for reflection. Whether you're a beginner or an experienced practitioner, this notebook will support you on your journey to inner peace.</p>",
+            "sku": "zen_meditation_journal.png",
             "image": "zen_meditation_notebook_guided.jpg",
-            "price": 15.99
+            "price": 15.99,
+            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf"
         }
     }
 ]
