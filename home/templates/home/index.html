@@ -2,26 +2,103 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <div class="container h-100">
-        <div class="row h-100">
-            <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-font text-black">
-                    Get ready to be the Best You!
-                </h1>
-                <div class="my-5">
-                    <h4>
-                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
-                    </h4>
-                </div>
+<div class="container h-100">
+    <div class="row h-100">
+        <div class="col-7 col-md-6 my-auto">
+            <h1 class="display-4 logo-font text-black">
+                Get ready to be the Best You!
+            </h1>
+            <div class="my-5">
+                <h4>
+                    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop
+                        Now</a>
+                </h4>
             </div>
         </div>
     </div>
+</div>
+<div class="100-px-height">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner col-md-6">
+            <div class="carousel-item active">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>...</h5>
+                    <p>...</p>
+                </div>
+                <img class="d-block center w-75 h-75" src="media/pexels-cup-of-couple-6177588.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>...</h5>
+                    <p>...</p>
+                </div>
+                <img class="d-block w-100" src="media/pexels-ken-tomita-389818.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>...</h5>
+                    <p>...</p>
+                </div>
+                <img class="d-block w-100" src="media/pexels-ketut-subiyanto-4132326.jpg" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">col-sm-8</div>
+        <div class="col-sm-6">col-sm-4</div>
+    </div>
+</div>
+
+<div class="arriv-las">
+    <div class="col-md-4 arriv-left2">
+        <img src="media/zen_meditation_journal.png" class="img-responsive" alt="">
+        <div class="arriv-info2">
+            <a href="details.html">
+                <h3>Casual Glasses<i class="ars"></i></h3>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-4 arriv-middle">
+        <img src="media/white_green_elegant_A4_planner.png" class="img-responsive" alt="">
+        <div class="arriv-info3">
+            <h3>FRESH LOOK T-SHIRT</h3>
+            <div class="crt-btn">
+                <a href="details.html">SHOP NOW</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 arriv-right2">
+        <img src="media/mindfullness_meditation_journal.png" class="img-responsive" alt="">
+        <div class="arriv-info2">
+            <a href="details.html">
+                <h3>Elegant Watches<i class="ars"></i></h3>
+            </a>
+        </div>
+    </div>
+    <div class="clearfix"> </div>
+</div>
 {% endblock %}

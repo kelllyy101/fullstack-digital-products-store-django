@@ -3,11 +3,77 @@ html {
 }
 
 body {
-    background: white;  /*url('/media/pexels-ken-tomita-389818.jpg') no-repeat center center fixed;*/
+    background: white;
+    /*url('/media/pexels-ken-tomita-389818.jpg') no-repeat center center fixed;*/
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
+}
+
+/* Home Page Carousel*/
+
+.carousel-inner img {
+    margin: auto;
+}
+
+/* Home Page Body*/
+.img-responsive,
+.thumbnail>img,
+.thumbnail a>img,
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.arriv-left2 {
+    width: 100%;
+}
+
+.arriv-middle {
+    width: 100%;
+    padding: 0px;
+    margin: 1em auto;
+}
+
+.arriv-info3 {
+    bottom: 82px;
+    left: 58px;
+}
+
+.arriv-right2 {
+    width: 100%;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.arriv-info2 {
+    position: absolute;
+    bottom: 32px;
+    left: 42px;
+    text-align: center;
+}
+
+.arriv-info3 {
+    position: absolute;
+    bottom: 32px;
+    left: 42px;
+    text-align: center;
+}
+
+.arriv-info2 {
+    bottom: 20px;
+    left: 16px;
+}
+
+.arriv-info2 a {
+    text-decoration: none;
+}
+
+.arriv-info2 a h3:hover {
+    color: #ff6978;
 }
 
 /* from Bulma */
@@ -125,8 +191,10 @@ body {
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
+    margin-top: 1.5rem;
+    /* mt-4 */
+    color: #6c757d;
+    /* text-secondary */
 }
 
 .allauth-form-inner-content input {
@@ -144,8 +212,8 @@ body {
 
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
-	/* btn */
-	display: inline-block;
+    /* btn */
+    display: inline-block;
     font-weight: 400;
     color: #fff;
     text-align: center;
@@ -162,18 +230,19 @@ body {
     border-radius: 0;
 
     /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff;
+.allauth-form-inner-content input[type='submit']:hover {
+    color: #fff;
     background-color: #222;
     border-color: #222;
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+    color: #17a2b8;
+    /* text-info */
 }
 
 #mc_embed_signup {
@@ -187,7 +256,7 @@ body {
 
 /* Social media Icons*/
 
-.social-icon{
+.social-icon {
     padding: 15px;
 }
 
@@ -244,18 +313,32 @@ body {
 
 /* Media queries for tablet view */
 @media screen and (max-width: 768px) {
-    #mc_embed_signup, .mc-field-group {
-        width: 60%; /* Half width on tablet */
+
+    #mc_embed_signup,
+    .mc-field-group {
+        width: 60%;
+        /* Half width on tablet */
     }
-    #mc-embedded-subscribe-form input[type="email"], .mc-field-group {
-        width: 25%; /* Full width for email input field */
+
+    #mc-embedded-subscribe-form input[type="email"],
+    .mc-field-group {
+        width: 25%;
+        /* Full width for email input field */
     }
+}
+
+.arriv-info2 {
+    bottom: 6px;
+    left: 10px;
 }
 
 /* Media queries for mobile view */
 @media screen and (max-width: 480px) {
-    #mc_embed_signup, .mc-field-group {
-        width: 50%; /* Quarter width on mobile */
+
+    #mc_embed_signup,
+    .mc-field-group {
+        width: 50%;
+        /* Quarter width on mobile */
     }
 
     .brandingLogo {
@@ -263,8 +346,10 @@ body {
     }
 
     /* Adjust input field size on mobile */
-    #mc-embedded-subscribe-form input[type="email"], .mc-field-group {
-        width: 25%; /* Full width for email input field */
+    #mc-embedded-subscribe-form input[type="email"],
+    .mc-field-group {
+        width: 25%;
+        /* Full width for email input field */
     }
 
     .btt-link {
