@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/pexels-ken-tomita-389818.jpg') no-repeat center center fixed;
+    background: white;  /*url('/media/pexels-ken-tomita-389818.jpg') no-repeat center center fixed;*/
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -179,10 +179,24 @@ body {
 #mc_embed_signup {
     background: #fff;
     color: black;
-    false;
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
     width: 600px;
+}
+
+
+/* Social media Icons*/
+
+.social-icon{
+    padding: 15px;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.bi-github:hover {
+    transform: scale(1.2);
 }
 
 /* -------------------------------- Media Queries */
@@ -215,6 +229,48 @@ body {
     border-radius: 0;
 }
 
+/* Mailchimp FORM*/
+
+/* Default styles for the form */
+
+#mc_embed_signup {
+    background: #fff;
+    color: #401c20;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    width: 600px;
+    max-width: 100%;
+}
+
+/* Media queries for tablet view */
+@media screen and (max-width: 768px) {
+    #mc_embed_signup, .mc-field-group {
+        width: 60%; /* Half width on tablet */
+    }
+    #mc-embedded-subscribe-form input[type="email"], .mc-field-group {
+        width: 25%; /* Full width for email input field */
+    }
+}
+
+/* Media queries for mobile view */
+@media screen and (max-width: 480px) {
+    #mc_embed_signup, .mc-field-group {
+        width: 50%; /* Quarter width on mobile */
+    }
+
+    .brandingLogo {
+        float: left;
+    }
+
+    /* Adjust input field size on mobile */
+    #mc-embedded-subscribe-form input[type="email"], .mc-field-group {
+        width: 25%; /* Full width for email input field */
+    }
+
+    .btt-link {
+        cursor: pointer;
+    }
+}
 
 /* ============ only desktop view ============ */
 @media all and (min-width: 992px) {
