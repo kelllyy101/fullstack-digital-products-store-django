@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category
+from .models import Product, Category, Review
 
 from .forms import ProductForm
 
@@ -67,6 +67,28 @@ def product_description(request, product_id):
     context = {
         'product': product,
     }
+
+    if request.method == 'POST':
+        rating = request.POST.get('rating', 3)
+        content = request.POST.get('content', '')
+
+        if content:
+            reviews = Review.objects.filter(created_by=request.user, product=product)
+
+            if reviews.count() > 0:
+                review = reviews.first()
+                review.rating = rating
+                review.content = content
+                review.save()
+            else:
+                review = Review.objects.create(
+                    product=product,
+                    rating=rating,
+                    content=content,
+                    created_by=request.user
+                )
+
+            #return redirect('product_description', args=[product.id])
 
     return render(request, 'products/product_description.html', context)
 

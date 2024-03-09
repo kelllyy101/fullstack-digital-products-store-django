@@ -93,6 +93,44 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <hr>
+        <h2><strong>Reviews</strong></h2>
+        {% if request.user.is_authenticated %}
+            <form method="post" action="." class="mt-6 p-4 bg-light rounded">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="rating">Rating</label>
+                    <select class="form-control" id="rating" name="rating">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="content">Comment</label>
+                    <textarea class="form-control" name="content"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-dark mt-3">
+                    Submit
+                    </button>
+                </div>
+            </form>
+            <hr>
+        {% endif %}
+        {% for review in product.reviews.all %}
+            <div>
+                <strong>Rating:</strong> {{ review.rating }}/5 <br>
+                <strong>Date:</strong> {{ review.created_at|date:"d-m-Y" }} <br>
+                <strong>Comments:</strong>
+                {{ review.content }}
+                <hr>
+            </div>
+        {% endfor %}
+    </div>
 </div>
 {% endblock %}
 {% block postloadjs %}
