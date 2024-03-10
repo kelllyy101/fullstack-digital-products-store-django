@@ -81,12 +81,13 @@ clips and comment on their progess.
 - [Deploying the app on Heroku](#deploying-the-app-on-heroku)
 - [Making a local clone](#making-a-local-clone)
 - [Running the app in your local environment](#running-the-app-in-your-local-environment)
+[**eCommerce Business Model**](#eCommerce-business-model)
 [**Credits**](#Credits)
 [**Acknowledgements**](#acknowledgements)
 ---
 ## Features
 ### Future Features
-[Return to top](#Strings_Attached)
+[Return to top](#The_Best_Me)
 # User Experience
 ## Design
 ### Fonts 
@@ -194,6 +195,83 @@ There are (hopefully) no remaining bugs in the project.
 
 ## Testing the app locally
 
+
+# eCommerce Business Model
+1. Introduction
+I believe that achieving personal growth and fulfillment requires a balanced approach that addresses both physical and mental aspects of wellness. My mission at is to empower individuals to lead healthier, more fulfilling lives by providing access to high-quality products and resources that support their physical and mental well-being.
+I envision a world where everyone has the tools and support they need to prioritize their health and happiness. Through our ecommerce platform, we aim to create a community of individuals committed to self-improvement and mutual support. We deeply care about the well-being of our customers and strive to create a supportive and empathetic community. We are committed to offering only the highest quality products that promote physical and mental wellness.We believe in empowering individuals to take control of their health and happiness through education, resources, and support.
+
+2. Business Model Canvas
+a. We offer a curated selection of products designed to support physical and mental well-being, including:
+- Journals for self-reflection, goal-setting, and gratitude practice.
+- Meditation guides and tools to promote mindfulness and stress relief.
+- Financial freedom resources to empower individuals to take control of their financial health.
+- Wellness products such as essential oils, meditation cushions, and relaxation aids.
+
+b. Customer Focus:
+We understand that everyone's journey to well-being is unique, which is why we prioritize personalized customer experiences. Our team is dedicated to providing support and guidance to help our customers find the products and resources that best suit their needs.
+
+c. Community Engagement:
+Beyond selling products, we are committed to fostering a sense of community and connection among our customers. Through our blog, social media channels, and online forums, we provide valuable content, resources, and opportunities for interaction and support. 
+
+3. Product Catalog
+   - Detailed overview of the products you offer, including:
+     - Journals: Types, designs, sizes for yearly and weekly and all are downloadable and can be used again.
+     - Meditation Guides and Financial Freedom Guides: Cannot be resold but can be downloaded. Each guide has a section for your notes, thought, goals and improvements.
+
+4. Target Audience
+   - Identify and describe your target audience segments, including:
+     - Individuals interested in personal growth and self-improvement.
+     - Meditation enthusiasts seeking guidance and resources.
+     - Individuals striving for financial independence and wealth management.
+     - Wellness and mindfulness practitioners.
+     - People trying to lose weight and improve their fitness and overall health.
+  
+5. Marketing and Sales Strategy
+   - Outline your marketing and sales strategy, covering:
+     - Online Marketing: SEO, content marketing, social media, email marketing - MailChimp newletters has been configured in the footer and appears on every page. Meta tags have been added to the base template for SEO purposes and a Facebook account has also been created for social media reach.
+     - Offline Marketing: Events, partnerships, collaborations, (future events).
+     - Sales Channels: Website sales, third-party platforms (Amazon, eBay), retail partnerships, (future events and possibilities).
+  
+6. Website and User Experience
+   - Describe your ecommerce website and user experience, including:
+     - Website Design: Layout, navigation, aesthetics are all simple and effective, a nice rich shade of maroon was used.
+     - Product Pages: Descriptions, images, videos, reviews, etc.
+     - Checkout Process: Cart management, payment gateways, security measures, etc.
+     - Customer Support: Contact options- via email, FAQs, return policies, etc.
+
+7. Fulfillment and Logistics
+   - Explain your fulfillment and logistics strategy, covering:
+     - Inventory Management: Stock levels, replenishment, tracking, etc.
+     - Order Processing: Order placement, processing times, order status updates, (if products were ever printed).
+     - Shipping: Shipping carriers, shipping options, shipping costs, delivery times, (if products were ever printed).
+     - Returns and Refunds: Return policies, return process, refunds, (if products were ever printed), refunds are not allowed for digital downloads.
+
+8. Customer Support and Engagement
+   - Detail your customer support and engagement approach, including:
+     - Customer Service: Contact methods, response times, issue resolution, etc.
+     - Community Building: Blog posts and comment sections, social media engagement on Facebook, user-generated content, etc.
+     - Loyalty Programs: Rewards, discounts, referrals, etc.
+  
+9. Performance Metrics and KPIs that could be implemented in the future
+   - Identify and track key performance metrics and KPIs, such as:
+     - Sales Revenue
+     - Conversion Rate
+     - Customer Acquisition Cost (CAC)
+     - Customer Lifetime Value (CLV)
+     - Website Traffic
+     - Average Order Value (AOV)
+     - Customer Satisfaction (CSAT) Score
+  
+10. Future Plans and Growth Strategies
+   - Discuss your future plans and growth strategies, including:
+     - Expansion: New product lines and guides, new markets, international expansion, etc.
+     - Innovation: Product innovations, technological advancements, etc.
+     - Partnerships: Collaborations with influencers, brands, organisations, etc.
+     - Scalability: Infrastructure improvements, automation, etc.
+
+11. Conclusion
+   In conclusion, The Best Me is positioned as a premier destination for individuals seeking personal growth, holistic well-being, and financial empowerment. Through our meticulously curated collection of journals, meditation guides, financial freedom resources, and related products, we aim to empower our customers to unlock their full potential and lead fulfilling lives. Throughout this ecommerce model documentation, I have outlined a comprehensive plan that encompasses every aspect of our business operations. From our business model canvas to our marketing and sales strategy, website and user experience, fulfillment and logistics, customer support and engagement, and future growth strategies, I have carefully crafted a roadmap for success. I am committed to understanding and serving our target audience effectively, providing them with valuable resources and exceptional customer experiences. Our dedication to excellence extends to every aspect of our operations, from product selection and website design to order fulfillment and customer support. .
 
 # Credits
 
