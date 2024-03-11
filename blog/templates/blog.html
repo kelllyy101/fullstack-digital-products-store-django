@@ -18,6 +18,24 @@
             <hr class="w-50 mb-1">
         </div>
     </div>
+    <div>
+        <ul>
+            {% for post in object_list %}
+            <li><a href="{% url 'blog-post' post.pk %}">{{ post.title }}</a> - {{ post.author.first_name }} </br>
+                {{ post.body }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+<!-- <div class="overlay"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2 class="logo-font">Blog</h2>
+            <hr class="w-50 mb-1">
+        </div>
+    </div>
     <div class="row">
         <div class="product-container col-10 offset-1">
             <div class="row">
@@ -50,7 +68,7 @@
         <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
     </a>
 </div>
-{% endblock %}
+{% endblock %} -->
 
 {% block postloadjs %}
 {{ block.super }}
