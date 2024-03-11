@@ -16,15 +16,24 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center mt-3">
-            <h2 class="logo-font"><a href="{% url 'blog' %}">Blog</a></h2>
+            <h2 class="logo-font"><a href="{% url 'blog' %}">Update Blog Post</a></h2>
             <hr class="w-50 mb-1">
             <h2 class="logo-font"><italic>{{ post.title }}</italic></h2>
-            <small>By: {{ post.author.first_name }} - <a href="{% url 'update_blog_post' post.pk %}">Edit</a></small>
+            <small>By: {{ post.author.first_name }}</small>
         </div>
     </div>
     <div>
         {{ post.body }}
     </div>
+</div>
+
+<div class="form-group">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button btn btn-black rounded-0 my-2>Update Blog</button>
+    </form>
+
 </div>
   
 {% endblock %}

@@ -13,4 +13,4 @@ class Post(models.Model):
         return self.title + ' | ' + str(self.author) #allows to see the author of the blog(object needs to be string)
 
     def get_absolute_url(self):
-        return reverse('blog')
+        return reverse('blog') #on submit/post goes back to home
