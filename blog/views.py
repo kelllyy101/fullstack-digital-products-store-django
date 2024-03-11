@@ -1,7 +1,8 @@
 from django.shortcuts import render
-from django.views.generic import ListView, DetailView, CreateView, UpdateView #LV queryset for us in the database that we can list, detail brings the detail of one record
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView #LV queryset for us in the database that we can list, detail brings the detail of one record
 from .models import Post
 from .forms import BlogPostForm, EditForm
+from django.urls import reverse_lazy
 
 # Create your views here.
 #def view_blog(request):
@@ -10,6 +11,7 @@ from .forms import BlogPostForm, EditForm
 class BlogView(ListView):
     model = Post
     template_name = 'blog.html'
+    ordering = ['-id'] #latest blog will be listed first, didn't add blog date
 
 class BlogPostView(DetailView):
     model = Post
@@ -26,3 +28,8 @@ class UpdateBlogPost(UpdateView):
     form_class = EditForm
     template_name = 'update_blog_post.html'
     #fields = ['title', 'title_tag', 'body']
+
+class DeleteBlogView(DeleteView):
+    model = Post
+    template_name = 'delete_blog_post.html'
+    success_url = reverse_lazy('blog')

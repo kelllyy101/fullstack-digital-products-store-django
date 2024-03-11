@@ -21,7 +21,10 @@
     <div>
         <ul>
             {% for post in object_list %}
-            <li><a href="{% url 'blog-post' post.pk %}">{{ post.title }}</a> - {{ post.author.first_name }} <small><a href="{% url 'update_blog_post' post.pk %}">Edit</a></small> </br>
+            <li><a href="{% url 'blog-post' post.pk %}">{{ post.title }}</a> - {{ post.author.first_name }} <small><a
+                        class="btn btn-outline btn-sm" href="{% url 'update_blog_post' post.pk %}">Edit</a><a
+                        class="btn btn-outline btn-sm" href="{% url 'delete_blog_post' post.pk %}">Delete</a></small>
+                </br>
                 {{ post.body }}</li>
             {% endfor %}
         </ul>

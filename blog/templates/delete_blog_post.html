@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-{% block title %}{{ post.title_tag }}{% endblock %}
+{% block title %}Delete Blog Post{% endblock %}
 
 {% block page_header %}
 <div class="container header-container">
@@ -18,14 +18,19 @@
         <div class="col text-center mt-3">
             <h2 class="logo-font"><a href="{% url 'blog' %}">Blog</a></h2>
             <hr class="w-50 mb-1">
-            <h2 class="logo-font"><italic>{{ post.title }}</italic></h2>
-            <small>By: {{ post.author.first_name }} - <a href="{% url 'update_blog_post' post.pk %}">Edit</a></small>
-            <a class="btn btn-outline btn-sm" href="{% url 'delete_blog_post' post.pk %}">Delete</a></small>
+            <h2 class="logo-font">Delete : {{ post.title }}</h2>
+            <small>By: {{ post.author.first_name }}</small>
         </div>
     </div>
-    <div>
-        {{ post.body }}
-    </div>
+</div>
+
+<div class="form-group">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button btn btn-black rounded-0 my-2>Delete Blog Post</button>
+    </form>
+
 </div>
   
 {% endblock %}
