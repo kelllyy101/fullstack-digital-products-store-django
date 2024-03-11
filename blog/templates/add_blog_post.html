@@ -1,6 +1,7 @@
 {% extends "base.html" %}
+{% block title %}Create a blog post{% endblock %}
 {% load static %}
-{% block title %}{{ post.title_tag }}{% endblock %}
+
 
 {% block page_header %}
 <div class="container header-container">
@@ -16,16 +17,19 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center mt-3">
-            <h2 class="logo-font"><a href="{% url 'blog' %}">Blog</a></h2>
+            <h2 class="logo-font">Add Blog Post</h2>
             <hr class="w-50 mb-1">
-            <h2 class="logo-font"><italic>{{ post.title }}</italic></h2>
-            <small>By: {{ post.author.first_name }}</small>
+            <br>
         </div>
     </div>
-    <div>
-        {{ post.body }}
-    </div>
 </div>
-  
-{% endblock %}
+<div class="container-fluid">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button btn btn-black rounded-0 my-2>Post</button>
+    </form>
 
+</div>
+
+{% endblock %}
