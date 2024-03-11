@@ -19,7 +19,7 @@
             <h2 class="logo-font"><a href="{% url 'blog' %}">Blog</a></h2>
             <hr class="w-50 mb-1">
             <h2 class="logo-font">Delete : {{ post.title }}</h2>
-            <small>By: {{ post.author.first_name }}</small>
+            <small>By: {{ post.author.first_name }} {{ post.blog_post_date }}</small>
         </div>
     </div>
 </div>

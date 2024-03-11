@@ -11,7 +11,7 @@ from django.urls import reverse_lazy
 class BlogView(ListView):
     model = Post
     template_name = 'blog.html'
-    ordering = ['-id'] #latest blog will be listed first, didn't add blog date
+    ordering = ['-blog_post_date'] #latest blog will be listed first
 
 class BlogPostView(DetailView):
     model = Post

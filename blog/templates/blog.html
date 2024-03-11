@@ -21,7 +21,11 @@
     <div>
         <ul>
             {% for post in object_list %}
-            <li><a href="{% url 'blog-post' post.pk %}">{{ post.title }}</a> - {{ post.author.first_name }} <small><a
+            <li><a href="{% url 'blog-post' post.pk %}">
+                {{ post.title }}</a> - 
+                {{ post.author.first_name }} -
+                {{ post.blog_post_date }}
+                 <small><a
                         class="btn btn-outline btn-sm" href="{% url 'update_blog_post' post.pk %}">Edit</a><a
                         class="btn btn-outline btn-sm" href="{% url 'delete_blog_post' post.pk %}">Delete</a></small>
                 </br>
@@ -84,34 +88,3 @@
 </div>
 {% endblock %} -->
 
-{% block postloadjs %}
-{{ block.super }}
-<script type="text/javascript">
-    $('.btt-link').click(function (e) {
-        window.scrollTo(0, 0)
-    })
-</script>
-
-<script type="text/javascript">
-    $('#sort-selector').change(function () {
-        var selector = $(this);
-        var currentUrl = new URL(window.location);
-
-        var selectedVal = selector.val();
-        if (selectedVal != "reset") {
-            var sort = selectedVal.split("_")[0];
-            var direction = selectedVal.split("_")[1];
-
-            currentUrl.searchParams.set("sort", sort);
-            currentUrl.searchParams.set("direction", direction);
-
-            window.location.replace(currentUrl);
-        } else {
-            currentUrl.searchParams.delete("sort");
-            currentUrl.searchParams.delete("direction");
-
-            window.location.replace(currentUrl);
-        }
-    })
-</script>
-{% endblock %}
