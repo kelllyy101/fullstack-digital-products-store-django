@@ -18,18 +18,21 @@
         <div class="col text-center mt-3">
             <h2 class="logo-font"><a href="{% url 'blog' %}">Blog</a></h2>
             <hr class="w-50 mb-1">
-            <h2 class="logo-font"><italic>{{ post.title }}</italic></h2>
-            <small>By: 
-                {{ post.author.first_name }} - 
+            <h2 class="logo-font">
+                <italic>{{ post.title }}</italic>
+            </h2>
+            <small>By:
+                {{ post.author.first_name }} -
                 {{ post.blog_post_date }}
-                <a href="{% url 'update_blog_post' post.pk %}">Edit</a></small>
-            <a class="btn btn-outline btn-sm" href="{% url 'delete_blog_post' post.pk %}">Delete</a></small>
+                {% if request.user.is_superuser %}
+                    <a href="{% url 'update_blog_post' post.pk %}">Edit</a></small>
+                    <a class="btn btn-outline btn-sm" href="{% url 'delete_blog_post' post.pk %}">Delete</a></small>
+                {% endif % }
         </div>
     </div>
     <div>
         {{ post.body }}
     </div>
 </div>
-  
-{% endblock %}
 
+{% endblock %}

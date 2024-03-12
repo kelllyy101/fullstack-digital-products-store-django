@@ -25,11 +25,13 @@
                 {{ post.title }}</a> - 
                 {{ post.author.first_name }} -
                 {{ post.blog_post_date }}
-                 <small><a
+                {% if request.user.is_superuser %}
+                <small><a
                         class="btn btn-outline btn-sm" href="{% url 'update_blog_post' post.pk %}">Edit</a><a
                         class="btn btn-outline btn-sm" href="{% url 'delete_blog_post' post.pk %}">Delete</a></small>
                 </br>
-                {{ post.body }}</li>
+                {% endif %}
+                {{ post.body|slice:":200" }}</li>
             {% endfor %}
         </ul>
     </div>
@@ -37,9 +39,11 @@
 
 <div class="row">
     <div class="col-12 col-lg-7 text-right">
+        {% if request.user.is_superuser %}
         <a href="{% url 'add_blog_post' %}" class="btn btn-black rounded-0 my-2">
             <span class="text-uppercase">Add Blog Post</span>
         </a>
+        {% endif %}
         <a href="{% url 'products' %}" class="btn btn-black rounded-0 my-2">
             <span class="text-uppercase">Back to Store</span>
         </a>

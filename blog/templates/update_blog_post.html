@@ -12,13 +12,17 @@
 
 
 {% block content %}
+{% if request.user.is_superuser %}
+
 <div class="overlay"></div>
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center mt-3">
             <h2 class="logo-font"><a href="{% url 'blog' %}">Update Blog Post</a></h2>
             <hr class="w-50 mb-1">
-            <h2 class="logo-font"><italic>{{ post.title }}</italic></h2>
+            <h2 class="logo-font">
+                <italic>{{ post.title }}</italic>
+            </h2>
             <small>By: {{ post.author.first_name }}</small>
         </div>
     </div>
@@ -35,6 +39,21 @@
     </form>
 
 </div>
-  
-{% endblock %}
 
+{% else %}
+<div class="container-fluid">
+    <h2>This is for store superusers only, how did you end up here?</h2>
+    <div class="col-12 col-lg-7 text-right">
+        <a href="{% url 'products' %}" class="btn btn-black rounded-0 my-2">
+            <span class="text-uppercase">Back to Store</span>
+        </a>
+        <a href="{% url 'blog' %}" class="btn btn-black rounded-0 my-2">
+            <span class="text-uppercase">Back to Blog</span>
+        </a>
+    </div>
+</div>
+
+
+{% endif %}
+
+{% endblock %}
