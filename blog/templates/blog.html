@@ -31,7 +31,7 @@
                         class="btn btn-outline btn-sm" href="{% url 'delete_blog_post' post.pk %}">Delete</a></small>
                 </br>
                 {% endif %}
-                {{ post.body|slice:":200" }}</li>
+                {{ post.body|slice:":200"|safe }}</li>
             {% endfor %}
         </ul>
     </div>
