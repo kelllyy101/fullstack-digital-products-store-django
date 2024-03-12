@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}Create a Blog Category{% endblock %}
+{% load static %}
+
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+{% if request.user.is_superuser %}
+<!--<div class="container-fluid">-->
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2 class="logo-font">Add Blog Category</h2>
+            <hr class="w-50 mb-1">
+            <br>
+        </div>
+    </div>
+</div>
+<div class="form-group">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button btn btn-black rounded-0 my-2>Add Category</button>
+    </form>
+</div>
+{% else %}
+
+
+<div class="container-fluid">
+    <h2>This is for store superusers only, how did you end up here?</h2>
+    <div class="col-12 col-lg-7 text-right">
+        <a href="{% url 'products' %}" class="btn btn-black rounded-0 my-2">
+            <span class="text-uppercase">Back to Store</span>
+        </a>
+        <a href="{% url 'blog' %}" class="btn btn-black rounded-0 my-2">
+            <span class="text-uppercase">Back to Blog</span>
+        </a>
+    </div>
+</div>
+
+
+{% endif %}
+{% endblock %}

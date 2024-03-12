@@ -23,6 +23,7 @@
             {% for post in object_list %}
             <li><a href="{% url 'blog-post' post.pk %}">
                 {{ post.title }}</a> - 
+                {{ post.category }}
                 {{ post.author.first_name }} -
                 {{ post.blog_post_date }}
                 {% if request.user.is_superuser %}
@@ -42,6 +43,9 @@
         {% if request.user.is_superuser %}
         <a href="{% url 'add_blog_post' %}" class="btn btn-black rounded-0 my-2">
             <span class="text-uppercase">Add Blog Post</span>
+        </a>
+        <a href="{% url 'add_blog_category' %}" class="btn btn-black rounded-0 my-2">
+            <span class="text-uppercase">Add Blog Category</span>
         </a>
         {% endif %}
         <a href="{% url 'products' %}" class="btn btn-black rounded-0 my-2">

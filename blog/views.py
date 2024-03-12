@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView #LV queryset for us in the database that we can list, detail brings the detail of one record
-from .models import Post
+from .models import Post, BlogCategory
 from .forms import BlogPostForm, EditForm
 from django.urls import reverse_lazy
 
@@ -33,3 +33,8 @@ class DeleteBlogView(DeleteView):
     model = Post
     template_name = 'delete_blog_post.html'
     success_url = reverse_lazy('blog')
+
+class AddCategoryView(CreateView):
+    model = BlogCategory
+    template_name = 'add_blog_category.html'
+    fields = '__all__' #all fields
