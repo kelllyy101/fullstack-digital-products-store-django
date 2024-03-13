@@ -23,7 +23,7 @@
             {% for post in object_list %}
             <li><a href="{% url 'blog_post' post.pk %}">
                 {{ post.title }}</a> - 
-                <a href="{% url 'category_view' post.category %}">{{ post.category }} </a>
+                <a href="{% url 'category_view' post.category|slugify %}">{{ post.category }} </a>
                 {{ post.author.first_name }} -
                 {{ post.blog_post_date }}
                 {% if request.user.is_superuser %}

@@ -40,5 +40,5 @@ class AddCategoryView(CreateView):
     fields = '__all__' #all fields
 
 def CategoryView(request, cats):
-    category_posts = Post.objects.filter(category=cats)
-    return render(request, 'categories_view.html', {'cats': cats.title(), 'category_posts':category_posts})
+    category_posts = Post.objects.filter(category=cats.replace('-',' ')) #slugify urls to get rid of the space
+    return render(request, 'categories_view.html', {'cats': cats.title().replace('-',' '), 'category_posts':category_posts})
