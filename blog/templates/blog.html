@@ -19,11 +19,11 @@
         </div>
     </div>
     <div>
-        <ul>
+        <ul>{{ cats }}
             {% for post in object_list %}
-            <li><a href="{% url 'blog-post' post.pk %}">
+            <li><a href="{% url 'blog_post' post.pk %}">
                 {{ post.title }}</a> - 
-                {{ post.category }}
+                <a href="{% url 'category_view' post.category %}">{{ post.category }} </a>
                 {{ post.author.first_name }} -
                 {{ post.blog_post_date }}
                 {% if request.user.is_superuser %}

@@ -38,3 +38,7 @@ class AddCategoryView(CreateView):
     model = BlogCategory
     template_name = 'add_blog_category.html'
     fields = '__all__' #all fields
+
+def CategoryView(request, cats):
+    category_posts = Post.objects.filter(category=cats)
+    return render(request, 'categories_view.html', {'cats': cats.title(), 'category_posts':category_posts})

@@ -5,8 +5,6 @@ from datetime import datetime, date
 # Create your models here.
 
 class BlogCategory(models.Model):
-    class Meta:
-        verbose_name_plural = 'Categories'
     name = models.CharField(max_length=255)
     category = models.CharField(max_length=255, default='best_you')
 
