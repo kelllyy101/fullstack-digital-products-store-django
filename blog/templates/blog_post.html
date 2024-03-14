@@ -55,5 +55,29 @@
         </form>
 
     </div>
+</div>
+    <br>
+    <div class="container mt-6 p-4 bg-light rounded">
+        <hr>
+        <h2><strong>Comments</strong></h2>
+        {% if not post.comments.all %}
+            No Comments Yet...<a href="{% url 'add_blog_comment' post.pk %}">Be the First!</a>
+        {% else %}
+        <a href="{% url 'add_blog_comment' post.pk %}">Add Comment</a>
+        <br/><br/>
+            {% for comment in post.comments.all %}
+                <strong>
+                    {{ comment.name }} -
+                    {{ comment.comment_date }}
+                </strong>
+                <br/>
+                {{ comment.body }}
+                <br/><br/>
+            {% endfor %}
+        </br>
+        
+        {% endif %}
+        <hr>
+    </div>
 
 {% endblock %}
