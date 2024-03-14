@@ -34,6 +34,7 @@
 <div class="form-group">
     <form method="POST">
         {% csrf_token %}
+        {{ form.media }}
         {{ form.as_p }}
         <button btn btn-black rounded-0 my-2>Update Blog</button>
     </form>
