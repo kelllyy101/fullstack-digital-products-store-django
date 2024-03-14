@@ -33,7 +33,27 @@
         </div>
     </div>
     <div>
-        {{ post.body|safe }} <!-- to override django default of no html rendering -->>
+        {{ post.body|safe }} <!-- to override django default of no html rendering -->
+    </div>
+    <hr>
+    <div class="like-container">
+        <p class="num-of-likes">
+            8
+        </p>
+        <form action="" method="POST">
+            {% csrf_token %}
+            {% if msg %}
+
+            <i class="fa-solid fa-heart"></i> 
+            
+            {% else %}
+
+            <i class="fa-regular fa-heart"></i>
+
+            {% endif %}
+            <small>like</small>
+        </form>
+
     </div>
 
 {% endblock %}

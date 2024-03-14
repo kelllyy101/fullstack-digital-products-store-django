@@ -21,7 +21,8 @@ class Post(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE) #delete all blog posts
     body = models.TextField()
     blog_post_date = models.DateField(auto_now_add=True)
-    category = models.CharField(max_length=255)
+    category = models.CharField(max_length=255, default='best_me')
+    likes = models.ManyToManyField(User, related_name='blog_post_likes')
 
     def __str__(self):
         return self.title + ' | ' + str(self.author) #allows to see the author of the blog(object needs to be string)
