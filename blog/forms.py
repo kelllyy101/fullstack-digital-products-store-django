@@ -14,7 +14,7 @@ class BlogPostForm(forms.ModelForm):
             'title': forms.TextInput(attrs={'class': 'form-control'}), #from Bootstrap instead of static files
             'title_tag': forms.TextInput(attrs={'class': 'form-control'}),
             'author': forms.Select(attrs={'class': 'form-control'}),
-            'category': forms.Select(choices=choice_list, attrs={'class': 'form-control'}),
+            'category': forms.Select(choices=choices, attrs={'class': 'form-control'}),
             'body': forms.Textarea(attrs={'class': 'form-control'}),
             'blog_snippet': forms.Textarea(attrs={'class': 'form-control'}),
         }
