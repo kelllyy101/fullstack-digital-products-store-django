@@ -23,6 +23,6 @@ class CheckoutProcessTests(TestCase):
 class CheckoutSuccessPageTests(TestCase):
     def test_checkout_success_page_loads_correctly(self):
         order_number = "123456789"  # Example order number
-        response = self.client.get(reverse('checkout_success', args=[order_number]))
+        response = self.client.get(reverse('checkout_success/<order_number>', args=[order_number]))
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'checkout/checkout_success.html')
