@@ -1,0 +1,459 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: white;
+    /*url('/media/pexels-ken-tomita-389818.jpg') no-repeat center center fixed;*/
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #555;
+    font-family: 'Lato';
+}
+
+/* Home Page Carousel*/
+
+.carousel-inner img {
+    margin: auto;
+}
+
+/* Home Page Body*/
+.img-responsive,
+.thumbnail>img,
+.thumbnail a>img,
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.arriv-left2 {
+    width: 100%;
+}
+
+.arriv-middle {
+    width: 100%;
+    padding: 0px;
+    margin: 1em auto;
+}
+
+.arriv-info3 {
+    bottom: 82px;
+    left: 58px;
+}
+
+.arriv-right2 {
+    width: 100%;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.arriv-info2 {
+    position: absolute;
+    bottom: 32px;
+    left: 42px;
+    text-align: center;
+}
+
+.arriv-info3 {
+    position: absolute;
+    bottom: 32px;
+    left: 42px;
+    text-align: center;
+}
+
+.arriv-info2 {
+    bottom: 20px;
+    left: 16px;
+}
+
+.arriv-info2 a {
+    text-decoration: none;
+}
+
+.arriv-info2 a h3:hover {
+    color: #ff6978;
+}
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.logo-font {
+    text-transform: uppercase;
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+.shop-now-button {
+    background: black;
+    color: white;
+    min-width: 260px;
+}
+
+.btn-black {
+    background: black;
+    color: white;
+}
+
+
+.btn-outline-black {
+    background: white;
+    color: black !important;
+    /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: black;
+    color: white !important;
+}
+
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #222;
+    color: white;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+.bg-black {
+    background: #000 !important;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
+}
+
+
+/* ------------------------------- bootstrap toasts */
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
+/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 10px solid black;
+    position: absolute;
+    top: -10px;
+    right: 36px;
+}
+
+.bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Allauth form formatting */
+
+.allauth-form-inner-content p {
+    margin-top: 1.5rem;
+    /* mt-4 */
+    color: #6c757d;
+    /* text-secondary */
+}
+
+.allauth-form-inner-content input {
+    border-color: #000;
+    border-radius: 0;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+    /* btn */
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0;
+
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {
+    color: #fff;
+    background-color: #222;
+    border-color: #222;
+}
+
+.allauth-form-inner-content a {
+    color: #17a2b8;
+    /* text-info */
+}
+
+#mc_embed_signup {
+    background: #fff;
+    color: black;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    width: 400px;
+}
+
+
+/* Social media Icons*/
+
+.social-icon {
+    padding: 15px;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.bi-github:hover {
+    transform: scale(1.2);
+}
+
+/* -------------------------------- Media Queries */
+
+/* Product Form */
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0;
+    border-color: #dc3545;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    border-radius: 0;
+}
+
+/* Mailchimp FORM*/
+
+/* Default styles for the form */
+
+#mc_embed_signup {
+    background: #fff;
+    color: #401c20;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    width: 400px;
+    max-width: 100%;
+}
+
+/* Media queries for tablet view */
+@media screen and (max-width: 768px) {
+
+    #mc_embed_signup,
+    .mc-field-group {
+        width: 60%;
+        /* Half width on tablet */
+    }
+
+    #mc-embedded-subscribe-form input[type="email"],
+    .mc-field-group {
+        width: 25%;
+        /* Full width for email input field */
+    }
+}
+
+.arriv-info2 {
+    bottom: 6px;
+    left: 10px;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-buttons .btn {
+    margin-right: 10px; /* Adjust as needed */
+}
+
+/* Media queries for mobile view */
+@media screen and (max-width: 480px) {
+
+    #mc_embed_signup,
+    .mc-field-group {
+        width: 50%;
+        /* Quarter width on mobile */
+    }
+
+    .brandingLogo {
+        float: left;
+    }
+
+    /* Adjust input field size on mobile */
+    #mc-embedded-subscribe-form input[type="email"],
+    .mc-field-group {
+        width: 25%;
+        /* Full width for email input field */
+    }
+
+    .btt-link {
+        cursor: pointer;
+    }
+}
+
+/* ============ only desktop view ============ */
+@media all and (min-width: 992px) {
+    .navbar-nav .dropdown-menu {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+        margin-top: 0;
+    }
+
+    .navbar-nav .nav-item:hover .nav-link {
+        color: #cd1d1d;
+    }
+
+    .navbar-nav .dropdown-menu.fade-down {
+        top: 80%;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+    }
+
+    .navbar-nav .dropdown-menu.fade-up {
+        top: 180%;
+    }
+
+    .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+        transition: .3s;
+        opacity: 1;
+        visibility: visible;
+        top: 100%;
+        transform: rotateX(0deg);
+    }
+}
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link {
+    cursor: pointer;
+}
+
+/* ============ desktop view .end// ============ */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-buttons {
+        flex-direction: column;
+    }
+
+    .footer-buttons .btn {
+        margin-right: 0;
+        margin-bottom: 10px; /* Adjust as needed */
+    }
+}
