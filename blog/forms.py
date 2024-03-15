@@ -1,8 +1,10 @@
 from django import forms
 from .models import Post, BlogCategory, Comment
 
-choices = BlogCategory.objects.all().values_list('name', 'name')
-
+choices = BlogCategory.objects.all()
+import logging
+logging.info("hola")
+logging.info(choices)
 choice_list = []
 
 for item in choices:
