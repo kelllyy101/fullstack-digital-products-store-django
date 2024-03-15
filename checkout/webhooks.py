@@ -13,7 +13,7 @@ def webhook(request):
     """Listen for webhooks from Stripe"""
 
     import logging
-    logging.error("I'm going to s_ck ")
+    logging.error("Uh oh error" )
 
     # Setup
     #wh_secret = settings.STRIPE_WH_SECRET

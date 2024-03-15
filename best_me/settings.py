@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-n$-b^+^xb-39ea4_$*6@_oz=agp=6tv55ur9xefm2sgaii59ji
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    #'the-best-me-38fd42c32230.herokuapp.com',
+    'the-best-me-38fd42c32230.herokuapp.com',
     'localhost', '127.0.0.1',
 ]
 
@@ -221,7 +221,7 @@ DEFAULT_FROM_EMAIL = 'djangokelly65@gmail.com'
 #EMAIL SET UP
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    DEFAULT_FROM_EMAIL = 'boutiqueado@example.com'
+    DEFAULT_FROM_EMAIL = 'djangokelly65@gmail.com'
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
