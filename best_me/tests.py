@@ -14,7 +14,3 @@ class BaseAppTests(TestCase):
     def test_home_url(self):
         response = self.client.get(reverse('home'))
         self.assertEqual(response.status_code, 200)  # Ensure home page is accessible
-
-    # Repeat the above pattern for other URLs in urlpatterns
-
-    # You can also write tests for static and media files serving, if applicable
