@@ -250,7 +250,7 @@ body {
     color: black;
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
-    width: 600px;
+    width: 400px;
 }
 
 
@@ -307,7 +307,7 @@ body {
     color: #401c20;
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
-    width: 600px;
+    width: 400px;
     max-width: 100%;
 }
 
@@ -330,6 +330,16 @@ body {
 .arriv-info2 {
     bottom: 6px;
     left: 10px;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-buttons .btn {
+    margin-right: 10px; /* Adjust as needed */
 }
 
 /* Media queries for mobile view */
@@ -434,5 +444,16 @@ body {
 
     body {
         height: calc(100vh - 116px);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-buttons {
+        flex-direction: column;
+    }
+
+    .footer-buttons .btn {
+        margin-right: 0;
+        margin-bottom: 10px; /* Adjust as needed */
     }
 }
