@@ -3,18 +3,13 @@ from .models import Post, BlogCategory, Comment
 
 class BlogPostForm(forms.ModelForm):
     class Meta:
-        choices = BlogCategory.objects.all()
-        import logging
-        logging.info("hola")
-        logging.info(choices)
-
         model = Post
         fields = ('title', 'title_tag', 'author', 'category', 'body', 'blog_snippet')
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control'}), #from Bootstrap instead of static files
             'title_tag': forms.TextInput(attrs={'class': 'form-control'}),
             'author': forms.Select(attrs={'class': 'form-control'}),
-            'category': forms.Select(choices=choices, attrs={'class': 'form-control'}),
+            'category': forms.Select(choices=BlogCategory.objects.all(), attrs={'class': 'form-control'}),
             'body': forms.Textarea(attrs={'class': 'form-control'}),
             'blog_snippet': forms.Textarea(attrs={'class': 'form-control'}),
         }
