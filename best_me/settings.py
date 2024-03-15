@@ -55,7 +55,7 @@ INSTALLED_APPS = [
     'profiles',
     # 'storages',
     'blog',
-    'ckeditor',
+    #'ckeditor',
     #'blog.apps.BlogConfig',
 ]
 
