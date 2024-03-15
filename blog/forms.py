@@ -1,17 +1,13 @@
 from django import forms
 from .models import Post, BlogCategory, Comment
 
-choices = BlogCategory.objects.all()
-import logging
-logging.info("hola")
-logging.info(choices)
-choice_list = []
-
-for item in choices:
-    choice_list.append(item)
-
 class BlogPostForm(forms.ModelForm):
     class Meta:
+        choices = BlogCategory.objects.all()
+        import logging
+        logging.info("hola")
+        logging.info(choices)
+
         model = Post
         fields = ('title', 'title_tag', 'author', 'category', 'body', 'blog_snippet')
         widgets = {
