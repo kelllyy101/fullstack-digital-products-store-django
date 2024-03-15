@@ -53,7 +53,7 @@ INSTALLED_APPS = [
     'checkout',
     'crispy_forms',
     'profiles',
-    'storages',
+    # 'storages',
     'blog',
     'ckeditor',
     #'blog.apps.BlogConfig',
