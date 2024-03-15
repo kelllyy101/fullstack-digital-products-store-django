@@ -53,4 +53,3 @@ class AddCommentView(CreateView):
         return super().form_valid(form)
 
     success_url = reverse_lazy('blog')
-    
