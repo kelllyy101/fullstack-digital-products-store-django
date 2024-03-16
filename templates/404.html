@@ -110,25 +110,32 @@
         </div>
         
     </header>
-
-    <div class="jumbotron">
-        <h1>
-            404 page error. Page not found or does not exist.
-        </h1>
-
-    </div>
-
-    <div class="container-fluid">
-        <h2>What were you looking for?</h2>
-        <div class="col-12 col-lg-7 text-right">
-            <a href="{% url 'products' %}" class="btn btn-black rounded-0 my-2">
-                <span class="text-uppercase">Back to Store</span>
-            </a>
-            <a href="{% url 'blog' %}" class="btn btn-black rounded-0 my-2">
-                <span class="text-uppercase">Back to Blog</span>
-            </a>
+    <hr>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <div class="jumbotron mt-5 text-center">
+                    <h1>404 Page Error</h1>
+                    <p>Page not found or does not exist.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col">
+                <h2 class="text-center">What were you looking for?</h2>
+                <div class="text-right">
+                    <a href="{% url 'products' %}" class="btn btn-black rounded-0 my-2">
+                        <span class="text-uppercase">Back to Store</span>
+                    </a>
+                    <a href="{% url 'blog' %}" class="btn btn-black rounded-0 my-2">
+                        <span class="text-uppercase">Back to Blog</span>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
+    
 
     {% if messages %}
     <div class="message-container">
