@@ -41,6 +41,9 @@ def all_products(request):
 
     current_sorting = f'{sort}_{direction}'
 
+    for p in products:
+        p.rating = p.get_rating()
+
     context = {
         'products': products,
         'search_term': query,
@@ -58,9 +61,10 @@ def product_description(request, product_id):
 
     reviews = Review.objects.filter(product=product)
     rating = 0
-    for r in reviews:
-        rating += r.rating
-    rating = rating/len(reviews)
+    if len(reviews) > 0:
+        for r in reviews:
+            rating += r.rating
+        rating = rating/len(reviews)
 
     context = {
         'product': product,

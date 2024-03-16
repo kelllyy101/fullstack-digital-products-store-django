@@ -31,15 +31,14 @@ class Product(models.Model):
         return self.name
 
     def get_rating(self):
-        reviews_total = 0
-
-        for review in self.reviews.all():
-            reviews_total += review.rating
+        reviews = self.reviews.all()
+        rating = 0
+        if len(reviews) > 0:
+            for r in reviews:
+                rating += r.rating
+            rating = rating/len(reviews)
         
-        if reviews_total > 0:
-            return reviews_total / self.reviews.count()
-        
-        return 0
+        return rating
 
 
 class Review(models.Model):
