@@ -19,6 +19,11 @@ def all_products(request):
     direction = None
 
     if request.GET:
+        if 'category' in request.GET:
+            categories_filter = request.GET['category'].split(',')
+            categories = Category.objects.filter(name__in=categories_filter)
+            products = products.filter(category__in=categories)
+
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
@@ -33,19 +38,6 @@ def all_products(request):
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
             
-        if 'category' in request.GET:
-            categories = request.GET['category'].split(',')
-            products = products.filter(category__name__in=categories)
-            categories = Category.objects.filter(name__in=categories)
-
-        if 'q' in request.GET:
-            query = request.GET['q']
-            if not query:
-                messages.error(request, "You didn't enter any search criteria!")
-                return redirect(reverse('products'))
-            
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
-            products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
 
@@ -64,31 +56,16 @@ def product_description(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
 
+    reviews = Review.objects.filter(product=product)
+    rating = 0
+    for r in reviews:
+        rating += r.rating
+    rating = rating/len(reviews)
+
     context = {
         'product': product,
+        'rating': rating,
     }
-
-    if request.method == 'POST':
-        rating = request.POST.get('rating', 3)
-        content = request.POST.get('content', '')
-
-        if content:
-            reviews = Review.objects.filter(created_by=request.user, product=product)
-
-            if reviews.count() > 0:
-                review = reviews.first()
-                review.rating = rating
-                review.content = content
-                review.save()
-            else:
-                review = Review.objects.create(
-                    product=product,
-                    rating=rating,
-                    content=content,
-                    created_by=request.user
-                )
-
-            #return redirect('product_description', args=[product.id])
 
     return render(request, 'products/product_description.html', context)
 

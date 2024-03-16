@@ -8,7 +8,8 @@
             "sku": "OBG-RES-JRN-001",
             "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/blue_green_journal_flower.png",
             "price": 123.99,
-            "url": "https://the-best-me.s3.eu-west-1.amazonaws.com/MRR+-+How+To+Growing+Your+Online+Business+WITH+PHOTOS.pdf"
+            "url": "https://the-best-me.s3.eu-west-1.amazonaws.com/MRR+-+How+To+Growing+Your+Online+Business+WITH+PHOTOS.pdf",
+            "category": 4
         }
     },
     {
@@ -20,7 +21,8 @@
             "sku": "6WK-WL-JRN-002",
             "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/6_week_weight_loss_tracker.png",
             "price": 10.99,
-            "url": "https://the-best-me.s3.eu-west-1.amazonaws.com/MRR+-+How+To+Growing+Your+Online+Business+WITH+PHOTOS.pdf"
+            "url": "https://the-best-me.s3.eu-west-1.amazonaws.com/MRR+-+How+To+Growing+Your+Online+Business+WITH+PHOTOS.pdf",
+            "category": 4
         }
     },
     {
@@ -141,7 +143,8 @@
             "sku": "YRJ-GUIDED-001",
             "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/white_green_elegant_A4_planner.png",
             "price": 19.99,
-            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf"
+            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf",
+            "category": 4
         }
     },
     {
@@ -153,7 +156,8 @@
             "sku": "GSW-YEARLY-001",
             "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/goal_setting_workbook_yearly.jpg",
             "price": 14.99,
-            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Turn+Your+Social+Media+Into+An+Income+Source+eBook+-+NO+PHOTOS.pdf"
+            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Turn+Your+Social+Media+Into+An+Income+Source+eBook+-+NO+PHOTOS.pdf",
+            "category": 4
         }
     },
     {
@@ -164,7 +168,8 @@
             "description": "<p>Manifest your dreams into reality with our Vision Board Planner! This annual edition allows you to visualize your goals and create a roadmap for success. Combine the power of intention-setting with practical planning to turn your dreams into achievable milestones. Start designing the life you desire with our Vision Board Planner!</p>",
             "sku": "VBP-ANNUAL-001",
             "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/vision_board_planner_annual.jpg",
-            "price": 24.99
+            "price": 24.99,
+            "category": 4
         }
     },
     {
@@ -188,7 +193,8 @@
             "sku": "HTJ-WEEKLY-001",
             "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/black_white_elegant_aesthetic_flowers_A4_planner.png.png",
             "price": 12.99,
-            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf"
+            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf",
+            "category": 4
         }
     },
     {
