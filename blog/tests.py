@@ -4,15 +4,17 @@ from django.test import TestCase
 from django.test import TestCase
 from django.urls import reverse
 from .models import Post
+from django.contrib.auth.models import User
 
 
 class BlogTests(TestCase):
     @classmethod
     def setUpTestData(cls):
-        cls.post = Post.objects.create(text="This is a test!") #fix
+        cls.author = User.objects.create_user('u1', password='12345')
+        cls.post = Post.objects.create(title="This is a test!", author=cls.author)
 
     def test_model_content(self):
-        self.assertEqual(self.post.text, "This is a test!")
+        self.assertEqual(self.post.title, "This is a test!")
 
     def test_url_exists_at_correct_location(self):
         response = self.client.get("/blog/")
@@ -25,7 +27,7 @@ class BlogTests(TestCase):
         self.assertContains(response, "This is a test!")
 
     def test_blog_post_view(self):
-        post = Post.objects.create(title="Test Post", body="This is a test post body.")
+        post = Post.objects.create(title="Test Post", body="This is a test post body.", author=self.author)
         response = self.client.get(reverse("blog_post", kwargs={"pk": post.pk}))
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, "blog_post.html")

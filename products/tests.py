@@ -7,7 +7,7 @@ class ProductViewTests(TestCase):
     def setUp(self):
         # Create a test user
         self.user = User.objects.create_user(
-            username='testuser', email='test@example.com', password='password'
+            username='testuser', email='test@example.com', password='password', is_superuser=True,
         )
 
         # Create some categories
@@ -34,13 +34,11 @@ class ProductViewTests(TestCase):
         self.assertEqual(response.context['product'], self.product1)
 
     def test_add_product_view(self):
-        # Log in as the test user
         self.client.login(username='testuser', password='password')
 
         # Test the add product view
         response = self.client.get(reverse('add_product'))
-        self.assertEqual(response.status_code, 302) 
-        self.assertTemplateUsed(response, 'products/product_description.html')#fix
+        self.assertTemplateUsed(response, 'products/add_product.html')
 
         # Add a product
         response = self.client.post(reverse('add_product'), {
@@ -48,7 +46,9 @@ class ProductViewTests(TestCase):
             'price': 15.0,
             'category': self.category1.id,
         })
-        self.assertEqual(response.status_code, 302)  # Expecting a redirect
+        self.assertEqual(response.status_code, 302)
+
+        self.assertTemplateUsed(response, 'products/add_product.html')
 
         # Ensure that the product was added
         self.assertTrue(Product.objects.filter(name='New Product').exists())
