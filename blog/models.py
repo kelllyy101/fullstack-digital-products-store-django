@@ -31,8 +31,7 @@ class Post(models.Model):
         return self.title + ' | ' + str(self.author) #allows to see the author of the blog(object needs to be string)
 
     def get_absolute_url(self):
-        return reverse('blog') #on submit/post goes back to home
-
+        return f'/blog/post/{self.pk}'
 
 class Comment(models.Model):
     post = models.ForeignKey(Post, related_name="comments", on_delete=models.CASCADE)

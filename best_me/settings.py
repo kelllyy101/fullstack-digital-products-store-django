@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    'django.contrib.sitemaps',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -55,9 +56,10 @@ INSTALLED_APPS = [
     'profiles',
     # 'storages',
     'blog',
-    #'ckeditor',
+    'ckeditor',
     #'blog.apps.BlogConfig',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

@@ -18,7 +18,10 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from django.views.generic import TemplateView
-
+from django.contrib.sitemaps import GenericSitemap
+from django.contrib.sitemaps.views import sitemap
+from blog.models import Post
+from products.models import Product
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -30,6 +33,25 @@ urlpatterns = [
     path('profile/', include('profiles.urls')),
     path('blog/', include('blog.urls')),
     path('robots.txt', TemplateView.as_view(template_name="robots.txt", content_type='text/plain')),
+    path(
+        'sitemap.xml',
+        sitemap,
+        {
+            'sitemaps': {
+                'posts': GenericSitemap(
+                    {
+                        "queryset": Post.objects.all(),
+                    },
+                ),
+                'products': GenericSitemap(
+                    {
+                        "queryset": Product.objects.all(),
+                    },
+                ),
+            },
+        },
+      name="django.contrib.sitemaps.views.sitemap",
+    ),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'home.views.handling_404'

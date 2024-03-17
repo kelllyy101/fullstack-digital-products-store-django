@@ -40,6 +40,9 @@ class Product(models.Model):
         
         return rating
 
+    def get_absolute_url(self):
+        return f'/products/{self.pk}'
+
 
 class Review(models.Model):
     product = models.ForeignKey(Product, related_name='reviews', on_delete=models.CASCADE)
