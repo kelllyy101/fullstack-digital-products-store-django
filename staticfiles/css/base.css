@@ -3,18 +3,27 @@ html {
 }
 
 body {
-    background: white;
-    /*url('/media/pexels-ken-tomita-389818.jpg') no-repeat center center fixed;*/
+    background-image: url('/media/laptop_desk_flowers.png') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
 }
 
+
 /* Home Page Carousel*/
 
-.carousel-inner img {
-    margin: auto;
+.carousel-inner {
+    width: 100%; /* Adjust as needed */
+    margin: 0 auto; /* Center the carousel */
+}
+
+.carousel-item img {
+    height: auto; /* Ensures images retain aspect ratio */
+}
+
+.container {
+    padding-top: 50px; 
 }
 
 /* Home Page Body*/
@@ -151,6 +160,7 @@ body {
     background: white;
     z-index: -1;
 }
+
 
 
 /* ------------------------------- bootstrap toasts */
@@ -458,6 +468,7 @@ body {
     body {
         height: calc(100vh - 116px);
     }
+
 }
 
 @media (max-width: 768px) {

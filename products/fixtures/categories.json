@@ -54,37 +54,5 @@
             "name": "meditation_journals",
             "friendly_name": "Meditation Journals"
         }
-    },
-    {
-        "pk": 8,
-        "model": "products.category",
-        "fields": {
-            "name": "clearance",
-            "friendly_name": "Clearance"
-        }
-    },
-    {
-        "pk": 9,
-        "model": "products.category",
-        "fields": {
-            "name": "deals",
-            "friendly_name": "Deals"
-        }
-    },
-    {
-        "pk": 10,
-        "model": "products.category",
-        "fields": {
-            "name": "essentials",
-            "friendly_name": "Essentials"
-        }
-    },
-    {
-        "pk": 11,
-        "model": "products.category",
-        "fields": {
-            "name": "new_arrivals",
-            "friendly_name": "New Arrivals"
-        }
     }
 ]
