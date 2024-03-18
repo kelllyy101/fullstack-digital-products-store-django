@@ -13,13 +13,13 @@
 
 {% block content %}
 
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col text-center mt-3">
                 <h2 class="logo-font"><a href="{% url 'blog' %}">Blog</a></h2>
                 <hr class="w-50 mb-1">
                 <h2 class="logo-font">
-                    <italic>{{ post.title }}</italic>
+                    <i>{{ post.title }}</i>
                 </h2>
                     <small>By:
                     {{ post.author.first_name }} -
@@ -32,7 +32,7 @@
             </div>
         </div>
     </div>
-    <div>
+    <div class="container mt-6 p-4 bg-white rounded border border-dark">
         {{ post.body|safe }} <!-- to override django default of no html rendering -->
     </div>
     <hr>
