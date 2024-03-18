@@ -44,19 +44,7 @@
             "name": "The Ultimate Social Media Marketing Blueprint",
             "description": "Set at a minimum selling price of $37 with MRR, this invaluable resource, The Ultimate Social Media Marketing Blueprint Ebook, equipped with a Canva Ebook Template and exclusive Master Resell Rights, is a game-changer for anyone aiming to generate income through digital product sales. <p>Unveil the secrets of making money online by learning effective strategies for social media marketing on Instagram. This comprehensive guide covers every aspect necessary for your online business to thrive.</p> <p>What makes this guide even more enticing is the inclusion of Master Resell Rights, allowing you to resell it as your own. Customize the colors and design to align with your brand, creating an additional revenue stream effortlessly.</p> <p>Explore a wealth of knowledge on social media marketing, specifically tailored for Instagram success, including: ✨ Identifying your target audience with a useful worksheet<br />✨ Crafting compelling content to attract and retain followers<br />✨ Developing a strategic content plan with an accompanying worksheet<br />✨ Leveraging Instagram's algorithm to your advantage<br />✨ Maximizing SEO and hashtags for increased visibility</p> <p>Unlock the full potential of digital marketing on Instagram and propel your online business to new heights. Dive into the detailed Table of Contents for more insights.",
             "sku": "TUSMMPB-EBOOK-004",
-            "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/social_media_templatesdigitalproduct_instagram.png",
-            "price": 10.99,
-            "url": "https://the-best-me.s3.eu-west-1.amazonaws.com/MRR+The+Ultimate+Social+Media+Marketing+Blueprint+-+WITHOUT+PHOTOS.pdf"
-        }
-    },
-    {
-        "pk": 5,
-        "model": "products.product",
-        "fields": {
-            "name": "Turn Your Social Media into a Source of Income with Digital Marketing",
-            "description": "<p data-pm-slice=\"1 1 []\">This stylish 44 page eBook will teach you everything you need to achieve your goals.</p> <p><strong>This guide is for you if you&rsquo;re looking to:</strong></p> <ul> <li> <p><strong>Build an income online</strong></p> </li> <li> <p><strong>Want a 90 days of Social Media content ideas</strong></p> </li> <li> <p><strong>101 Social Media Hooks</strong></p> </li> <li> <p><strong>101 Call to Action ideas for social media</strong></p> </li> </ul> <p>Unlock the potential of your social media platforms with our 44-page 'Turn Your Social Media Into an Income Source' eBook. This meticulously crafted resource is a game-changer for your digital products business, providing you with ready-made content to seamlessly integrate into your online strategy.</p> <p>Discover the power of promoting your digital products effectively on social media with this comprehensive guide.</p> <p>? Learn about social media hooks, complete with 101 examples, and understand the significance of CTAs (Call to Action) in every post, accompanied by practical examples.</p> <p>What sets this eBook apart is the inclusion of Master Resell Rights, allowing you to offer this valuable content to your customers.</p> <p>? Additionally, get a 90-day treasure trove of content ideas to effortlessly promote your digital products and boost sales on social media.</p> <p>Whether you choose to customize the content or sell it as is, this stylish 44-page eBook is tailored for success. It includes 101 Social Media Hooks, 101 Call to Action ideas, and a 90-day Content Calendar designed with short-form video platforms like TikTok, Instagram Reels, and YouTube Shorts in mind. ?</p> <p>Harness the immense potential of these social media platforms to monetize organic traffic without spending on ads. Our eBook serves as your guide to creating engaging content that attracts audiences and drives them to your offers.</p> <p>Join the digital products revolution and kickstart your passive income journey today!</p> <p>? This eBook is versatile &ndash; sell it on platforms like Etsy, Shopify, TikTok, Stan store, or use it as an enticing incentive for your audience. Seize the opportunity to turn your social media presence into a lucrative income stream! ?</p>",
-            "sku": "TYSM-DM-EBOOK-005",
-            "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/3_months_social_media_content.png",
+            "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/social_media_digitalproduct_journal.png",
             "price": 10.99,
             "url": "https://the-best-me.s3.eu-west-1.amazonaws.com/MRR+The+Ultimate+Social+Media+Marketing+Blueprint+-+WITHOUT+PHOTOS.pdf"
         }
@@ -68,7 +56,7 @@
             "name": "Social Media Success Blueprint",
             "description": "<p>Unlock the power of social media with our comprehensive guide! Learn how to build a strong presence on popular platforms, engage with your audience effectively, and convert followers into loyal customers. Whether you're a business owner or a digital marketer, this blueprint will help you achieve success in the competitive world of social media.</p>",
             "sku": "SMSB-EBOOK-001",
-            "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/social_media_blueprint.jpg",
+            "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/social_media_blueprint.png",
             "price": 24.99,
             "url": "https://the-best-me.s3.eu-west-1.amazonaws.com/MRR+The+Ultimate+Social+Media+Marketing+Blueprint+-+WITHOUT+PHOTOS.pdf"
         }
@@ -80,7 +68,7 @@
             "name": "Email Marketing Mastery Course",
             "description": "<p>Master the art of email marketing with our comprehensive course! Learn how to build an email list, create engaging campaigns, and maximize your ROI. With practical tips and real-world examples, this course will take your email marketing skills to the next level.</p>",
             "sku": "EMM-COURSE-001",
-            "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/social_media_templatesdigitalproduct_instagram.png",
+            "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/email_marketing_success.png",
             "price": 49.99,
             "url": "https://the-best-me.s3.eu-west-1.amazonaws.com/MRR+The+Ultimate+Social+Media+Marketing+Blueprint+-+WITHOUT+PHOTOS.pdf"
         }
@@ -90,7 +78,7 @@
         "model": "products.product",
         "fields": {
             "name": "Content Creation Guidebook",
-            "description": "<p>Create compelling content that resonates with your audience with our Content Creation Guidebook! Learn how to brainstorm ideas, structure your content effectively, and optimize it for different platforms. Whether you're a blogger, YouTuber, or social media influencer, this guidebook is your go-to resource for content creation success.</p>",
+            "description": "Create compelling content that resonates with your audience with our Content Creation Guidebook! Learn how to brainstorm ideas, structure your content effectively, and optimize it for different platforms. Whether you're a blogger, YouTuber, or social media influencer, this guidebook is your go-to resource for content creation success.</p>",
             "sku": "CCG-GUIDE-001",
             "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/ultimate_social_media_marketing.png.png",
             "price": 29.99,
@@ -103,7 +91,7 @@
         "model": "products.product",
         "fields": {
             "name": "Financial Freedom Masterclass",
-            "description": "<p>Take control of your finances and achieve true financial freedom with our masterclass! Learn how to budget effectively, invest wisely, and build multiple streams of passive income. Whether you're just starting your financial journey or looking to accelerate your wealth-building efforts, this masterclass will provide you with the knowledge and tools you need to succeed.</p>",
+            "description": "Take control of your finances and achieve true financial freedom with our masterclass! Learn how to budget effectively, invest wisely, and build multiple streams of passive income. Whether you're just starting your financial journey or looking to accelerate your wealth-building efforts, this masterclass will provide you with the knowledge and tools you need to succeed.</p>",
             "sku": "FFM-MASTERCLASS-001",
             "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/achieve_financial_freedom.png",
             "price": 79.99,
@@ -115,9 +103,9 @@
         "model": "products.product",
         "fields": {
             "name": "Investing 101 - Beginner's Guide",
-            "description": "<p>Learn the fundamentals of investing and start building wealth for the future with our beginner's guide! Understand different investment vehicles, risk management strategies, and portfolio diversification techniques. Whether you're interested in stocks, bonds, real estate, or cryptocurrency, this guide will help you make informed investment decisions.</p>",
+            "description": "Learn the fundamentals of investing and start building wealth for the future with our beginner's guide! Understand different investment vehicles, risk management strategies, and portfolio diversification techniques. Whether you're interested in stocks, bonds, real estate, or cryptocurrency, this guide will help you make informed investment decisions.</p>",
             "sku": "INV-101-GUIDE-001",
-            "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/investing_beginners_guide.jpg",
+            "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/investing_beginners_guide.png",
             "price": 34.99,
             "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Turn+Your+Social+Media+Into+An+Income+Source+eBook+-+NO+PHOTOS.pdf"
         }
@@ -127,7 +115,7 @@
         "model": "products.product",
         "fields": {
             "name": "Retirement Planning Workshop",
-            "description": "<p>Plan for a secure and comfortable retirement with our comprehensive workshop! Learn how to calculate your retirement needs, optimize your savings, and create a retirement income strategy. Whether you're nearing retirement age or just starting to think about your future, this workshop will help you make the most of your golden years.</p>",
+            "description": "Plan for a secure and comfortable retirement with our comprehensive workshop! Learn how to calculate your retirement needs, optimize your savings, and create a retirement income strategy. Whether you're nearing retirement age or just starting to think about your future, this workshop will help you make the most of your golden years.",
             "sku": "RPW-WORKSHOP-001",
             "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/6_week_weight_loss_tracker.png",
             "price": 59.99,
@@ -139,7 +127,7 @@
         "model": "products.product",
         "fields": {
             "name": "Yearly Reflection Journal - Guided Planner",
-            "description": "Reflect on your year and set meaningful goals with our Yearly Reflection Journal! This guided planner helps you review your achievements, challenges, and lessons learned, while also providing prompts to plan for the year ahead. Start each year with clarity and purpose using this essential tool for personal growth.</p>",
+            "description": "Reflect on your year and set meaningful goals with our Yearly Reflection Journal! This guided planner helps you review your achievements, challenges, and lessons learned, while also providing prompts to plan for the year ahead. Start each year with clarity and purpose using this essential tool for personal growth.",
             "sku": "YRJ-GUIDED-001",
             "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/white_green_elegant_A4_planner.png",
             "price": 19.99,
@@ -152,9 +140,9 @@
         "model": "products.product",
         "fields": {
             "name": "Goal Setting Workbook - Yearly Edition",
-            "description": "<p>Achieve your dreams and aspirations with our Goal Setting Workbook! This yearly edition is designed to help you set actionable goals, track your progress, and celebrate your achievements. Whether you're striving for personal or professional growth, this workbook will keep you motivated and focused throughout the year.</p>",
+            "description": "Achieve your dreams and aspirations with our Goal Setting Workbook! This yearly edition is designed to help you set actionable goals, track your progress, and celebrate your achievements. Whether you're striving for personal or professional growth, this workbook will keep you motivated and focused throughout the year.",
             "sku": "GSW-YEARLY-001",
-            "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/goal_setting_workbook_yearly.jpg",
+            "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/goal_setting_workbook_yearly.png",
             "price": 14.99,
             "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Turn+Your+Social+Media+Into+An+Income+Source+eBook+-+NO+PHOTOS.pdf",
             "category": 4
@@ -165,9 +153,9 @@
         "model": "products.product",
         "fields": {
             "name": "Vision Board Planner - Annual Edition",
-            "description": "<p>Manifest your dreams into reality with our Vision Board Planner! This annual edition allows you to visualize your goals and create a roadmap for success. Combine the power of intention-setting with practical planning to turn your dreams into achievable milestones. Start designing the life you desire with our Vision Board Planner!</p>",
+            "description": "Manifest your dreams into reality with our Vision Board Planner! This annual edition allows you to visualize your goals and create a roadmap for success. Combine the power of intention-setting with practical planning to turn your dreams into achievable milestones. Start designing the life you desire with our Vision Board Planner!",
             "sku": "VBP-ANNUAL-001",
-            "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/vision_board_planner_annual.jpg",
+            "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/vision_board_planner_annual.png",
             "price": 24.99,
             "category": 4
         }
@@ -179,7 +167,7 @@
             "name": "Weekly Planner - Minimalist Design",
             "description": "<p>Stay organized and productive with our Weekly Planner! Featuring a minimalist design and ample space for scheduling tasks, appointments, and goals, this planner is perfect for keeping your week on track. Simplify your life and enhance your productivity with our Weekly Planner.</p>",
             "sku": "WP-MINIMALIST-001",
-            "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/weekly_planner_minimalist.jpg",
+            "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/weekly_planner_minimalist.png",
             "price": 9.99,
             "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf"
         }
@@ -191,7 +179,7 @@
             "name": "Habit Tracker Journal - Weekly Edition",
             "description": "<p>Cultivate positive habits and track your progress with our Habit Tracker Journal! This weekly edition allows you to set goals, track your habits, and analyze your results. Whether you're working on fitness goals, personal development, or building new routines, this journal will keep you accountable and motivated.</p>",
             "sku": "HTJ-WEEKLY-001",
-            "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/black_white_elegant_aesthetic_flowers_A4_planner.png.png",
+            "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/black_white_elegant_aesthetic_flowers_A4_planner.png",
             "price": 12.99,
             "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf",
             "category": 4
@@ -204,7 +192,7 @@
             "name": "Meal Planning Notebook - Weekly Layout",
             "description": "<p>Simplify meal planning and grocery shopping with our Meal Planning Notebook! Featuring a weekly layout with space to plan meals, create shopping lists, and track your favorite recipes, this notebook is a must-have for busy individuals and families. Take the stress out of mealtime prep with our Meal Planning Notebook.</p>",
             "sku": "MPN-WEEKLY-001",
-            "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/meal_planning_notebook_weekly.jpg",
+            "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/meal_planning_notebook_weekly.png",
             "price": 11.99,
             "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf"
         }
@@ -216,7 +204,7 @@
             "name": "Weight Loss Tracker Journal - 12-Week Edition",
             "description": "<p>Embark on a journey to a healthier you with our Weight Loss Tracker Journal! This 12-week edition allows you to set weight loss goals, track your progress, and celebrate your achievements. With motivational quotes and practical tips, this journal will keep you motivated and focused on your fitness journey.</p>",
             "sku": "WLTJ-12WEEK-001",
-            "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/weight_loss_tracker_journal_12_week.jpg",
+            "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/weight_loss_tracker_journal_12_week.png",
             "price": 14.99,
             "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf"
         }
@@ -276,9 +264,21 @@
             "name": "Zen Meditation Notebook - Guided Practice",
             "description": "Find serenity and tranquility in your daily life with our Zen Meditation Notebook! This guided practice notebook includes meditation prompts, breathing exercises, and space for reflection. Whether you're a beginner or an experienced practitioner, this notebook will support you on your journey to inner peace.</p>",
             "sku": "zen_meditation_journal.png",
-            "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/zen_meditation_notebook_guided.jpg",
+            "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/zen_meditation_notebook_guided.png",
             "price": 15.99,
             "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "products.product",
+        "fields": {
+            "name": "Turn Your Social Media into a Source of Income with Digital Marketing",
+            "description": "<p data-pm-slice=\"1 1 []\">This stylish 44 page eBook will teach you everything you need to achieve your goals.</p> <p><strong>This guide is for you if you&rsquo;re looking to:</strong></p> <ul> <li> <p><strong>Build an income online</strong></p> </li> <li> <p><strong>Want a 90 days of Social Media content ideas</strong></p> </li> <li> <p><strong>101 Social Media Hooks</strong></p> </li> <li> <p><strong>101 Call to Action ideas for social media</strong></p> </li> </ul> <p>Unlock the potential of your social media platforms with our 44-page 'Turn Your Social Media Into an Income Source' eBook. This meticulously crafted resource is a game-changer for your digital products business, providing you with ready-made content to seamlessly integrate into your online strategy.</p> <p>Discover the power of promoting your digital products effectively on social media with this comprehensive guide.</p> <p>? Learn about social media hooks, complete with 101 examples, and understand the significance of CTAs (Call to Action) in every post, accompanied by practical examples.</p> <p>What sets this eBook apart is the inclusion of Master Resell Rights, allowing you to offer this valuable content to your customers.</p> <p>? Additionally, get a 90-day treasure trove of content ideas to effortlessly promote your digital products and boost sales on social media.</p> <p>Whether you choose to customize the content or sell it as is, this stylish 44-page eBook is tailored for success. It includes 101 Social Media Hooks, 101 Call to Action ideas, and a 90-day Content Calendar designed with short-form video platforms like TikTok, Instagram Reels, and YouTube Shorts in mind. ?</p> <p>Harness the immense potential of these social media platforms to monetize organic traffic without spending on ads. Our eBook serves as your guide to creating engaging content that attracts audiences and drives them to your offers.</p> <p>Join the digital products revolution and kickstart your passive income journey today!</p> <p>? This eBook is versatile &ndash; sell it on platforms like Etsy, Shopify, TikTok, Stan store, or use it as an enticing incentive for your audience. Seize the opportunity to turn your social media presence into a lucrative income stream! ?</p>",
+            "sku": "TYSM-DM-EBOOK-005",
+            "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/3_months_social_media_content.png",
+            "price": 10.99,
+            "url": "https://the-best-me.s3.eu-west-1.amazonaws.com/MRR+The+Ultimate+Social+Media+Marketing+Blueprint+-+WITHOUT+PHOTOS.pdf"
         }
     }
 ]
