@@ -59,6 +59,16 @@ def product_description(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
 
+    if request.method == 'POST':
+        rating = request.POST.get('rating')
+        content = request.POST.get('content')
+        review = Review.objects.create(
+            product=product,
+            rating=rating,
+            content=content,
+            created_by=request.user
+        )
+
     reviews = Review.objects.filter(product=product)
     rating = 0
     if len(reviews) > 0:

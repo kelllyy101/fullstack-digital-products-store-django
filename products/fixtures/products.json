@@ -34,7 +34,8 @@
             "sku": "GYOB-EBOOK-003",
             "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/planner_journal_tracker_pink.jpg",
             "price": 10.99,
-            "url": "https://the-best-me.s3.eu-west-1.amazonaws.com/MRR+The+Ultimate+Social+Media+Marketing+Blueprint+-+WITHOUT+PHOTOS.pdf"
+            "url": "https://the-best-me.s3.eu-west-1.amazonaws.com/MRR+The+Ultimate+Social+Media+Marketing+Blueprint+-+WITHOUT+PHOTOS.pdf",
+            "category": 2
         }
     },
     {
@@ -46,7 +47,8 @@
             "sku": "TUSMMPB-EBOOK-004",
             "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/social_media_digitalproduct_journal.png",
             "price": 10.99,
-            "url": "https://the-best-me.s3.eu-west-1.amazonaws.com/MRR+The+Ultimate+Social+Media+Marketing+Blueprint+-+WITHOUT+PHOTOS.pdf"
+            "url": "https://the-best-me.s3.eu-west-1.amazonaws.com/MRR+The+Ultimate+Social+Media+Marketing+Blueprint+-+WITHOUT+PHOTOS.pdf",
+            "category": 3
         }
     },
     {
@@ -58,7 +60,8 @@
             "sku": "SMSB-EBOOK-001",
             "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/social_media_blueprint.png",
             "price": 24.99,
-            "url": "https://the-best-me.s3.eu-west-1.amazonaws.com/MRR+The+Ultimate+Social+Media+Marketing+Blueprint+-+WITHOUT+PHOTOS.pdf"
+            "url": "https://the-best-me.s3.eu-west-1.amazonaws.com/MRR+The+Ultimate+Social+Media+Marketing+Blueprint+-+WITHOUT+PHOTOS.pdf",
+            "category": 3
         }
     },
     {
@@ -70,7 +73,8 @@
             "sku": "EMM-COURSE-001",
             "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/email_marketing_success.png",
             "price": 49.99,
-            "url": "https://the-best-me.s3.eu-west-1.amazonaws.com/MRR+The+Ultimate+Social+Media+Marketing+Blueprint+-+WITHOUT+PHOTOS.pdf"
+            "url": "https://the-best-me.s3.eu-west-1.amazonaws.com/MRR+The+Ultimate+Social+Media+Marketing+Blueprint+-+WITHOUT+PHOTOS.pdf",
+            "category": 1
         }
     },
     {
@@ -82,7 +86,8 @@
             "sku": "CCG-GUIDE-001",
             "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/ultimate_social_media_marketing.png.png",
             "price": 29.99,
-            "url": "https://the-best-me.s3.eu-west-1.amazonaws.com/MRR+The+Ultimate+Social+Media+Marketing+Blueprint+-+WITHOUT+PHOTOS.pdf"
+            "url": "https://the-best-me.s3.eu-west-1.amazonaws.com/MRR+The+Ultimate+Social+Media+Marketing+Blueprint+-+WITHOUT+PHOTOS.pdf",
+            "category": 3
     
         }
     },
@@ -95,7 +100,8 @@
             "sku": "FFM-MASTERCLASS-001",
             "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/achieve_financial_freedom.png",
             "price": 79.99,
-            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Turn+Your+Social+Media+Into+An+Income+Source+eBook+-+NO+PHOTOS.pdf"
+            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Turn+Your+Social+Media+Into+An+Income+Source+eBook+-+NO+PHOTOS.pdf",
+            "category": 2
         }
     },
     {
@@ -107,7 +113,8 @@
             "sku": "INV-101-GUIDE-001",
             "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/investing_beginners_guide.png",
             "price": 34.99,
-            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Turn+Your+Social+Media+Into+An+Income+Source+eBook+-+NO+PHOTOS.pdf"
+            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Turn+Your+Social+Media+Into+An+Income+Source+eBook+-+NO+PHOTOS.pdf",
+            "category": 2
         }
     },
     {
@@ -119,7 +126,8 @@
             "sku": "RPW-WORKSHOP-001",
             "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/6_week_weight_loss_tracker.png",
             "price": 59.99,
-            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Turn+Your+Social+Media+Into+An+Income+Source+eBook+-+NO+PHOTOS.pdf"
+            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Turn+Your+Social+Media+Into+An+Income+Source+eBook+-+NO+PHOTOS.pdf",
+            "category": 2
         }
     },
     {
@@ -169,7 +177,8 @@
             "sku": "WP-MINIMALIST-001",
             "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/weekly_planner_minimalist.png",
             "price": 9.99,
-            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf"
+            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf",
+            "category": 5
         }
     },
     {
@@ -182,7 +191,7 @@
             "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/black_white_elegant_aesthetic_flowers_A4_planner.png",
             "price": 12.99,
             "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf",
-            "category": 4
+            "category": 5
         }
     },
     {
@@ -194,7 +203,8 @@
             "sku": "MPN-WEEKLY-001",
             "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/meal_planning_notebook_weekly.png",
             "price": 11.99,
-            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf"
+            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf",
+            "category": 5
         }
     },
     {
@@ -206,7 +216,8 @@
             "sku": "WLTJ-12WEEK-001",
             "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/weight_loss_tracker_journal_12_week.png",
             "price": 14.99,
-            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf"
+            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf",
+            "category": 6
         }
     },
     {
@@ -218,7 +229,8 @@
             "sku": "FP-WORKOUTMEAL-001",
             "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/daily_fitness_journal.png",
             "price": 19.99,
-            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf"
+            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf",
+            "category": 6
         }
     },
     {
@@ -230,7 +242,8 @@
             "sku": "HLJ-WEIGHTLOSS-001",
             "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/weight_loss_planner.png",
             "price": 17.99,
-            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf"
+            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf",
+            "category": 6
         }
     },
     {
@@ -242,7 +255,8 @@
             "sku": "MMJ-DAILYREFLECTIONS-001",
             "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/mindfullness_meditation_journal.png",
             "price": 16.99,
-            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf"
+            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf",
+            "category": 7
         }
     },
     {
@@ -254,7 +268,8 @@
             "sku": "GJ-MEDITATION-001",
             "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/gratitude_journal_yearly_planner.png",
             "price": 13.99,
-            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf"
+            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf",
+            "category": 7
         }
     },
     {
@@ -266,7 +281,8 @@
             "sku": "zen_meditation_journal.png",
             "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/zen_meditation_notebook_guided.png",
             "price": 15.99,
-            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf"
+            "url":"https://the-best-me.s3.eu-west-1.amazonaws.com/Resolutions_and_Goals_working_on_me.pdf",
+            "category": 7
         }
     },
     {
@@ -278,7 +294,8 @@
             "sku": "TYSM-DM-EBOOK-005",
             "image": "https://the-best-me.s3.eu-west-1.amazonaws.com/media/3_months_social_media_content.png",
             "price": 10.99,
-            "url": "https://the-best-me.s3.eu-west-1.amazonaws.com/MRR+The+Ultimate+Social+Media+Marketing+Blueprint+-+WITHOUT+PHOTOS.pdf"
+            "url": "https://the-best-me.s3.eu-west-1.amazonaws.com/MRR+The+Ultimate+Social+Media+Marketing+Blueprint+-+WITHOUT+PHOTOS.pdf",
+            "category": 3
         }
     }
 ]
