@@ -268,6 +268,19 @@ body {
     transform: scale(1.2);
 }
 
+/*Blog*/
+
+.container {
+    max-width: 100%; /* Ensure the container fills the width of its parent */
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+.blog-grid {
+    max-height: 200px; 
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Product Form */

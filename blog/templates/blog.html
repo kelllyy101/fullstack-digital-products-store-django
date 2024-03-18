@@ -12,7 +12,46 @@
 
 
 {% block content %}
-<div class="overlay"></div>
+<div class="container">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2 class="logo-font">Blog</h2>
+            <hr class="w-50 mb-1">
+        </div>
+    </div>
+    <div class="row">
+        {% for post in object_list %}
+        <div class="col-md-4 mt-3">
+            <div class="blog-grid rounded border border-dark">
+                <div class="blog-grid-img position-relative">
+                    <!-- Replace 'post.image.url' with the URL of your blog post image -->
+                    <img src="{{ post.image.url }}" alt="{{ post.title }}">
+                </div>
+                <div class="blog-grid-text p-4">
+                    <h3 class="h5 mb-3"><a href="{% url 'blog_post' post.pk %}">{{ post.title }}</a></h3>
+                    <p class="display-30">{{ post.blog_snippet }}</p>
+                    <div class="meta meta-style2">
+                        <ul>
+                            <li><i class="fas fa-calendar-alt"></i> {{ post.blog_post_date }}</li>
+                            <li><i class="fas fa-user"></i> {{ post.author.first_name }}</li>
+                        </ul>
+                    </div>
+                    {% if request.user.is_superuser %}
+                    <div class="mt-5">
+                        <small><a class="btn btn-outline btn-sm" href="{% url 'update_blog_post' post.pk %}">Edit</a>
+                        <a class="btn btn-outline btn-sm" href="{% url 'delete_blog_post' post.pk %}">Delete</a></small>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+
+<!-- <div class="overlay"></div>
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center mt-3">
@@ -39,16 +78,13 @@
             {% endfor %}
         </ul>
     </div>
-</div>
+</div> -->
 
 <div class="row">
     <div class="col-12 col-lg-7 text-right">
         {% if request.user.is_superuser %}
         <a href="{% url 'add_blog_post' %}" class="btn btn-black rounded-0 my-2">
             <span class="text-uppercase">Add Blog Post</span>
-        </a>
-        <a href="{% url 'add_blog_category' %}" class="btn btn-black rounded-0 my-2">
-            <span class="text-uppercase">Add Blog Category</span>
         </a>
         {% endif %}
         <a href="{% url 'products' %}" class="btn btn-black rounded-0 my-2">
