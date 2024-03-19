@@ -1,52 +1,12 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome,
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
-
-## Codeanywhere Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
-
-`python3 -m http.server`
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
-
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
-
-
-# Strings_Attached
+# The_Best_Me
 An online shop and community for people that what to become the best versions of themselves, through journaling, meditation and financial freedom.
 Source code can be found [here](https://github.com/kelllyy101/pp5)
 The live project can be viewed [here](https://herokuapp.com)
 ## Purpose of Project
-The aim of the project is to help users on their journey to become the best versions of themselves. The website consists of a shop where instruments and accessories can be purchased, and subscriptions to music lesson videos 
-can be signed up to. There is also a community on the site, within which users can post videos, sound
-clips and comment on their progess.
+The aim of the project is to help users on their journey to become the best versions of themselves. The website consists of guides and journals to aid users become the the best version of themselves by documenting their progress. By journaling and meditating, you set yourself up for a better future you, who doesn't need to stick to the norms of working 9-5. With focus and drive, you can use guides to provide a second income source so you have a lot less to worry about, focusing on becoming the best version of you.
 ![responsivenes_screenshot]()
 ---
 ## Links to content
@@ -86,7 +46,47 @@ clips and comment on their progess.
 [**Acknowledgements**](#acknowledgements)
 ---
 ## Features
+Regular Users:
+
+Register: Users can create an account by providing necessary details like username, email, and password.
+Login: Registered users can log in using their credentials.
+View Products: Users can browse through the collection of journals and guides available in the store.
+Product Details: Users can view detailed information about each product, including its description, price, and available quantity.
+Add to Bag: Users can add desired products to their shopping bag/cart.
+View Bag: Users can view the contents of their shopping bag, update quantities, or remove items.
+Checkout: Users can proceed to checkout, providing shipping and payment details for the order.
+Order History: Users can view their order history, including past purchases and their status.
+Blog: Users can access a blog section where they can find articles and guides on personal development and how to utilize the products effectively.
+
+Product Management: Superusers can add new products to the store, edit existing product details such as name, description, price, and quantity, and delete products if necessary.
+Order Management: Superusers can view all orders placed in the store, mark orders as processed/shipped, and manage order statuses.
+User Management: Superusers can view user accounts, edit user details, and even deactivate user accounts if required.
+Blog Management: Superusers can create, edit, and delete blog posts. They can also manage comments on blog posts, including approving, editing, or deleting them.
+
+Email Notifications: Superusers can configure and send email notifications to users for order confirmations, shipping updates, and promotional campaigns.
+
 ### Future Features
+Analytics: Superusers may have access to analytics tools to track sales, user engagement, and other metrics to optimize the store's performance.
+
+Site Configuration: Superusers can manage site settings such as shipping options, payment methods, and other configurations.
+
+Wishlist: Allow users to create and manage a wishlist of products they're interested in purchasing in the future. This can improve user engagement and retention.
+
+Search Functionality: Implement a robust search feature that allows users to easily find products by name, category, or keyword. You can use filters and sorting options to enhance the search experience further.
+
+Recommendation System: Integrate a recommendation engine that suggests relevant products to users based on their browsing history, purchase behavior, and preferences. This can personalize the user experience and increase sales.
+
+Advanced User Profiles: Enhance user profiles with additional features such as profile pictures, bio sections, and social media integration. This can foster a sense of community among users and improve engagement.
+
+Discounts and Coupons: Implement a system for offering discounts, promotions, and coupon codes to users. This can help boost sales and incentivize repeat purchases.
+
+Multiple Payment Options: Expand the available payment options to include popular methods such as PayPal, Apple Pay, Google Pay, and cryptocurrency. Offering flexibility in payment methods can improve conversion rates.
+
+Mobile App Integration: Develop a mobile app version of your store to reach users on mobile devices. Ensure seamless synchronization between the web and mobile platforms for a consistent user experience.
+
+Localization and Internationalization: Support multiple languages and currencies to cater to a global audience. This can expand your customer base and increase sales from different regions.
+
+
 [Return to top](#The_Best_Me)
 # User Experience
 ## Design
@@ -274,8 +274,9 @@ Beyond selling products, we are committed to fostering a sense of community and 
    In conclusion, The Best Me is positioned as a premier destination for individuals seeking personal growth, holistic well-being, and financial empowerment. Through our meticulously curated collection of journals, meditation guides, financial freedom resources, and related products, we aim to empower our customers to unlock their full potential and lead fulfilling lives. Throughout this ecommerce model documentation, I have outlined a comprehensive plan that encompasses every aspect of our business operations. From our business model canvas to our marketing and sales strategy, website and user experience, fulfillment and logistics, customer support and engagement, and future growth strategies, I have carefully crafted a roadmap for success. I am committed to understanding and serving our target audience effectively, providing them with valuable resources and exceptional customer experiences. Our dedication to excellence extends to every aspect of our operations, from product selection and website design to order fulfillment and customer support. .
 
 # Credits
-
+Bootstrap was used extensively in the project. Code Institute's To-Do list walk through project was a big help setting the base of this project and to be able to understand the basics. Habit Tracker websites such as Habify and MyHabitTracker influenced the design. Bootstrap documentation was thoroughly used throughout the design. Stack Overflow provided much needed documentation when deploying this project. Official Django Documentation was all thoroughly used throughout.
 
 # Acknowledgements
+I would like to express my gratitude to Code Institute for their exceptional web development curriculum and to my mentor for their invaluable guidance and support throughout this project. Thank you for providing the resources and expertise that have helped me grow as a developer.
 
 [Return to top](#pp5)
