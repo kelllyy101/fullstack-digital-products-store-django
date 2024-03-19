@@ -245,7 +245,7 @@ Tests were created for each of the apps to ensure top functionality which can be
 
 # Bugs
 - A number of other bugs and their solution are documented in the issues tracker on GitHub, such as :
-    - https://github.com/
+    - https://github.com/users/kelllyy101/projects/3
     
 ## Remaining Bugs
 There are (hopefully) no remaining bugs in the project. One thing I would have liked to change is the back to top arrow on medium size screens as the cursor changes because of the GitHub Icon in the footer.
@@ -269,13 +269,53 @@ There are (hopefully) no remaining bugs in the project. One thing I would have l
 
 # Deployment
 ## Setting up an AWS account for static storage.
+Setting up an AWS account for static storage involves several steps. Here's a summary of the process I took to store the static files of my project:
+
+1. **Create an AWS Account**: Go to the AWS website and sign up for an account if you don't already have one. You'll need to provide some basic information and a payment method.
+
+2. **Sign in to the AWS Management Console**: Once you have an account, sign in to the AWS Management Console using your credentials.
+
+3. **Navigate to S3 (Simple Storage Service)**: In the AWS Management Console, find the S3 service. You can search for it in the services search bar or locate it under the "Storage" section.
+
+4. **Create a Bucket**: Once in the S3 dashboard, click the "Create bucket" button. Give your bucket a unique name (bucket names must be globally unique across all of AWS) and select the region where you want your bucket to be located.
+
+5. **Configure Bucket Properties**: You can configure various properties for your bucket, such as versioning, logging, and tags. For static website hosting, you'll want to enable static website hosting under the "Properties" tab.
+
+6. **Set Up Static Website Hosting**: Under the "Properties" tab of your bucket, find the "Static website hosting" section. Enable it and specify the index document (e.g., index.html) and error document if needed.
+
+7. **Upload Your Files**: Once your bucket is set up, you can upload your static files (HTML, CSS, JavaScript, images, etc.) using the AWS Management Console, AWS CLI, or an SDK.
+
+8. **Set Permissions**: By default, all objects in your bucket are private. If you want to make them publicly accessible (which you typically do for a static website), you'll need to adjust the bucket policy or the permissions of individual objects.
+
+9. **Testing**: After uploading your files and setting permissions, you can test your static website by accessing the endpoint provided in the static website hosting configuration. It should serve your web content.
+
+10. **DNS Configuration (Optional)**: If you want to use a custom domain for your static website, you'll need to configure DNS settings to point to the S3 endpoint. This involves creating a CNAME record or an Alias record pointing to the S3 endpoint URL.
+
+
 ## Deploying the app on Heroku
 
 ## Making a local clone
 1. Open a terminal/command prompt on your local machine.
 2. Navigate to the folder on your local machine where you would like to clone the project.
 3. Enter the command : `git clone 'https://github.com/johnrearden/just-beats.git'`
+
 ## Running the app in your local environment
+Heroku Deployment:
+
+Heroku is a platform that allows you to deploy and host your applications, including the expense tracker project. Here are the steps I took to deploy the expense tracker on Heroku:
+
+1. Logged in to my Heroku account at https://www.heroku.com/.
+2. Installed the Heroku Command Line Interface (CLI) on my system to manage and deploy Heroku apps from the command line.
+3. Ensured that my project was in a Git repository and connected Heroku to GitHub successfully by copying and pasting the repository name.
+4. Added a requirements.txt file and a Procfile from Code Institute's template to ensure successful deployment of the project. Additionally, removed DEBUG for production.
+5. Created a new Heroku app using the Heroku CLI after logging into my account and connecting my Git repository. Also enabled automatic deployment.
+6. Before creating the app, added two buildpacks from the Settings tab, ensuring that heroku/python was added first, followed by heroku/nodejs. Additionally, configured production settings by creating: if DEBUG: ALLOWED_HOSTS = [] else: ALLOWED_HOSTS = [''the-best-me-38fd42c32230.herokuapp.com'].
+7. Add the Provided Config Vars: Copy the provided config vars (AWS_ACCESS_KEY_ID, AWS_SECRET_KEY_ID, DATABASE_URL, EMAIL_HOST_PASS, EMAIL_HOST_USER, SECRET_KEY, USE_AWS) 
+8. Deployed the project to Heroku by pushing the Git repository to Heroku's remote. This setup ensured that the project updates with every git push, as selected in the settings, successfully integrating and deploying the project for use through the Heroku URL.
+
+Database Setup:
+
+For this project, database configuration on Heroku is essential if it relies on a database. After adding the required database add-on, I updated the application settings to use the database URL provided by Heroku. Additionally, I managed sensitive information such as API keys and database credentials using environment variables on Heroku, either through the Heroku dashboard or the Heroku CLI.
 
 ## Testing the app locally
 
@@ -358,7 +398,7 @@ Beyond selling products, we are committed to fostering a sense of community and 
    In conclusion, The Best Me is positioned as a premier destination for individuals seeking personal growth, holistic well-being, and financial empowerment. Through our meticulously curated collection of journals, meditation guides, financial freedom resources, and related products, we aim to empower our customers to unlock their full potential and lead fulfilling lives. Throughout this ecommerce model documentation, I have outlined a comprehensive plan that encompasses every aspect of our business operations. From our business model canvas to our marketing and sales strategy, website and user experience, fulfillment and logistics, customer support and engagement, and future growth strategies, I have carefully crafted a roadmap for success. I am committed to understanding and serving our target audience effectively, providing them with valuable resources and exceptional customer experiences. Our dedication to excellence extends to every aspect of our operations, from product selection and website design to order fulfillment and customer support. .
 
 # Credits
-Bootstrap was used extensively in the project. Code Institute's To-Do list walk through project was a big help setting the base of this project and to be able to understand the basics. Habit Tracker websites such as Habify and MyHabitTracker influenced the design. Bootstrap documentation was thoroughly used throughout the design. Stack Overflow provided much needed documentation when deploying this project. Official Django Documentation was all thoroughly used throughout.
+Bootstrap was used extensively in the project. Code Institute's Boutique walk through project was a big help setting the base of this project and to be able to understand the basics. eCommerce stores such as BooHoo and Dunnes influenced the design. Stack Overflow provided much needed documentation when deploying this project. Official Django Documentation was all thoroughly used throughout. Stripe CLI documentation was followed while integrating it.
 
 # Acknowledgements
 I would like to express my gratitude to Code Institute for their exceptional web development curriculum and to my mentor for their invaluable guidance and support throughout this project. Thank you for providing the resources and expertise that have helped me grow as a developer.
