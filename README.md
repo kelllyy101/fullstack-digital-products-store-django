@@ -248,8 +248,9 @@ Tests were created for each of the apps to ensure top functionality which can be
     - https://github.com/
     
 ## Remaining Bugs
-There are (hopefully) no remaining bugs in the project.
-[Return to top](#Strings_attached)
+There are (hopefully) no remaining bugs in the project. One thing I would have liked to change is the back to top arrow on medium size screens as the cursor changes because of the GitHub Icon in the footer.
+
+
 # Libraries and Programs Used
 1. [Heroku](https://www.heroku.com/)
     - Heroku was used to deploy the project
@@ -259,9 +260,15 @@ There are (hopefully) no remaining bugs in the project.
     - Github was used to store the projects after being pushed from Git and its cloud service [Github Pages](https://pages.github.com/) was used to serve the project on the web. GitHub Projects was used to track the User Stories, User Epics, bugs and other issues during the project.
 4. [Visual Studio Code](https://code.visualstudio.com/)
     - VS Code was used locally as the main IDE environment, with the JSHint and Flake8 linters installed for JavaScript and Python code validation respectively.
+5. [Bootstrap](https://getbootstrap.com/docs/4.0/)
+    - Bootrap was extensively used in the layout and design of this project.
+6. [AWS](https://aws.amazon.com/)
+    - Aws was used to store the downloadable digital products and the images of the products.
+7. [ElephantSQL](elephantsql.com)
+    - ElephantSQL was the database used to store categories, products, orders, user profiles, blogs, blog reviews and product reviews.
 
 # Deployment
-## Setting up a cloudinary account for static storage.
+## Setting up an AWS account for static storage.
 ## Deploying the app on Heroku
 
 ## Making a local clone
