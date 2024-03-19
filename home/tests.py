@@ -58,5 +58,5 @@ class HomepageTests(SimpleTestCase):
 
     def test_product_names_present(self):
         response = self.client.get(reverse("home"))
-        self.assertContains(response, "Casual Glasses")
-        self.assertContains(response, "FRESH LOOK T-SHIRT")
+        self.assertContains(response, "Journaling")
+        self.assertContains(response, "Meditation")

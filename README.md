@@ -4,7 +4,7 @@
 # The_Best_Me
 An online shop and community for people that what to become the best versions of themselves, through journaling, meditation and financial freedom.
 Source code can be found [here](https://github.com/kelllyy101/pp5)
-The live project can be viewed [here](https://herokuapp.com)
+The live project can be viewed [here](https://the-best-me-38fd42c32230.herokuapp.com/)
 ## Purpose of Project
 The aim of the project is to help users on their journey to become the best versions of themselves. The website consists of guides and journals to aid users become the the best version of themselves by documenting their progress. By journaling and meditating, you set yourself up for a better future you, who doesn't need to stick to the norms of working 9-5. With focus and drive, you can use guides to provide a second income source so you have a lot less to worry about, focusing on becoming the best version of you.
 ![responsivenes_screenshot]()
@@ -90,8 +90,14 @@ Localization and Internationalization: Support multiple languages and currencies
 [Return to top](#The_Best_Me)
 # User Experience
 ## Design
+The design is simple and classic using black and white as seen in the walkthrough project. Keeping the design simple and minimalistic should attract any woman who is looking to become the best version of themselves.
+
 ### Fonts 
+Simple Monsterrat font is used so there is easy quick reading, focusing on the journals and actual content of the store, making it quicker and easier to become the best version of you.
+
 ### Colour
+The colours are simple and classic using black and white, so the colourful journals stand out and catch the eye of the viewer.
+
 ### Wireframes
 ![products_display wireframe](/static/)
 ![products_detail wireframe](/static/)
@@ -99,23 +105,22 @@ Localization and Internationalization: Support multiple languages and currencies
 [Return to top](#Strings_Attached)
 # Development Process
 ## Project planning and documentation in GitHub
-GitHub Issues were used to document the development steps undertaken in the project. Two issue templates, 
-for [User Epics]() and [User Stories]() were used. Various labels were employed to enable quick identification of issue type including Bugs, User Epics, User Stories and Style. MoSCoW prioritisation was employed using the labels must-have, should-have and could-have. 
-To break the project into manageable sprints, GitHub Projects was used to provide a Kanban board
-onto which the issues were posted, moving them from 'Todo' to 'In Progress' to 'Done' as they 
-were completed in turn. The iterations are documented here - [Iteration 1]
-The User Epics and their related User Stories are as follows:
-- Epic : [).
-    - Story : [)
-    - Story : [)
+GitHub Issues were used to document the development steps undertaken in the project and [User Stories]() were used. Various labels were employed to enable quick identification of issue type including Bugs, User Epics, User Stories and Style. MoSCoW prioritisation was employed using the labels must-have, should-have and could-have. 
+To break the project into manageable sprints, GitHub Projects was used to provide a Kanban board onto which the issues were posted, moving them from 'Todo' to 'In Progress' to 'Done' as they 
+were completed as seen [here](https://github.com/users/kelllyy101/projects/3)
+
 ## Data Model
 ### Products App
 ![Entity-relationship diagram for models](image)
 ### Checkout App
 ![Entity-relationship diagram for models](image)
 - Data validation
+
+### Blog App
+
 # Payments Integration
-I have integrated Stripe with the aid the the final walk through project with Code-Institute
+I have integrated Stripe with the aid the the final walk through project with Code-Institute.
+
 # Testing
 - Manual testing
 - Automated testing
@@ -126,20 +131,23 @@ I have integrated Stripe with the aid the the final walk through project with Co
 ## Manual Testing
 ### Feature Testing
 The manual testing of features is organised by app below.
-#### _Basket App_
-
-
-
 #### _products app_
 
+
+
+#### _checkout app_
+
+#### _blog app_
 
 
 ### Responsiveness
 ### Browser Compatibility
 | Feature | Chrome | Firefox | Safari(mobile) |
 --- | --- | --- | --- | 
+
 ### Lighthouse
 ![loop_rating_page](media/docs/create_review_lighthouse_report.png)
+
 ### Code Validation
 #### Python code : 
 - All Python code is validated by the external CodeInstitute validator @ https://pep8ci.herokuapp.com/. 
@@ -152,12 +160,9 @@ https://validator.w3.org/
 - No errors were found when the single CSS file style.css was passed through the W3C Validation Service.
 https://jigsaw.w3.org/css-validator/
 ### User Stories
-The User Epics and Stories in this project are documented in three GitHub Projects, corresponding 
-to the iterations that comprised the development work of the project. These can be found here :
-- [Iteration 1]()
-Alternitively, the Epics and Stories are individually linked here :
-- [Epics and Stories](#development-process)
----
+The User Stories of this project are documented in a GitHub Project, corresponding 
+to the iterations that comprised the development work of the project. These can be found [here](https://github.com/users/kelllyy101/projects/3).
+
 ## Stripe Webhook Testing
 ### Stripe Payment Flow
 The payment flow handling is direct from the Boutique Ado project. 
@@ -165,7 +170,79 @@ The payment flow handling is direct from the Boutique Ado project.
 ---
 ## Automated Testing
 ### Testing django views, models and forms.
-[Return to top](#Strings_attached)
+Tests were created for each of the apps to ensure top functionality which can be found in the following files: 
+
+[bag/tests.py](https://github.com/kelllyy101/pp5/blob/main/bag/tests.py) -
+1. **test_admin_url**: This test checks whether accessing the admin URL redirects to the login page. It sends a GET request to the admin index page (`admin:index`) using the `reverse` function to resolve the URL. Then, it asserts that the response status code is 302, indicating redirection.
+
+2. **test_accounts_url**: This test ensures that the login page URL is accessible. It sends a GET request to the URL resolved by the name `account_login` using the `reverse` function. It expects the response status code to be 200, indicating a successful access to the login page.
+
+3. **test_home_url**: This test verifies the accessibility of the home page URL. It sends a GET request to the URL resolved by the name `home` using the `reverse` function. Similar to the previous test, it expects the response status code to be 200, indicating that the home page is accessible.
+
+
+[best_me/tests.py](https://github.com/kelllyy101/pp5/blob/main/best_me/tests.py) -
+1. **test_admin_url**: Checks if the admin URL (`/admin/`) redirects to the login page. It sends a GET request to the admin index page using the reverse URL resolution mechanism, and then asserts that the response status code is 302, indicating redirection to the login page.
+
+2. **test_accounts_url**: Verifies if the accounts login URL (presumably `/accounts/login/`) is accessible. It sends a GET request to the login page using the reverse URL resolution mechanism and asserts that the response status code is 200, indicating the page is accessible.
+
+3. **test_home_url**: Tests the accessibility of the home page URL (`/home/` or similar). Similar to the previous tests, it sends a GET request to the home page using the reverse URL resolution mechanism and asserts that the response status code is 200, ensuring the page is accessible.
+
+
+[blog/tests.py](https://github.com/kelllyy101/pp5/blob/main/blog/tests.py) -
+1. **setUpTestData**: Sets up initial data for the tests. It creates a user (`u1`) and a post with the title "This is a test!" authored by that user.
+
+2. **test_model_content**: Checks if the title of the post created in `setUpTestData` matches the expected value ("This is a test!").
+
+3. **test_url_exists_at_correct_location**: Verifies that the URL "/blog/" exists and returns a status code of 200 (OK).
+
+4. **test_blog_view**: Tests the blog view. It checks if accessing the blog page via its reverse URL returns a status code of 200, ensures that the correct template ("blog.html") is used, and confirms that the post title "This is a test!" is present in the response.
+
+5. **test_blog_post_view**: Checks the blog post detail view. It creates a new post, accesses its detail page via its reverse URL with its primary key (`pk`), verifies that the status code is 200, ensures that the correct template ("blog_post.html") is used, and confirms that the post title "Test Post" is present in the response.
+
+6. **test_add_blog_post_view**: Tests the view for adding a new blog post. It accesses the add blog post page via its reverse URL, checks if the status code is 200, and ensures that the correct template ("add_blog_post.html") is used.
+
+
+[checkout/tests.py](https://github.com/kelllyy101/pp5/blob/main/checkout/tests.py) -
+1. CheckoutPageTests:
+   - **test_checkout_page_loads_correctly**: Checks if the checkout page loads correctly. It verifies that the HTTP response status code is 200 (OK) and ensures that the correct template ("checkout/checkout.html") is used.
+
+2. CheckoutProcessTests:
+   - **test_successful_checkout_redirects_to_success_page**: Simulates a successful checkout process by sending a POST request to the checkout endpoint. It expects a redirect status code (302), indicating a successful checkout. Additionally, it checks that the user is redirected to the checkout success page.
+
+3. CheckoutSuccessPageTests:
+   - **test_checkout_success_page_loads_correctly**: Tests if the checkout success page loads correctly. It constructs a mock order number, retrieves the checkout success page using the order number in the URL, and checks that the HTTP response status code is 200 (OK). It also ensures that the correct template ("checkout/checkout_success.html") is used.
+
+
+[home/tests.py](https://github.com/kelllyy101/pp5/blob/main/home/tests.py) - 
+1. **test_url_exists_at_correct_location**: Checks if the homepage URL ("/") returns a status code of 200 (OK).
+
+2. **test_url_available_by_name**: Tests if the homepage URL is accessible using its name ("home") and returns a status code of 200.
+
+3. **test_template_name_correct**: Ensures that the correct template ("home/index.html") is used when rendering the homepage. Additionally, it verifies that the base template ("base.html") is used.
+
+4. **test_main_heading_present**: Checks if the main heading "Get ready to be the Best You!" is present on the homepage.
+
+5. **test_shop_now_button_present**: Verifies the presence of the "SHOP NOW" button on the homepage.
+
+6. **test_carousel_present**: Ensures that the carousel with the ID "carouselExampleIndicators" is present on the homepage.
+
+7. **test_product_images_present**: Checks if specific product images are present on the homepage. It verifies the presence of three images using their URLs.
+
+8. **test_product_names_present**: Verifies the presence of specific product names ("Journaling" and "Meditation") on the homepage.
+
+
+[profiles/tests.py](https://github.com/kelllyy101/pp5/blob/main/profiles/tests.py) -
+1. **setUp**: This method sets up initial data for the tests. It creates a user with the username 'testuser' and password '12345'. If the user does not already have a UserProfile associated with it, it creates one.
+
+2. **test_profile_view_template**: This test checks if the profile view template is rendered correctly. It logs in as the test user, sends a GET request to the profile view URL (`reverse('profile')`), and asserts that the response status code is 200. Additionally, it ensures that the correct template ('profiles/profile.html') is used.
+
+3. **test_profile_update_form**: This test verifies the functionality of updating a user's profile. It logs in as the test user, sends a POST request to the profile view URL (`reverse('profile')`) with some form data (such as default phone number and country), and assumes that it successfully redirects after form submission (status code 200).
+
+4. **test_profile_view_with_orders**: This test checks if the profile view displays order history correctly. It assumes that orders related to the user profile exist in the database. It logs in as the test user, sends a GET request to the profile view URL, and asserts that the response status code is 200. It also checks if the correct template ('profiles/profile.html') is used.
+
+5. **test_order_history_view**: This test verifies the functionality of the order history view. It assumes that there is an Order model in the application and creates an order to test the order history view. It logs in as the test user, sends a GET request to the order history view URL (`reverse('order_history', args=['12345'])`), and checks if the response status code is 200. It also ensures that the correct template ('checkout/checkout_success.html') is used.
+
+
 # Bugs
 - A number of other bugs and their solution are documented in the issues tracker on GitHub, such as :
     - https://github.com/
