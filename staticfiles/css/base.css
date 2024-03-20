@@ -294,7 +294,6 @@ body {
 
 .blog-grid {
     max-height: 200px; 
-    overflow: hidden;
     margin-bottom: 10px;
 }
 
