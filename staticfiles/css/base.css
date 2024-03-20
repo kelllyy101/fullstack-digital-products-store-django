@@ -10,7 +10,7 @@ body {
 }
 
 #hero-container {
-    background: url('/media/laptop_desk_flowers.png');
+    background: url('https://the-best-me.s3.eu-west-1.amazonaws.com/media/laptop_desk_flowers.png');
     background-size: cover;
     background-position: center;
     width: 100%;
