@@ -30,14 +30,13 @@
                 {% csrf_token %}
                 
                 {{ form.as_p }}
-                <button btn btn-black rounded-0 my-2>Add Comment</button>
+                <button class="btn btn-dark rounded-0 my-2">Add Comment</button>
             </form>
         </div>
     </div>
 {% else %}
         <div class="container-fluid">
-            <br/>
-            <h3>You have to <a href="/accounts/login/">Sign In</a> to Comment</a></h3>
+            <h3>You have to <a href="/accounts/login/">Sign In</a> to Comment</h3>
             <div class="col-12 col-lg-7 text-right">
                 <a href="{% url 'products' %}" class="btn btn-black rounded-0 my-2">
                     <span class="text-uppercase">Back to Store</span>
@@ -47,7 +46,6 @@
                 </a>
             </div>
         </div>
-    </div>
 
 {% endif %}
 {% endblock %}

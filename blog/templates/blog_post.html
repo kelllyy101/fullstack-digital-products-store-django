@@ -26,7 +26,6 @@
                     {{ post.blog_post_date }}
                     {% if request.user.is_superuser %}
                         <a href="{% url 'update_blog_post' post.pk %}">Edit</a>
-                        </small>
                         <a class="btn btn-outline btn-sm" href="{% url 'delete_blog_post' post.pk %}">Delete</a></small>
                     {% endif %}
             </div>
@@ -36,25 +35,6 @@
         {{ post.body|safe }} <!-- to override django default of no html rendering -->
     </div>
     <hr>
-    <div class="like-container">
-        <p class="num-of-likes">
-            8
-        </p>
-        <form action="" method="POST">
-            {% csrf_token %}
-            {% if msg %}
-
-            <i class="fa-solid fa-heart"></i> 
-            
-            {% else %}
-
-            <i class="fa-regular fa-heart"></i>
-
-            {% endif %}
-            <small>like</small>
-        </form>
-
-    </div>
 </div>
     <br>
     <div class="container mt-6 p-4 bg-light rounded">
@@ -64,17 +44,14 @@
             No Comments Yet...<a href="{% url 'add_blog_comment' post.pk %}">Be the First!</a>
         {% else %}
         <a href="{% url 'add_blog_comment' post.pk %}">Add Comment</a>
-        <br/><br/>
             {% for comment in post.comments.all %}
                 <strong>
                     {{ comment.name }} -
                     {{ comment.comment_date }}
                 </strong>
-                <br/>
                 {{ comment.body }}
-                <br/><br/>
+                
             {% endfor %}
-        </br>
         
         {% endif %}
         <hr>

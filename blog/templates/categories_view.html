@@ -31,7 +31,7 @@
                         <small><a
                                 class="btn btn-outline btn-sm" href="{% url 'update_blog_post' post.pk %}">Edit</a><a
                                 class="btn btn-outline btn-sm" href="{% url 'delete_blog_post' post.pk %}">Delete</a></small>
-                        </br>
+                        <br></br>
                         {% endif %}
                         {{ post.body|slice:":200"|safe }}</li>
                     {% endfor %}

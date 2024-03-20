@@ -334,7 +334,7 @@ body {
 
 #mc_embed_signup {
     background: #fff;
-    clear: center;
+    clear: left;
     font: 14px Helvetica, Arial, sans-serif;
     width: 400px;
     max-width: 100%;
@@ -388,7 +388,7 @@ body {
     /* Adjust input field size on mobile */
     #mc-embedded-subscribe-form input[type="email"],
     .mc-field-group {
-        width: 25%;
+        width: 5%;
         /* Full width for email input field */
     }
 

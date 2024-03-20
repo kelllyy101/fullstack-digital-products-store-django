@@ -82,7 +82,7 @@
                 {% endfor %}
 
                 <script>
-                    var urls = JSON.parse('{{urls | escapejs}}');;
+                    var urls = JSON.parse('{{urls | escapejs}}');
                     var dynamicLinks = document.querySelectorAll('.dynamicLink');
                     dynamicLinks.forEach(function (link, index) {
                         link.href = urls[index];
