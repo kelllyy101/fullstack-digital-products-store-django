@@ -14,21 +14,25 @@
 
 
 {% block content %}
-<div id="hero-container" class="container h-80">
-    <div class="row h-80">
-        <div class="col-7 col-md-6 my-auto">
-            <h1 class="display-4 logo-font text-black">
-                Get ready to be the Best You!
-            </h1>
-            <div class="my-5">
-                <h4>
-                    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop
-                        Now</a>
-                </h4>
+
+<body>
+    <div id="hero-container" class="container h-90 w-100">
+        <div class="row h-90">
+            <div class="col-7 col-md-6 my-auto">
+                <h1 class="display-4 logo-font text-black">
+                    Get ready to be the Best You!
+                </h1>
+                <div class="my-5">
+                    <h4>
+                        <a href="{% url 'products' %}"
+                            class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop
+                            Now</a>
+                    </h4>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</body>
 
 
 <section id="about" class="about">
@@ -71,7 +75,8 @@
                 <img src="media/DP0709201205510679M.jpg" class="img-responsive" alt="">
                 <div class="shop-now mt-3">
                     <div class="crt-btn ml-5">
-                        <a href="{% url 'products' %}?category=marketing_mrr,financial_freedom_independence,social_media" class="btn btn-dark">Shop Freedom</a>
+                        <a href="{% url 'products' %}?category=marketing_mrr,financial_freedom_independence,social_media"
+                            class="btn btn-dark">Shop Freedom</a>
                     </div>
                 </div>
             </div>
@@ -81,7 +86,8 @@
                 <img src="media/mindfullness_meditation_journal.png" class="img-responsive" alt="">
                 <div class="shop-now mt-3">
                     <div class="crt-btn ml-5">
-                        <a href="{% url 'products' %}?category=yearly_journals_essentials,weekly_journals,weight_loss_journals,meditation_journals" class="btn btn-dark">Shop Meditation</a>
+                        <a href="{% url 'products' %}?category=yearly_journals_essentials,weekly_journals,weight_loss_journals,meditation_journals"
+                            class="btn btn-dark">Shop Meditation</a>
                     </div>
                 </div>
             </div>
@@ -91,7 +97,8 @@
                 <img src="media/weight_loss_planner.png" class="img-responsive" alt="">
                 <div class="shop-now mt-3">
                     <div class="crt-btn ml-5">
-                        <a href="{% url 'products' %}?category=weight_loss_journals" class="btn btn-dark">Shop Weightloss</a>
+                        <a href="{% url 'products' %}?category=weight_loss_journals" class="btn btn-dark">Shop
+                            Weightloss</a>
                     </div>
                 </div>
             </div>
@@ -101,7 +108,8 @@
                 <img src="media/weekly_planner_minimalist.png" class="img-responsive" alt="">
                 <div class="shop-now mt-3">
                     <div class="crt-btn ml-5">
-                        <a href="{% url 'products' %}?category=yearly_journals_essentials,weekly_journals,weight_loss_journals,meditation_journals" class="btn btn-dark">Shop Mindfullness</a>
+                        <a href="{% url 'products' %}?category=yearly_journals_essentials,weekly_journals,weight_loss_journals,meditation_journals"
+                            class="btn btn-dark">Shop Mindfullness</a>
                     </div>
                 </div>
             </div>
@@ -177,66 +185,67 @@
 <div class="container-fluid mt-5 mb-5">
     <h2 class="pb-2 nerd-page-subheading text-center"><strong>Most Popular Products</strong>
     </h2>
-        <div class="row h-100 slide-row">
-            <div class="col-lg-2 col-md-6 col-sm-6">
-                <div class="col-md-6 mt-5">
-                    <div>
-                        <a href="{% url 'product_description' 22 %}"><img src="media/zen_meditation_notebook_guided.png" class="img-responsive" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-6">
-                <div class="col-md-6 mt-5">
-                    <img src="media/mindfullness_meditation_journal.png" class="img-responsive" alt="">
-                    <div class="arriv-info2">
-                        <a href="{% url 'product_description' 20 %}">
-                            <h3>Mindfullness</h3>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-6">
-                <div class="col-md-6 mt-5">
-                    <img src="media/white_green_elegant_A4_planner.png" class="img-responsive" alt="">
-                    <div class="arriv-info2">
-                        <a href="{% url 'product_description' 11 %}">
-                            <h3>Mindfullness</h3>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-6">
-                <div class="col-md-6 mt-5">
-                    <img src="media/achieve_financial_freedom.png" class="img-responsive" alt="">
-                    <div class="arriv-info2">
-                        <a href="{% url 'product_description' 8 %}">
-                            <h3>Freedom</h3>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-6">
-                <div class="col-md-6 mt-5">
-                    <img src="media/6_week_weight_loss_tracker.png" class="img-responsive" alt="">
-                    <div class="arriv-info2">
-                        <a href="{% url 'product_description' 10 %}">
-                            <h3>Meditation</h3>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-6">
-                <div class="col-md-6 mt-5">
-                    <img src="media/gratitude_journal_yearly_planner.png" class="img-responsive" alt="">
-                    <div class="arriv-info2">
-                        <a href="{% url 'product_description' 22 %}">
-                            <h3>Meditation</h3>
-                        </a>
-                    </div>
+    <div class="row h-100 slide-row">
+        <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="col-md-6 mt-5">
+                <div>
+                    <a href="{% url 'product_description' 22 %}"><img src="media/zen_meditation_notebook_guided.png"
+                            class="img-responsive" alt="">
+                    </a>
                 </div>
             </div>
         </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="col-md-6 mt-5">
+                <img src="media/mindfullness_meditation_journal.png" class="img-responsive" alt="">
+                <div class="arriv-info2">
+                    <a href="{% url 'product_description' 20 %}">
+                        <h3>Mindfullness</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="col-md-6 mt-5">
+                <img src="media/white_green_elegant_A4_planner.png" class="img-responsive" alt="">
+                <div class="arriv-info2">
+                    <a href="{% url 'product_description' 11 %}">
+                        <h3>Mindfullness</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="col-md-6 mt-5">
+                <img src="media/achieve_financial_freedom.png" class="img-responsive" alt="">
+                <div class="arriv-info2">
+                    <a href="{% url 'product_description' 8 %}">
+                        <h3>Freedom</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="col-md-6 mt-5">
+                <img src="media/6_week_weight_loss_tracker.png" class="img-responsive" alt="">
+                <div class="arriv-info2">
+                    <a href="{% url 'product_description' 10 %}">
+                        <h3>Meditation</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="col-md-6 mt-5">
+                <img src="media/gratitude_journal_yearly_planner.png" class="img-responsive" alt="">
+                <div class="arriv-info2">
+                    <a href="{% url 'product_description' 22 %}">
+                        <h3>Meditation</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 

@@ -10,9 +10,10 @@ body {
 }
 
 #hero-container {
-    background: url('media/laptop_desk_flowers.png');
+    background: url('/media/laptop_desk_flowers.png');
     background-size: cover;
     background-position: center;
+    width: 100%;
 }
 
 /* Home Page Carousel*/
@@ -333,8 +334,7 @@ body {
 
 #mc_embed_signup {
     background: #fff;
-    color: #401c20;
-    clear: left;
+    clear: center;
     font: 14px Helvetica, Arial, sans-serif;
     width: 400px;
     max-width: 100%;
@@ -346,13 +346,14 @@ body {
     #mc_embed_signup,
     .mc-field-group {
         width: 60%;
+        
         /* Half width on tablet */
     }
 
     #mc-embedded-subscribe-form input[type="email"],
     .mc-field-group {
         width: 25%;
-        /* Full width for email input field */
+        
     }
 }
 
