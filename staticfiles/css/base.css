@@ -298,6 +298,10 @@ body {
     margin-bottom: 10px;
 }
 
+#blog-title {
+    text-decoration: none;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Product Form */

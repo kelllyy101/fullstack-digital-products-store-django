@@ -24,10 +24,10 @@
         <div class="col-md-4 mt-3">
             <div class="blog-grid rounded border border-dark">
                 <div class="blog-grid-img position-relative">
-                    <img src="{{ post.image }}" alt="{{ post.title }}">
+                    <img src="{{ post.image }}" alt="{{ post.title }}" width="300px" height="200px">
                 </div>
                 <div class="blog-grid-text p-4">
-                    <h3 class="h5 mb-3"><a href="{% url 'blog_post' post.pk %}">{{ post.title }}</a></h3>
+                    <h3 id="blog-title" class="h5 mb-3"><a href="{% url 'blog_post' post.pk %}">{{ post.title }}</a></h3>
                     <p class="display-30">{{ post.blog_snippet }}</p>
                     <div class="meta meta-style2">
                         <ul>
