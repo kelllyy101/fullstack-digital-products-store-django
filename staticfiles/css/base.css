@@ -3,13 +3,17 @@ html {
 }
 
 body {
-    background-image: url('/media/laptop_desk_flowers.png') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
 }
 
+#hero-container {
+    background: url('media/laptop_desk_flowers.png');
+    background-size: cover;
+    background-position: center;
+}
 
 /* Home Page Carousel*/
 
@@ -79,11 +83,13 @@ body {
 
 .arriv-info2 a {
     text-decoration: none;
+    opacity: 0;
 }
 
-.arriv-info2 a h3:hover {
-    color: #ff6978;
+.shop-now{
+    bottom: 20px;
 }
+
 
 /* from Bulma */
 .icon {
