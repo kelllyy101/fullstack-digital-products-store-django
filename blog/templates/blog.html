@@ -24,8 +24,7 @@
         <div class="col-md-4 mt-3">
             <div class="blog-grid rounded border border-dark">
                 <div class="blog-grid-img position-relative">
-                    <!-- Replace 'post.image.url' with the URL of your blog post image -->
-                    <img src="{{ post.image.url }}" alt="{{ post.title }}">
+                    <img src="{{ post.image }}" alt="{{ post.title }}">
                 </div>
                 <div class="blog-grid-text p-4">
                     <h3 class="h5 mb-3"><a href="{% url 'blog_post' post.pk %}">{{ post.title }}</a></h3>
