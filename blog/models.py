@@ -26,6 +26,7 @@ class Post(models.Model):
     category = models.CharField(max_length=255, default='best_me')
     likes = models.ManyToManyField(User, related_name='blog_post_likes')
     blog_snippet = models.CharField(max_length=255, default='Click Title to Read')
+    image = models.URLField(default='none')
 
     def __str__(self):
         return self.title + ' | ' + str(self.author) #allows to see the author of the blog(object needs to be string)
