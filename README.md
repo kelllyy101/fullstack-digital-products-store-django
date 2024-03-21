@@ -210,10 +210,65 @@ to the iterations that comprised the development work of the project. These can 
 I have integrated Stripe with the aid the the final walk through project with Code-Institute.
 
 ## Stripe Webhook Testing
-### Stripe Payment Flow
-The payment flow handling is direct from the Boutique Ado project. 
 
----
+**Testing Stripe Webhooks with Payment Intents**
+
+Stripe webhooks are a mechanism for notifying your server about events that occur in your Stripe account, such as successful payments, refunds, or subscription cancellations. Testing webhooks is crucial to ensure that your server handles these events correctly.
+
+1. **Set Up Webhook Endpoint:**
+   - Start by setting up a webhook endpoint on your server to receive Stripe webhook events. This endpoint should be capable of processing incoming webhook payloads.
+
+2. **Configure Webhook in Stripe Dashboard:**
+   - In the Stripe Dashboard, configure a webhook endpoint URL and select the events you want to receive notifications for.
+   - Stripe provides a secret webhook signing key, which you'll use to verify the authenticity of incoming webhook requests.
+
+3. **Test Webhooks Locally:**
+   - To test webhooks locally, use tools like ngrok to expose your local server to the internet.
+   - Once your local server is accessible from the internet, you can simulate webhook events by triggering actions in your Stripe account, such as creating a payment intent.
+
+4. **Use Payment Intents for Testing:**
+   - Payment intents represent a Stripe API object that tracks the lifecycle of a payment attempt. They are commonly used for handling card payments and 3D Secure authentication.
+   - In the terminal, you can create a payment intent using the Stripe CLI or Stripe API test mode. This simulates a payment attempt and triggers the corresponding webhook event.
+   - Monitor your server logs to verify that your webhook endpoint correctly receives and processes the webhook event payload.
+
+5. **Verify Webhook Handling:**
+   - After receiving a webhook event, verify that your server correctly handles the event and performs any necessary business logic, such as updating order status or sending email notifications.
+   - Ensure that your server responds to webhook events with the appropriate HTTP status code (usually 200 OK) to acknowledge receipt and prevent retries.
+
+By testing Stripe webhooks with payment intents in the terminal, I can verified the reliability and effectiveness of my webhook integration and ensure smooth payment processing for my customers.
+
+![Webhook Testing](/media/stripe/Screenshot%20(907).png)
+![Webhook Testing](/media/stripe/Screenshot%20(911).png)
+![Webhook Testing](/media/stripe/Screenshot%20(913).png)
+
+
+### Stripe Payment Flow
+The payment flow handling was based on the Boutique Ado project with slight adjustments to the Stripe CLI integration. 
+**Payment Flow Overview**
+
+1. **Checkout Process:**
+   - Upon reaching the checkout page, customers are required to provide their name and email address. These details are mandatory for completing the purchase.
+   - Additionally, customers have the option to enter their shipping address, which can be saved for future orders, anticipating the potential addition of physical products to our inventory.
+
+2. **Credit Card Information:**
+   - After entering personal details, customers proceed to enter their credit card information.
+   - To simulate successful transactions during testing, we use a test credit card number '4242 4242 4242 4242' with a future expiry date.
+   - If the transaction is successful, customers will see a loading screen displayed over a blue background.
+
+3. **Handling Errors:**
+   - In case of an unsuccessful transaction, an error message will appear indicating an issue with the card number.
+   - Customers are redirected back to the checkout page to correct their credit card information.
+
+4. **Order Confirmation:**
+   - Upon successful payment processing, customers are directed to the checkout success page with a notification of successful order placed from Bootstrap toasts.
+   - Here, they can view their order information, including details of the purchased digital product.
+   - A digital product link is provided for customers to initiate the download process immediately.
+
+By implementing this payment flow, a user-friendly and efficient purchasing experience for the customers is ensured, promoting trust and satisfaction with the ecommerce platform. I prioritised security and reliability throughout the payment process, aiming to deliver a seamless transaction experience for every customer.
+
+![Successful purchase Testing](/media/stripe/Screenshot%20(900).png)
+![Test fakecard number](/media/stripe/Screenshot%20(952).png)
+![Test product downloadability with JS](/media/stripe/Screenshot%20(923).png)
 ## Automated Testing
 ### Testing django views, models and forms.
 Tests were created for each of the apps to ensure top functionality which can be found in the following files: 
