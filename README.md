@@ -46,6 +46,7 @@ Additionally, the integration of the Stripe CLI enables users to explore opportu
 - [Making a local clone](#making-a-local-clone)
 - [Running the app in your local environment](#running-the-app-in-your-local-environment)
 [**eCommerce Business Model**](#eCommerce-business-model)
+[**Marketing**](#Marketing)
 [**Credits**](#Credits)
 [**Acknowledgements**](#acknowledgements)
 ---
@@ -94,7 +95,7 @@ Localization and Internationalization: Support multiple languages and currencies
 [Return to top](#The_Best_Me)
 # User Experience
 ## Design
-The design is simple and classic using black and white as seen in the walkthrough project. Keeping the design simple and minimalistic should attract any woman who is looking to become the best version of themselves.
+The design is simple and classic using black and white as seen in the walkthrough project. Keeping the design simple and minimalistic should attract any woman who is looking to become the best version of themselves. It is responsive on all devices. On medium to small devices the nav-bar turns into a burger menu to have all available paths easily accessible for the user.
 
 ### Fonts 
 Simple Monsterrat font is used so there is easy quick reading, focusing on the journals and actual content of the store, making it quicker and easier to become the best version of you.
@@ -107,11 +108,14 @@ The colours are simple and classic using black and white, so the colourful journ
 ![products_detail wireframe](/static/)
 ![display_basket wireframe](/static/)
 [Return to top](#Strings_Attached)
+
 # Development Process
 ## Project planning and documentation in GitHub
 GitHub Issues were used to document the development steps undertaken in the project and [User Stories]() were used. Various labels were employed to enable quick identification of issue type including Bugs, User Epics, User Stories and Style. MoSCoW prioritisation was employed using the labels must-have, should-have and could-have. 
 To break the project into manageable sprints, GitHub Projects was used to provide a Kanban board onto which the issues were posted, moving them from 'Todo' to 'In Progress' to 'Done' as they 
-were completed as seen [here](https://github.com/users/kelllyy101/projects/3)
+were completed as seen [here](https://github.com/users/kelllyy101/projects/3). 
+![GitHub Project Board](/media/testing/Screenshot%20(955).png)
+![GitHub Project Comment](/media/testing/Screenshot%20(956).png)
 
 ## Data Model
 **Deploying My Database with ElephantSQL**
@@ -438,6 +442,28 @@ Beyond selling products, we are committed to fostering a sense of community and 
 
 11. Conclusion
    In conclusion, The Best Me is positioned as a premier destination for individuals seeking personal growth, holistic well-being, and financial empowerment. Through our meticulously curated collection of journals, meditation guides, financial freedom resources, and related products, we aim to empower our customers to unlock their full potential and lead fulfilling lives. Throughout this ecommerce model documentation, I have outlined a comprehensive plan that encompasses every aspect of our business operations. From our business model canvas to our marketing and sales strategy, website and user experience, fulfillment and logistics, customer support and engagement, and future growth strategies, I have carefully crafted a roadmap for success. I am committed to understanding and serving our target audience effectively, providing them with valuable resources and exceptional customer experiences. Our dedication to excellence extends to every aspect of our operations, from product selection and website design to order fulfillment and customer support. .
+
+# Marketing
+To expand the reach of my Django ecommerce project and engage with a broader audience, I've implemented the following marketing initiatives, which are present on the footer and seen across all blog pages:
+
+**Facebook Page**:
+
+A dedicated Facebook page has been created to showcase your ecommerce store and connect with potential customers.
+By sharing updates, product launches, promotions, and engaging content on Facebook, you can increase brand visibility and attract more followers.
+Adding the Facebook page link to the footer of your website enables visitors to easily find and connect with your brand on social media.
+
+![Facebook Page](/media/testing/Screenshot%20(958).png)
+
+**Mailchimp Newsletter Signup**:
+
+To foster customer relationships and drive repeat business, a Mailchimp newsletter signup form has been integrated into your website.
+Visitors can subscribe to your newsletter to receive updates, exclusive offers, product recommendations, and relevant content directly in their inbox.
+Building a subscriber base allows you to communicate with your audience regularly, share valuable content, and promote new products or special promotions.
+With effective email marketing campaigns, you can nurture leads, encourage conversions, and enhance customer loyalty.
+By leveraging these marketing initiatives, you can enhance brand awareness, engage with your audience across different channels, and ultimately drive traffic and sales to my Django ecommerce store.
+
+![Subscribers on MailChimp](/media/testing/Screenshot%20(959).png)
+![Footer](/media/testing/Screenshot%20(960).png)
 
 # Credits
 Bootstrap was used extensively in the project. Code Institute's Boutique walk through project was a big help setting the base of this project and to be able to understand the basics. eCommerce stores such as BooHoo and Dunnes influenced the design. Stack Overflow provided much needed documentation when deploying this project. Official Django Documentation was all thoroughly used throughout. Stripe CLI documentation was followed while integrating it.
