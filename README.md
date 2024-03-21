@@ -9,6 +9,9 @@ The live project can be viewed [here](https://the-best-me-38fd42c32230.herokuapp
 The aim of this project, built using Django, Bootstrap, and incorporating elements of JQuery, is to empower users on their journey towards self-improvement. The website serves as a platform offering guides and journals designed to facilitate personal growth and development as well as the blog which offers insightful information. By leveraging tools such as journaling and meditation, users can document their progress, ultimately striving to become the best version of themselves.
 
 Additionally, the integration of the Stripe CLI enables users to explore opportunities for financial independence leaving them stress free. Through focus and determination, users can utilise the provided guides to establish alternative income streams, thereby reducing reliance on traditional 9-5 employment. This approach empowers individuals to prioritise personal growth and fulfillment, paving the way for a brighter and more fulfilling future
+
+*for efficiency and time restraints in the project, digital products were not created for each individual product and have been reused for various products. Downloads may not be exactly what the products states.
+
 ![responsivenes_screenshot](/media/testing/all-devices-black.png)
 ---
 ## Links to content
@@ -174,11 +177,27 @@ were completed as seen [here](https://github.com/users/kelllyy101/projects/3).
 ## Manual Testing
 ### Feature Testing
 The manual testing of features is organised by app below.
+
+1. **Verify email test**: Upon registering, an email is sent to the users email to confirm ![Verify Email Test](/media/manual/products/Screenshot%20(884).png)
+
 #### _products app_
 
+1. **Test Bootstrap Toasts and colours**:  ![Boostrap Toast Test](/media/manual/products/Screenshot%20(861).png)
+2. **Test Updated Product with Toasts**: Updated product information ![Updated Product Test](/media/manual/products/Screenshot%20(862).png)
+3. **Test to Remove Product**: Removed product ![Removed Product Test](/media/manual/products/Screenshot%20(863).png)
+4. **Test to View Empty Bag**: Clicked empty bag icon and error 'Bag is empty' ![Empty Bag Error Test](/media/manual/products/Screenshot%20(875).png)
+5. **Test to Add Product with error**: Added product with invalid information and returns error: ![Add invalided product information Test](/media/manual/products/Screenshot%20(889).png)
+6. **Test to Add Successful Product**: Added product with correct information to have successful product add ![Successful Add Product Test](/media/manual/products/Screenshot%20(892).png)
+7. **Test to edit product with alert**: Edited product to see alert of which product is being currently edited ![Currently Editing Product Test](/media/manual/products/Screenshot%20(894).png)
 
 
 #### _checkout app_
+
+1. **Test Successful Order**: Created test order to see successful order flow ![Successful Order Test](/media/manual/checkout/Screenshot%20(874).png)
+2. **Test to render JavaScript**: Test to see Javascript is coming through so on click the product downloads. ![Successful JS in console log](/media/manual/checkout/Screenshot%20(923).png)
+3. **Test product download**: Test to see that product downloads and highlighted when hovered on the successful checkout page ![Successful Product download Test](/media/manual/checkout/Screenshot%20(963).png)
+4. **Test valid information**: Test to see that required fields show at checkout and users cannot checkout without filling in requiered fields ![User information fields](/media/manual/checkout/Screenshot%20(962).png)
+5. **Test incorrect card information**: Test to check the validity of the card information entered ![Incorrect card information entered](/media/stripe/Screenshot%20(952).png)
 
 #### _blog app_
 
@@ -269,6 +288,7 @@ By implementing this payment flow, a user-friendly and efficient purchasing expe
 ![Successful purchase Testing](/media/stripe/Screenshot%20(900).png)
 ![Test fakecard number](/media/stripe/Screenshot%20(952).png)
 ![Test product downloadability with JS](/media/stripe/Screenshot%20(923).png)
+
 ## Automated Testing
 ### Testing django views, models and forms.
 Tests were created for each of the apps to ensure top functionality which can be found in the following files: 
