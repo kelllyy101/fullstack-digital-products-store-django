@@ -294,8 +294,10 @@ Tests were created for each of the apps to ensure top functionality which can be
     - https://github.com/users/kelllyy101/projects/3
     
 ## Remaining Bugs
-There are (hopefully) no remaining bugs in the project. One thing I would have liked to change is the back to top arrow on medium size screens as the cursor changes because of the GitHub Icon in the footer.
+One thing I would have liked to change is the back to top arrow on medium size screens as the cursor changes because of the GitHub Icon in the footer.
+The night before submission, the blog images were added but appear differently when deployed to Heroku. Running locally, the blog grid and images appear as : ![GitHub Project Comment](/media/testing/Screenshot%20(950).png) ![GitHub Project Comment](/media/testing/Screenshot%20(951).png).
 
+On Heroku, a vertical scroll bar appears with the images covering the blog title and date as seen here: ![GitHub Project Comment](/media/testing/Screenshot%20(961).png)
 
 # Libraries and Programs Used
 1. [Heroku](https://www.heroku.com/)
