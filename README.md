@@ -110,6 +110,43 @@ To break the project into manageable sprints, GitHub Projects was used to provid
 were completed as seen [here](https://github.com/users/kelllyy101/projects/3)
 
 ## Data Model
+**Deploying My Database with ElephantSQL**
+
+1. **Sign Up and Create an Instance:**
+   - Visit the ElephantSQL website and sign up for an account.
+   - Once logged in, create a new database instance. Choose a plan that suits your project requirements.
+
+2. **Connection Details:**
+   - After creating the instance, ElephantSQL provides you with connection details such as the hostname, username, password, and database name.
+   - These details will be used to configure your Django project to connect to the ElephantSQL database.
+
+3. **Update Django Settings:**
+   - In your Django project settings (`settings.py`), update the `DATABASES` configuration with the connection details provided by ElephantSQL.
+   - Replace the default database configuration with the PostgreSQL configuration provided by ElephantSQL.
+
+4. **Migrate Your Database:**
+   - Once the settings are updated, migrate your Django project to create the necessary database schema.
+   - Run `python manage.py makemigrations` followed by `python manage.py migrate` to apply the migrations to the ElephantSQL database.
+
+5. **Test Connection and Deploy:**
+   - Ensure that your Django project can successfully connect to the ElephantSQL database by running your project locally.
+   - Test database operations such as creating, reading, updating, and deleting records to confirm that the integration is working as expected.
+
+6. **Monitor and Scale:**
+   - ElephantSQL provides monitoring tools and scalability options to manage your database efficiently.
+   - Monitor database performance, usage, and health using the ElephantSQL dashboard.
+   - Scale your database instance as needed to accommodate increasing traffic and data volume.
+
+7. **Backup and Security:**
+   - ElephantSQL offers automated backups and security features to safeguard your data.
+   - Enable automatic backups to ensure data integrity and implement security measures such as SSL encryption and access controls.
+
+8. **Run Querys:**
+    - I ran queries for different data to make sure that they were saved correctly in the database as seen in the below photos as examples.
+    ![Blog Posts](/media/testing/Screenshot%20(953).png)
+    ![Products](/media/testing/Screenshot%20(954).png)
+
+
 ### Products App
 ![Entity-relationship diagram for models](image)
 ### Checkout App
