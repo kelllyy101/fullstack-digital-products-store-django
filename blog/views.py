@@ -5,8 +5,6 @@ from .forms import BlogPostForm, EditForm, CommentForm
 from django.urls import reverse_lazy
 
 # Create your views here.
-#def view_blog(request):
-#    return render(request, 'blog.html')
 
 class BlogView(ListView):
     model = Post
