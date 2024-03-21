@@ -6,8 +6,10 @@ An online shop and community for people that what to become the best versions of
 Source code can be found [here](https://github.com/kelllyy101/pp5)
 The live project can be viewed [here](https://the-best-me-38fd42c32230.herokuapp.com/)
 ## Purpose of Project
-The aim of the project is to help users on their journey to become the best versions of themselves. The website consists of guides and journals to aid users become the the best version of themselves by documenting their progress. By journaling and meditating, you set yourself up for a better future you, who doesn't need to stick to the norms of working 9-5. With focus and drive, you can use guides to provide a second income source so you have a lot less to worry about, focusing on becoming the best version of you.
-![responsivenes_screenshot]()
+The aim of this project, built using Django, Bootstrap, and incorporating elements of JQuery, is to empower users on their journey towards self-improvement. The website serves as a platform offering guides and journals designed to facilitate personal growth and development as well as the blog which offers insightful information. By leveraging tools such as journaling and meditation, users can document their progress, ultimately striving to become the best version of themselves.
+
+Additionally, the integration of the Stripe CLI enables users to explore opportunities for financial independence leaving them stress free. Through focus and determination, users can utilise the provided guides to establish alternative income streams, thereby reducing reliance on traditional 9-5 employment. This approach empowers individuals to prioritise personal growth and fulfillment, paving the way for a brighter and more fulfilling future
+![responsivenes_screenshot](/media/testing/all-devices-black.png)
 ---
 ## Links to content
 [**Features**](#Features)
@@ -16,10 +18,12 @@ The aim of the project is to help users on their journey to become the best vers
     - [Fonts](#fonts)
     - [Colour](#colour)
     - [Wireframes](#wireframes)
+
 [**Development Process**](#Development-Process)
 - [Project Planning](#project-planning-and-documentation-in-github)
 - [Inline JavaScript](#inline-javascript-and-event-handlers)
 - [Data Model](#data-model)
+
 [**Testing**](#Testing)
 - [Manual Testing](#manual-testing)
     - [Feature Testing](#feature-testing)
@@ -155,8 +159,6 @@ were completed as seen [here](https://github.com/users/kelllyy101/projects/3)
 
 ### Blog App
 
-# Payments Integration
-I have integrated Stripe with the aid the the final walk through project with Code-Institute.
 
 # Testing
 - Manual testing
@@ -199,6 +201,9 @@ https://jigsaw.w3.org/css-validator/
 ### User Stories
 The User Stories of this project are documented in a GitHub Project, corresponding 
 to the iterations that comprised the development work of the project. These can be found [here](https://github.com/users/kelllyy101/projects/3).
+
+# Payments Integration
+I have integrated Stripe with the aid the the final walk through project with Code-Institute.
 
 ## Stripe Webhook Testing
 ### Stripe Payment Flow
