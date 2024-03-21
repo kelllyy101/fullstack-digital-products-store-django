@@ -94,6 +94,8 @@ Mobile App Integration: Develop a mobile app version of your store to reach user
 
 Localization and Internationalization: Support multiple languages and currencies to cater to a global audience. This can expand your customer base and increase sales from different regions.
 
+Ability to comment on other blog post comments and have 'Like' or 'Unlike' functionality implemeneted.
+
 
 [Return to top](#The_Best_Me)
 # User Experience
@@ -107,10 +109,14 @@ Simple Monsterrat font is used so there is easy quick reading, focusing on the j
 The colours are simple and classic using black and white, so the colourful journals stand out and catch the eye of the viewer.
 
 ### Wireframes
-![products_display wireframe](/static/)
-![products_detail wireframe](/static/)
-![display_basket wireframe](/static/)
-[Return to top](#Strings_Attached)
+![homepage wireframe](/media/wireframes/Screenshot%20(975).png)
+![homepage wireframe](/media/wireframes/Screenshot%20(976).png)
+![homepage wireframe](/media/wireframes/Screenshot%20(974).png)
+![products_detail wireframe](/media/wireframes/Screenshot%20(978).png)
+![checkout wireframe](/media/wireframes/Screenshot%20(977).png)
+![blog wireframe](/media/wireframes/Screenshot%20(971).png)
+![footer wireframe](/media/wireframes/Screenshot%20(969).png)
+
 
 # Development Process
 ## Project planning and documentation in GitHub
@@ -157,16 +163,6 @@ were completed as seen [here](https://github.com/users/kelllyy101/projects/3).
     ![Blog Posts](/media/testing/Screenshot%20(953).png)
     ![Products](/media/testing/Screenshot%20(954).png)
 
-
-### Products App
-![Entity-relationship diagram for models](image)
-### Checkout App
-![Entity-relationship diagram for models](image)
-- Data validation
-
-### Blog App
-
-
 # Testing
 - Manual testing
 - Automated testing
@@ -212,7 +208,7 @@ The manual testing of features is organised by app below.
 --- | --- | --- | --- | 
 
 ### Lighthouse
-![loop_rating_page](media/docs/create_review_lighthouse_report.png)
+![LightHouse Report](/media/testing/Screenshot%20(966).png)
 
 ### Code Validation
 #### Python code : 
