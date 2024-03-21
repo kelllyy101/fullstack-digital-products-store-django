@@ -54,10 +54,8 @@ INSTALLED_APPS = [
     'checkout',
     'crispy_forms',
     'profiles',
-    # 'storages',
     'blog',
     'ckeditor',
-    #'blog.apps.BlogConfig',
 ]
 
 
@@ -166,8 +164,6 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-# Internationalization
-# https://docs.djangoproject.com/en/3.2/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
 
@@ -180,8 +176,7 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.2/howto/static-files/
+
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
@@ -194,25 +189,6 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-# if 'USE_AWS' in os.environ:
-    # AWS_STORAGE_BUCKET_NAME = 'the-best-me'
-    # AWS_S3_REGION_NAME = 'eu-west-1'
-    # AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-    # AWS_SECRET_KEY_ID = os.environ.get('AWS_SECRET_KEY_ID')
-    # AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
-
-     # Static and media files
-    # STATICFILES_STORAGE = 'custom_storages.StaticStorage'
-    # STATICFILES_LOCATION = 'static'
-    # DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
-    # MEDIAFILES_LOCATION = 'media'
-
-    # Override static and media URLs in production
-    # STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
-    # MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
