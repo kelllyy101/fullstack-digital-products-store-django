@@ -18,7 +18,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center mt-3">
-            <h2 class="logo-font"><a href="{% url 'blog' %}">Back to Blogs</a></h2>
+            <h2 class="logo-font"><a href="{% url 'blog' %}" class="text-dark">Back to Blogs</a></h2>
             <hr class="w-50 mb-1">
             <h2 class="logo-font">Delete : <i>{{ post.title }}</i></h2>
             <small>By: {{ post.author.first_name }} {{ post.blog_post_date }}</small>

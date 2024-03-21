@@ -182,24 +182,28 @@ The manual testing of features is organised by app below.
 
 #### _products app_
 
-1. **Test Bootstrap Toasts and colours**:  ![Boostrap Toast Test](/media/manual/products/Screenshot%20(861).png)
-2. **Test Updated Product with Toasts**: Updated product information ![Updated Product Test](/media/manual/products/Screenshot%20(862).png)
-3. **Test to Remove Product**: Removed product ![Removed Product Test](/media/manual/products/Screenshot%20(863).png)
-4. **Test to View Empty Bag**: Clicked empty bag icon and error 'Bag is empty' ![Empty Bag Error Test](/media/manual/products/Screenshot%20(875).png)
-5. **Test to Add Product with error**: Added product with invalid information and returns error: ![Add invalided product information Test](/media/manual/products/Screenshot%20(889).png)
-6. **Test to Add Successful Product**: Added product with correct information to have successful product add ![Successful Add Product Test](/media/manual/products/Screenshot%20(892).png)
-7. **Test to edit product with alert**: Edited product to see alert of which product is being currently edited ![Currently Editing Product Test](/media/manual/products/Screenshot%20(894).png)
+1. **Bootstrap Toasts and colours**:  ![Boostrap Toast Test](/media/manual/products/Screenshot%20(861).png)
+2. **Updated Product with Toasts**: Updated product information ![Updated Product Test](/media/manual/products/Screenshot%20(862).png)
+3. **Remove Product**: Removed product ![Removed Product Test](/media/manual/products/Screenshot%20(863).png)
+4. **View Empty Bag**: Clicked empty bag icon and error 'Bag is empty' ![Empty Bag Error Test](/media/manual/products/Screenshot%20(875).png)
+5. **Add Product with error**: Added product with invalid information and returns error: ![Add invalided product information Test](/media/manual/products/Screenshot%20(889).png)
+6. **Add Successful Product**: Added product with correct information to have successful product add ![Successful Add Product Test](/media/manual/products/Screenshot%20(892).png)
+7. **Edit product with alert**: Edited product to see alert of which product is being currently edited ![Currently Editing Product Test](/media/manual/products/Screenshot%20(894).png)
 
 
 #### _checkout app_
 
-1. **Test Successful Order**: Created test order to see successful order flow ![Successful Order Test](/media/manual/checkout/Screenshot%20(874).png)
-2. **Test to render JavaScript**: Test to see Javascript is coming through so on click the product downloads. ![Successful JS in console log](/media/manual/checkout/Screenshot%20(923).png)
-3. **Test product download**: Test to see that product downloads and highlighted when hovered on the successful checkout page ![Successful Product download Test](/media/manual/checkout/Screenshot%20(963).png)
-4. **Test valid information**: Test to see that required fields show at checkout and users cannot checkout without filling in requiered fields ![User information fields](/media/manual/checkout/Screenshot%20(962).png)
-5. **Test incorrect card information**: Test to check the validity of the card information entered ![Incorrect card information entered](/media/stripe/Screenshot%20(952).png)
+1. **Successful Order**: Created test order to see successful order flow ![Successful Order Test](/media/manual/checkout/Screenshot%20(874).png)
+2. **Render JavaScript**: Test to see Javascript is coming through so on click the product downloads. ![Successful JS in console log](/media/manual/checkout/Screenshot%20(923).png)
+3. **Product download**: Test to see that product downloads and highlighted when hovered on the successful checkout page ![Successful Product download Test](/media/manual/checkout/Screenshot%20(963).png)
+4. **valid information**: Test to see that required fields show at checkout and users cannot checkout without filling in requiered fields ![User information fields](/media/manual/checkout/Screenshot%20(962).png)
+5. **Invalid card information**: Test to check the validity of the card information entered ![Incorrect card information entered](/media/stripe/Screenshot%20(952).png)
 
 #### _blog app_
+1. **Add Blog**: Test to see that blog can be added successfully ![Blog added successfully](/media/manual/blog/Screenshot%20(925).png)
+2. **Edit Blog**: Test to see that the blog can be edited and saved successfully, redirecting back to all blog posts on successful save ![Blog edited](/media/manual/blog/Screenshot%20(929).png)
+3. **Comment on Blog**: Test to add a blog comment successfully ![Blog commented added successfully](/media/manual/blog/Screenshot%20(932).png)
+4. **Delete Blog**: Test that blogs can successfully be deleted ![Blog deleted successfully](/media/manual/blog/Screenshot%20(964).png) ![Blog added successfully](/media/manual/blog/Screenshot%20(965).png)
 
 
 ### Responsiveness
