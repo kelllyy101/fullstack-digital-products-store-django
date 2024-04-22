@@ -57,18 +57,29 @@ Additionally, the integration of the Stripe CLI enables users to explore opportu
 Regular Users:
 
 Register: Users can create an account by providing necessary details like username, email, and password.
+
 Login: Registered users can log in using their credentials.
+
 View Products: Users can browse through the collection of journals and guides available in the store.
+
 Product Details: Users can view detailed information about each product, including its description, price, and available quantity.
+
 Add to Bag: Users can add desired products to their shopping bag/cart.
+
 View Bag: Users can view the contents of their shopping bag, update quantities, or remove items.
+
 Checkout: Users can proceed to checkout, providing shipping and payment details for the order.
+
 Order History: Users can view their order history, including past purchases and their status.
+
 Blog: Users can access a blog section where they can find articles and guides on personal development and how to utilize the products effectively.
 
 Product Management: Superusers can add new products to the store, edit existing product details such as name, description, price, and quantity, and delete products if necessary.
+
 Order Management: Superusers can view all orders placed in the store, mark orders as processed/shipped, and manage order statuses.
+
 User Management: Superusers can view user accounts, edit user details, and even deactivate user accounts if required.
+
 Blog Management: Superusers can create, edit, and delete blog posts. They can also manage comments on blog posts, including approving, editing, or deleting them.
 
 Email Notifications: Superusers can configure and send email notifications to users for order confirmations, shipping updates, and promotional campaigns.
@@ -473,51 +484,9 @@ Beyond selling products, we are committed to fostering a sense of community and 
      - Individuals striving for financial independence and wealth management.
      - Wellness and mindfulness practitioners.
      - People trying to lose weight and improve their fitness and overall health.
-  
-5. Marketing and Sales Strategy
-   - Outline your marketing and sales strategy, covering:
-     - Online Marketing: SEO, content marketing, social media, email marketing - MailChimp newletters has been configured in the footer and appears on every page. Meta tags have been added to the base template for SEO purposes and a Facebook account has also been created for social media reach.
-     - Offline Marketing: Events, partnerships, collaborations, (future events).
-     - Sales Channels: Website sales, third-party platforms (Amazon, eBay), retail partnerships, (future events and possibilities).
-  
-6. Website and User Experience
-   - Describe your ecommerce website and user experience, including:
-     - Website Design: Layout, navigation, aesthetics are all simple and effective, a nice rich shade of maroon was used.
-     - Product Pages: Descriptions, images, videos, reviews, etc.
-     - Checkout Process: Cart management, payment gateways, security measures, etc.
-     - Customer Support: Contact options- via email, FAQs, return policies, etc.
 
-7. Fulfillment and Logistics
-   - Explain your fulfillment and logistics strategy, covering:
-     - Inventory Management: Stock levels, replenishment, tracking, etc.
-     - Order Processing: Order placement, processing times, order status updates, (if products were ever printed).
-     - Shipping: Shipping carriers, shipping options, shipping costs, delivery times, (if products were ever printed).
-     - Returns and Refunds: Return policies, return process, refunds, (if products were ever printed), refunds are not allowed for digital downloads.
 
-8. Customer Support and Engagement
-   - Detail your customer support and engagement approach, including:
-     - Customer Service: Contact methods, response times, issue resolution, etc.
-     - Community Building: Blog posts and comment sections, social media engagement on Facebook, user-generated content, etc.
-     - Loyalty Programs: Rewards, discounts, referrals, etc.
-  
-9. Performance Metrics and KPIs that could be implemented in the future
-   - Identify and track key performance metrics and KPIs, such as:
-     - Sales Revenue
-     - Conversion Rate
-     - Customer Acquisition Cost (CAC)
-     - Customer Lifetime Value (CLV)
-     - Website Traffic
-     - Average Order Value (AOV)
-     - Customer Satisfaction (CSAT) Score
-  
-10. Future Plans and Growth Strategies
-   - Discuss your future plans and growth strategies, including:
-     - Expansion: New product lines and guides, new markets, international expansion, etc.
-     - Innovation: Product innovations, technological advancements, etc.
-     - Partnerships: Collaborations with influencers, brands, organisations, etc.
-     - Scalability: Infrastructure improvements, automation, etc.
-
-11. Conclusion
+5. Conclusion
    In conclusion, The Best Me is positioned as a premier destination for individuals seeking personal growth, holistic well-being, and financial empowerment. Through our meticulously curated collection of journals, meditation guides, financial freedom resources, and related products, we aim to empower our customers to unlock their full potential and lead fulfilling lives. Throughout this ecommerce model documentation, I have outlined a comprehensive plan that encompasses every aspect of our business operations. From our business model canvas to our marketing and sales strategy, website and user experience, fulfillment and logistics, customer support and engagement, and future growth strategies, I have carefully crafted a roadmap for success. I am committed to understanding and serving our target audience effectively, providing them with valuable resources and exceptional customer experiences. Our dedication to excellence extends to every aspect of our operations, from product selection and website design to order fulfillment and customer support. .
 
 # Marketing
@@ -543,7 +512,7 @@ By leveraging these marketing initiatives, you can enhance brand awareness, enga
 ![Footer](/media/testing/Screenshot%20(960).png)
 
 # Credits
-Bootstrap was used extensively in the project. Code Institute's Boutique walk through project was a big help setting the base of this project and to be able to understand the basics. eCommerce stores such as BooHoo and Dunnes influenced the design. Stack Overflow provided much needed documentation when deploying this project. Official Django Documentation was all thoroughly used throughout. Stripe CLI documentation was followed while integrating it.
+Bootstrap was used extensively in the project. Code Institute's Boutique walk through project was a big help setting the base of this project and to be able to understand the basics. eCommerce stores such as BooHoo and Dunnes influenced the design. Stack Overflow provided much needed documentation when deploying this project. Official Django Documentation was all thoroughly used throughout. Stripe CLI documentation was followed while integrating it. Would also like to credit [Strings_Attached](https://strings-attached-jr.herokuapp.com/) project for the README format.
 
 # Acknowledgements
 I would like to express my gratitude to Code Institute for their exceptional web development curriculum and to my mentor for their invaluable guidance and support throughout this project. Thank you for providing the resources and expertise that have helped me grow as a developer.
