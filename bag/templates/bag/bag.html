@@ -23,7 +23,7 @@
         </div>
     </div>
 
-    <div class="row">
+    <div class="row justify-content-end" >
         <div class="col">
             {% if bag_items %}
             <div class="table-responsive rounded">
@@ -90,7 +90,7 @@
                     </tr>
                     {% endfor %}
                     <tr>
-                        <td colspan="3" class="pt-5 text-right">
+                        <td colspan="5" class="pt-5 text-right">
                             <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
                             <h6>Discount: ${{ discount | floatformat:2 }}</h6>
                             <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
@@ -108,8 +108,8 @@
                                 </span>
                                 <span class="text-uppercase">Keep Shopping</span>
                             </a>
-                            <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-md mt-5">
-                                <span class="mt-5 text-uppercase">Secure Checkout</span>
+                            <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
+                                <span class="text-uppercase">Secure Checkout</span>
                                 <span class="icon">
                                     <i class="fas fa-lock"></i>
                                 </span>
