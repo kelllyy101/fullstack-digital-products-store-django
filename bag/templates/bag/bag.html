@@ -33,7 +33,7 @@
                                     <th scope="col">Product Info</th>
                                     <th scope="col">Price</th>
                                     <th scope="col">Qty</th>
-                                    <th scope="col">Subtotal</th>
+                                    <!-- <th scope="col">Subtotal</th> -->
                                 </tr>
                             </thead>
 
@@ -50,10 +50,10 @@
                                         <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                                         <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                                     </td>
-                                    <td class="py-3">
+                                    <!-- <td class="py-3">
                                         <p class="my-0">${{ item.product.price }}</p>
-                                    </td>
-                                    <td class="py-3 w-25">
+                                    </td> -->
+                                    <td class="py-4 w-30">
                                         <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                                             {% csrf_token %}
                                             <div class="form-group">
@@ -84,19 +84,19 @@
                                         <a class="update-link btn btn-outline-light btn-sm"><small>Update</small></a>
                                         <a class="remove-item btn btn-outline-light btn-sm float-right" id="remove_{{ item.item_id }}"><small>Remove</small></a>
                                     </td>
-                                    <td class="py-3">
+                                    <!-- <td class="py-3">
                                         <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
-                                    </td>
+                                    </td> -->
                                 </tr>
                             {% endfor %}
                             <tr>
-                                <td colspan="5" class="pt-5 text-right">
+                                <td colspan="3" class="pt-5 text-right">
                                     <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
                                     <h6>Discount: ${{ discount | floatformat:2 }}</h6>
                                     <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
                                     {% if grand_total < 20.00 %}
                                         <p class="mb-1 text-danger">
-                                            You could get 10% off just spending <strong>${{ discount_10 }}</strong> more!
+                                            Get 10% off just spending <strong>${{ discount_10 }}</strong> more!
                                         </p>
                                     {% endif %}
                                 </td>
@@ -109,8 +109,8 @@
                                         </span>
                                         <span class="text-uppercase">Keep Shopping</span>
                                     </a>
-                                    <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
-                                        <span class="text-uppercase">Secure Checkout</span>
+                                    <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-md">
+                                        <span class="mt-5 text-uppercase">Secure Checkout</span>
                                         <span class="icon">
                                             <i class="fas fa-lock"></i>
                                         </span>
@@ -121,7 +121,7 @@
                     </div>
                 {% else %}
                     <p class="lead mb-5">Your bag is empty.</p>
-                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-md">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
@@ -129,7 +129,7 @@
                     </a>
                 {% endif %}
             </div>
-        </div>
+        </div> 
     </div>
 {% endblock %}
 
