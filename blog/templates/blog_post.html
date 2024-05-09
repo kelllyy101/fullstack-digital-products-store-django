@@ -13,48 +13,54 @@
 
 {% block content %}
 
-    <div class="container">
-        <div class="row">
-            <div class="col text-center mt-3">
-                <h2 class="logo-font"><a href="{% url 'blog' %}" class="text-dark">Back to Blogs</a></h2>
-                <hr class="w-50 mb-1">
-                <h2 class="logo-font">
-                    <i>{{ post.title }}</i>
-                </h2>
-                    <small>By:
-                    {{ post.author.first_name }} -
-                    {{ post.blog_post_date }}
-                    {% if request.user.is_superuser %}
-                        <a href="{% url 'update_blog_post' post.pk %}">Edit</a>
-                        <a class="btn btn-outline btn-sm" href="{% url 'delete_blog_post' post.pk %}">Delete</a></small>
-                    {% endif %}
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2 class="logo-font"><a href="{% url 'blog' %}" class="text-dark">Back to Blogs</a></h2>
+            <hr class="w-50 mb-1">
+            <h2 class="logo-font">
+                <i>{{ post.title }}</i>
+            </h2>
+            <small>By:
+                {{ post.author.first_name }} -
+                {{ post.blog_post_date }}
+                {% if request.user.is_superuser %}
+                <a href="{% url 'update_blog_post' post.pk %}">Edit</a>
+                <a href="{% url 'delete_blog_post' post.pk %}">Delete</a></small>
+            {% endif %}
         </div>
     </div>
-    <div class="container mt-6 p-4 bg-white rounded border border-dark">
-        {{ post.body|safe }} <!-- to override django default of no html rendering -->
-    </div>
+</div>
+<div class="container mt-6 p-4 bg-white rounded border border-dark">
+    {{ post.body|safe }} <!-- to override django default of no html rendering -->
+</div>
+<hr>
+</div>
+<br>
+<div class="container mt-6 p-4 bg-light rounded">
+    <form action="{% url 'like_post' post.pk %}" method="POST">
+        {% csrf_token %}
+        <button type="submit" name="post_id" value="{{ post.id }}" class="btn btn-outline-dark btn-sm">
+            Like
+        </button> {{ total_blog_likes }} - likes
+    </form>
+    <hr>
+    <h2><strong>Comments</strong></h2>
+    {% if not post.comments.all %}
+    No Comments Yet...<a href="{% url 'add_blog_comment' post.pk %}">Be the First!</a>
+    {% else %}
+    <a href="{% url 'add_blog_comment' post.pk %}">Add Comment</a>
+    {% for comment in post.comments.all %}
+    <strong>
+        {{ comment.name }} -
+        {{ comment.comment_date }}
+    </strong>
+    {{ comment.body }}
+
+    {% endfor %}
+
+    {% endif %}
     <hr>
 </div>
-    <br>
-    <div class="container mt-6 p-4 bg-light rounded">
-        <hr>
-        <h2><strong>Comments</strong></h2>
-        {% if not post.comments.all %}
-            No Comments Yet...<a href="{% url 'add_blog_comment' post.pk %}">Be the First!</a>
-        {% else %}
-        <a href="{% url 'add_blog_comment' post.pk %}">Add Comment</a>
-            {% for comment in post.comments.all %}
-                <strong>
-                    {{ comment.name }} -
-                    {{ comment.comment_date }}
-                </strong>
-                {{ comment.body }}
-                
-            {% endfor %}
-        
-        {% endif %}
-        <hr>
-    </div>
 
 {% endblock %}

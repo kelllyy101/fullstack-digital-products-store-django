@@ -1,8 +1,9 @@
-from django.shortcuts import render
-from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView #LV queryset for us in the database that we can list, detail brings the detail of one record
+from django.shortcuts import render, get_list_or_404
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView  #LV queryset for us in the database that we can list, detail brings the detail of one record
 from .models import Post, BlogCategory, Comment
 from .forms import BlogPostForm, EditForm, CommentForm
-from django.urls import reverse_lazy
+from django.urls import reverse_lazy, reverse
+from django.http import HttpResponseRedirect
 
 # Create your views here.
 
@@ -14,6 +15,13 @@ class BlogView(ListView):
 class BlogPostView(DetailView):
     model = Post
     template_name = 'blog_post.html'
+
+    def get_context_data(self, *args, **kwargs):
+        context = super(BlogPostView, self).get_context_data
+        get_blog_id = get_list_or_404(Post, id=self.kwargs['pk'])
+        total_blog_likes = get_blog_id.total_blog_likes()
+        context["total_blog_likes"] = total_blog_likes
+        return context
 
 class AddBlogPostView(CreateView):
     model = Post
@@ -51,3 +59,8 @@ class AddCommentView(CreateView):
         return super().form_valid(form)
 
     success_url = reverse_lazy('blog')
+
+def LikeView(request, pk):
+    post = get_list_or_404(Post, id=request.POST.get('post_id'))
+    post.likes.add(request.user)
+    return HttpResponseRedirect(reverse('blog_post', args=[str(pk)]))
