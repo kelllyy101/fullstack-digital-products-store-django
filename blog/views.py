@@ -20,7 +20,12 @@ class BlogPostView(DetailView):
         context = super(BlogPostView, self).get_context_data
         get_blog_id = get_list_or_404(Post, id=self.kwargs['pk'])
         total_blog_likes = get_blog_id.total_blog_likes()
+        liked = False
+        if get_blog_id.likes.filter(id=self.request.user.id).exists():
+            liked = True
+
         context["total_blog_likes"] = total_blog_likes
+        context["liked"] = liked
         return context
 
 class AddBlogPostView(CreateView):
@@ -62,5 +67,12 @@ class AddCommentView(CreateView):
 
 def LikeView(request, pk):
     post = get_list_or_404(Post, id=request.POST.get('post_id'))
-    post.likes.add(request.user)
+    liked = False
+    if post.likes.filter(id=request.user.id).exists():
+        post.likes.remove(request.user)
+        liked = False
+    else:
+        post.likes.add(request.user)
+        liked = True
+
     return HttpResponseRedirect(reverse('blog_post', args=[str(pk)]))
