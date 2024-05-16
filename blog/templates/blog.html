@@ -19,37 +19,52 @@
             <hr class="w-50 mb-1">
         </div>
     </div>
-    <div class="row bg-primary">
-        {% for post in object_list %}
-        <div class="col-md-4 mt-3">
-            <div class="blog-grid rounded border border-dark">
-                <div class="blog-grid-img position-relative">
-                    <img src="{{ post.image }}" alt="{{ post.title }}" width="300px" height="200px">
-                </div>
-                <div class="blog-grid-text p-4">
-                    <h3 id="blog-title" class="h5 mb-3 "><a href="{% url 'blog_post' post.pk %}" class="text-dark">{{ post.title }}</a></h3>
-                    <p class="display-30">{{ post.blog_snippet }}</p>
-                    <div class="meta meta-style2">
-                        <ul>
-                            <li><i class="fas fa-calendar-alt"></i> {{ post.blog_post_date }}</li>
-                            <li><i class="fas fa-user"></i> {{ post.author.first_name }}</li>
-                        </ul>
+    <div class="row">
+        <div class="col-12 mt-3 left">
+            <div class="row">
+                {% for post in object_list %}
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="image-container">
+                                {% if post.image %}
+                                <img class="card-img-top" src="{{ post.image.url }}">
+                                {% else %}
+                                <img class="card-img-top" src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/pexels-esranur-kalay-9586204.jpg">
+                                {% endif %}
+                                <div class="image-flash">
+                                    <p class="author">Author: {{ post.author.first_name }}</p>
+                                </div>
+                            </div>
+                            <a href="{% url 'blog_post' post.pk %}" class="post-link">
+                                <h2 class="card-title">{{ post.title }}</h2>
+                                <p class="card-text">{{ post.blog_snippet }}</p>
+                            </a>
+                            <hr />
+                            <p class="card-text text-muted h6">{{ post.blog_post_date }} <i class="far fa-heart"></i> {{ post.number_of_likes }}</p>
+                            {% if request.user.is_superuser %}
+                            <div class="mt-5">
+                                <small>
+                                    <a class="btn btn-outline btn-sm" href="{% url 'update_blog_post' post.pk %}">Edit</a>
+                                    <a class="btn btn-outline btn-sm" href="{% url 'delete_blog_post' post.pk %}">Delete</a>
+                                </small>
+                            </div>
+                            {% endif %}
+                        </div>
                     </div>
-                    {% if request.user.is_superuser %}
-                    <div class="mt-5">
-                        <small><a class="btn btn-outline btn-sm" href="{% url 'update_blog_post' post.pk %}">Edit</a>
-                        <a class="btn btn-outline btn-sm" href="{% url 'delete_blog_post' post.pk %}">Delete</a></small>
-                    </div>
-                    {% endif %}
                 </div>
+                {% if forloop.counter|divisibleby:3 %}
+            </div>
+            <div class="row">
+                {% endif %}
+                {% endfor %}
             </div>
         </div>
-        {% endfor %}
     </div>
 </div>
 
 
-<div class="row-sm bg-danger">
+<div class="row-sm">
     <div class="col-12 col-lg-8 text-right">
         {% if request.user.is_superuser %}
         <a href="{% url 'add_blog_post' %}" class="btn btn-black rounded-0 my-4">
