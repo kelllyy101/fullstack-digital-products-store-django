@@ -19,7 +19,7 @@
             <hr class="w-50 mb-1">
         </div>
     </div>
-    <div class="row">
+    <div class="row bg-primary">
         {% for post in object_list %}
         <div class="col-md-4 mt-3">
             <div class="blog-grid rounded border border-dark">
@@ -49,14 +49,14 @@
 </div>
 
 
-<div class="row">
-    <div class="col-12 col-lg-7 text-right">
+<div class="row-sm bg-danger">
+    <div class="col-12 col-lg-8 text-right">
         {% if request.user.is_superuser %}
-        <a href="{% url 'add_blog_post' %}" class="btn btn-black rounded-0 my-2">
+        <a href="{% url 'add_blog_post' %}" class="btn btn-black rounded-0 my-4">
             <span class="text-uppercase">Add Blog Post</span>
         </a>
         {% endif %}
-        <a href="{% url 'products' %}" class="btn btn-black rounded-0 my-2">
+        <a href="{% url 'products' %}" class="btn btn-black rounded-0 my-4">
             <span class="text-uppercase">Back to Store</span>
         </a>
     </div>
