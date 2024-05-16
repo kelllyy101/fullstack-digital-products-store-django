@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_list_or_404
+from django.shortcuts import render, get_list_or_404, get_object_or_404
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView  #LV queryset for us in the database that we can list, detail brings the detail of one record
 from .models import Post, BlogCategory, Comment
 from .forms import BlogPostForm, EditForm, CommentForm
@@ -17,14 +17,13 @@ class BlogPostView(DetailView):
     template_name = 'blog_post.html'
 
     def get_context_data(self, *args, **kwargs):
-        context = super(BlogPostView, self).get_context_data
-        get_blog_id = get_list_or_404(Post, id=self.kwargs['pk'])
-        total_blog_likes = get_blog_id.total_blog_likes()
+        context = super(BlogPostView, self).get_context_data()
+        post = get_object_or_404(Post, id=self.kwargs['pk'])
         liked = False
-        if get_blog_id.likes.filter(id=self.request.user.id).exists():
+        if post.likes.filter(id=self.request.user.id).exists():
             liked = True
 
-        context["total_blog_likes"] = total_blog_likes
+        context["total_likes"] = post.total_post_likes()
         context["liked"] = liked
         return context
 
@@ -66,7 +65,7 @@ class AddCommentView(CreateView):
     success_url = reverse_lazy('blog')
 
 def LikeView(request, pk):
-    post = get_list_or_404(Post, id=request.POST.get('post_id'))
+    post = get_object_or_404(Post, id=request.POST.get('post_id'))
     liked = False
     if post.likes.filter(id=request.user.id).exists():
         post.likes.remove(request.user)
@@ -76,3 +75,38 @@ def LikeView(request, pk):
         liked = True
 
     return HttpResponseRedirect(reverse('blog_post', args=[str(pk)]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
