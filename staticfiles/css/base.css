@@ -312,7 +312,7 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #23BBBB;
+    background-color: #000000;
 }
 
 .author {
@@ -321,6 +321,15 @@ body {
     text-transform: uppercase;
 }
 
+.post-link{
+    color: black;
+}
+
+.post-link:hover{
+    color: black;
+    transform: scale(1.6);
+    text-decoration: none;
+}
 /* -------------------------------- Media Queries */
 
 /* Product Form */
