@@ -35,7 +35,6 @@
     {{ post.body|safe }} <!-- to override django default of no html rendering -->
 </div>
 <hr>
-</div>
 <br>
 <div class="container mt-6 p-4 bg-light rounded"><i class="far fa-heart"></i>
     <form action="{% url 'like_post' post.pk %}" method="POST">
