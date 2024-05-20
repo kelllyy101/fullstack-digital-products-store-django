@@ -28,7 +28,7 @@
                         <div class="card-body fixed-card-body">
                             <div class="image-container">
                                 {% if post.image %}
-                                <img class="card-img-top" src="{{ post.image }}">
+                                <img class="card-img-top" src="{{ post.image }}" alt="Images relating to journals, desktops, writing and creativity">
                                 {% else %}
                                 <img class="card-img-top" src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/pexels-esranur-kalay-9586204.jpg">
                                 {% endif %}
@@ -40,7 +40,6 @@
                                 <h2 class="card-title">{{ post.title }}</h2>
                                 <p class="card-text">{{ post.blog_snippet }}</p>
                             </a>
-                            <hr />
                             <p class="card-text text-muted h6">{{ post.blog_post_date }} <i class="fas fa-heart"></i> {{ post.total_post_likes }} </p>
                             {% if request.user.is_superuser %}
                             <div class="mt-5">
