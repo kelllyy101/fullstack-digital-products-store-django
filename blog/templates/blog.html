@@ -25,7 +25,7 @@
                 {% for post in object_list %}
                 <div class="col-md-4">
                     <div class="card mb-4">
-                        <div class="card-body">
+                        <div class="card-body fixed-card-body">
                             <div class="image-container">
                                 {% if post.image %}
                                 <img class="card-img-top" src="{{ post.image.url }}">
@@ -41,7 +41,7 @@
                                 <p class="card-text">{{ post.blog_snippet }}</p>
                             </a>
                             <hr />
-                            <p class="card-text text-muted h6">{{ post.blog_post_date }} <i class="far fa-heart"></i> {{ post.number_of_likes }}</p>
+                            <p class="card-text text-muted h6">{{ post.blog_post_date }} <i class="fas fa-heart"></i> {{ post.total_post_likes }} <i class="far fa-heart"></i></p>
                             {% if request.user.is_superuser %}
                             <div class="mt-5">
                                 <small>

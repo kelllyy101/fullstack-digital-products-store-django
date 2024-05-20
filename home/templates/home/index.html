@@ -15,31 +15,31 @@
 
 {% block content %}
 
-<body>
-    <div id="hero-container" class="container h-90 w-100">
-        <div class="row h-90">
-            <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-font text-black">
-                    Get ready to be the Best You!
-                </h1>
-                <div class="my-5">
-                    <h4>
-                        <a href="{% url 'products' %}"
-                            class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop
-                            Now</a>
-                    </h4>
-                </div>
+
+<div id="hero-container" class="container h-90 w-100">
+    <div class="row h-90">
+        <div class="col-7 col-md-6 my-auto">
+            <h1 class="display-4 logo-font text-black">
+                Get ready to be the Best You!
+            </h1>
+            <div class="my-5">
+                <h4>
+                    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop
+                        Now</a>
+                </h4>
             </div>
         </div>
     </div>
-</body>
+</div>
+
 
 
 
 <div class="container">
     <div class="row">
         <div class="col-lg-6" data-aos="zoom-in">
-            <img src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/woman_journaling_planner.jpg" class="img-fluid" alt="woman writing down her habits">
+            <img src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/woman_journaling_planner.jpg"
+                class="img-fluid" alt="woman writing down her habits">
         </div>
         <div class="col-lg-6 d-flex flex-column justify-contents-center" data-aos="fade-left">
             <div class="content pt-4 pt-lg-0">
@@ -72,7 +72,8 @@
     <div class="row">
         <div class="col-lg-3 col-md-3 col-sm-6 mb-4">
             <div class="arriv-right2">
-                <img src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/DP0709201205510679M.jpg" class="img-responsive" alt="">
+                <img src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/DP0709201205510679M.jpg"
+                    class="img-responsive" alt="">
                 <div class="shop-now mt-3">
                     <div class="crt-btn ml-5">
                         <a href="{% url 'products' %}?category=marketing_mrr,financial_freedom_independence,social_media"
@@ -83,7 +84,8 @@
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6 mb-4">
             <div class="arriv-right2">
-                <img src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/mindfullness_meditation_journal.png" class="img-responsive" alt="">
+                <img src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/mindfullness_meditation_journal.png"
+                    class="img-responsive" alt="">
                 <div class="shop-now mt-3">
                     <div class="crt-btn ml-5">
                         <a href="{% url 'products' %}?category=yearly_journals_essentials,weekly_journals,weight_loss_journals,meditation_journals"
@@ -94,7 +96,8 @@
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6 mb-4">
             <div class="arriv-right2">
-                <img src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/weight_loss_planner.png" class="img-responsive" alt="">
+                <img src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/weight_loss_planner.png"
+                    class="img-responsive" alt="">
                 <div class="shop-now mt-3">
                     <div class="crt-btn ml-5">
                         <a href="{% url 'products' %}?category=weight_loss_journals" class="btn btn-dark">Shop
@@ -105,7 +108,8 @@
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6 mb-4">
             <div class="arriv-right2">
-                <img src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/weekly_planner_minimalist.png" class="img-responsive" alt="">
+                <img src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/weekly_planner_minimalist.png"
+                    class="img-responsive" alt="">
                 <div class="shop-now mt-3">
                     <div class="crt-btn ml-5">
                         <a href="{% url 'products' %}?category=yearly_journals_essentials,weekly_journals,weight_loss_journals,meditation_journals"
@@ -130,21 +134,27 @@
                     <h2 class="text-dark background-white">BE HEALTHIER</h2>
                     <p class="text-dark">Start Journaling</p>
                 </div>
-                <img class="d-block w-100" src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/pexels-cup-of-couple-6177588.jpg" alt="First slide">
+                <img class="d-block w-100"
+                    src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/pexels-cup-of-couple-6177588.jpg"
+                    alt="First slide">
             </div>
             <div class="carousel-item">
                 <div class="carousel-caption d-none d-md-block">
                     <h2 class="text-dark">BE UNIQUE</h2>
                     <p class="text-dark">Start Your Journey</p>
                 </div>
-                <img class="d-block w-100" src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/pexels-ken-tomita-389818.jpg" alt="Second slide">
+                <img class="d-block w-100"
+                    src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/pexels-ken-tomita-389818.jpg"
+                    alt="Second slide">
             </div>
             <div class="carousel-item">
                 <div class="carousel-caption d-none d-md-block">
                     <h2 class="text-dark">BE BETTER</h2>
                     <p class="text-dark">Start Meditating</p>
                 </div>
-                <img class="d-block w-100" src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/pexels-ketut-subiyanto-4132326.jpg" alt="Third slide">
+                <img class="d-block w-100"
+                    src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/pexels-ketut-subiyanto-4132326.jpg"
+                    alt="Third slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -164,16 +174,16 @@
     <h2 class="pb-2 nerd-page-subheading text-center"><strong>Start Your Journey Today</strong></h2>
     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-3">
         <div class="col-4">
-            <img src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/pexels-kawê-rodrigues-15422289.jpg" class="img-fluid shadow-lg"
-                alt="pink journal for tracking">
+            <img src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/pexels-kawê-rodrigues-15422289.jpg"
+                class="img-fluid shadow-lg" alt="pink journal for tracking">
         </div>
         <div class="col-4">
-            <img src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/background_homepage_journals.jpg" class="img-fluid shadow-lg"
-                alt="enjoy the little things journal and meditate">
+            <img src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/background_homepage_journals.jpg"
+                class="img-fluid shadow-lg" alt="enjoy the little things journal and meditate">
         </div>
         <div class="col-4">
-            <img src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/pexels-karolina-grabowska-4491492.jpg" class="img-fluid shadow-lg"
-                alt="writing down your goals in white planner">
+            <img src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/pexels-karolina-grabowska-4491492.jpg"
+                class="img-fluid shadow-lg" alt="writing down your goals in white planner">
         </div>
         <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg">
         </div>
@@ -189,7 +199,8 @@
         <div class="col-lg-2 col-md-6 col-sm-6">
             <div class="col-md-6 mt-5">
                 <div>
-                    <a href="{% url 'product_description' 22 %}"><img src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/zen_meditation_notebook_guided.png"
+                    <a href="{% url 'product_description' 22 %}"><img
+                            src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/zen_meditation_notebook_guided.png"
                             class="img-responsive" alt="">
                     </a>
                 </div>
@@ -197,7 +208,8 @@
         </div>
         <div class="col-lg-2 col-md-6 col-sm-6">
             <div class="col-md-6 mt-5">
-                <img src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/mindfullness_meditation_journal.png" class="img-responsive" alt="">
+                <img src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/mindfullness_meditation_journal.png"
+                    class="img-responsive" alt="">
                 <div class="arriv-info2">
                     <a href="{% url 'product_description' 20 %}">
                         <h3>Mindfullness</h3>
@@ -207,7 +219,8 @@
         </div>
         <div class="col-lg-2 col-md-6 col-sm-6">
             <div class="col-md-6 mt-5">
-                <img src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/white_green_elegant_A4_planner.png" class="img-responsive" alt="">
+                <img src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/white_green_elegant_A4_planner.png"
+                    class="img-responsive" alt="">
                 <div class="arriv-info2">
                     <a href="{% url 'product_description' 11 %}">
                         <h3>Mindfullness</h3>
@@ -217,7 +230,8 @@
         </div>
         <div class="col-lg-2 col-md-6 col-sm-6">
             <div class="col-md-6 mt-5">
-                <img src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/achieve_financial_freedom.png" class="img-responsive" alt="">
+                <img src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/achieve_financial_freedom.png"
+                    class="img-responsive" alt="">
                 <div class="arriv-info2">
                     <a href="{% url 'product_description' 8 %}">
                         <h3>Freedom</h3>
@@ -227,7 +241,8 @@
         </div>
         <div class="col-lg-2 col-md-6 col-sm-6">
             <div class="col-md-6 mt-5">
-                <img src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/6_week_weight_loss_tracker.png" class="img-responsive" alt="">
+                <img src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/6_week_weight_loss_tracker.png"
+                    class="img-responsive" alt="">
                 <div class="arriv-info2">
                     <a href="{% url 'product_description' 10 %}">
                         <h3>Meditation</h3>
@@ -237,7 +252,8 @@
         </div>
         <div class="col-lg-2 col-md-6 col-sm-6">
             <div class="col-md-6 mt-5">
-                <img src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/gratitude_journal_yearly_planner.png" class="img-responsive" alt="">
+                <img src="https://the-best-me.s3.eu-west-1.amazonaws.com/media/gratitude_journal_yearly_planner.png"
+                    class="img-responsive" alt="">
                 <div class="arriv-info2">
                     <a href="{% url 'product_description' 22 %}">
                         <h3>Meditation</h3>

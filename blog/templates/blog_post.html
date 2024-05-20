@@ -37,22 +37,22 @@
 <hr>
 </div>
 <br>
-<div class="container mt-6 p-4 bg-light rounded">
+<div class="container mt-6 p-4 bg-light rounded"><i class="far fa-heart"></i>
     <form action="{% url 'like_post' post.pk %}" method="POST">
         {% csrf_token %}
         {% if user.is_authenticated %}
-            {% if liked %}
-                <button type="submit" name="post_id" value="{{ post.id }}" class="btn btn-outline-white btn-sm">
-                    Unlike
-                </button>
-            {% else %}
-                <button type="submit" name="post_id" value="{{ post.id }}" class="btn btn-outline-dark btn-sm">
-                    Like
-                </button>
-            {% endif %}
+        {% if liked %}
+        <button type="submit" name="post_id" value="{{ post.id }}" class="btn btn-outline-dark btn-sm">
+            Unlike
+        </button>
         {% else %}
-            <small><a href="{% url 'account_login' %}"> Login to like</a></small>
-            {{ total_blog_likes }} - likes
+        <button type="submit" name="post_id" value="{{ post.id }}" class="btn btn-outline-dark btn-sm">
+            Like
+        </button>
+        {% endif %}
+        {% else %}
+        <small><a href="{% url 'account_login' %}"> Login to like</a></small>
+        {{ total_blog_likes }} - likes
         {% endif %}
     </form>
     <hr>
@@ -60,18 +60,22 @@
     {% if not post.comments.all %}
     No Comments Yet...<a href="{% url 'add_blog_comment' post.pk %}">Be the First!</a>
     {% else %}
-    <a href="{% url 'add_blog_comment' post.pk %}">Add Comment</a>
-    {% for comment in post.comments.all %}
-    <strong>
-        {{ comment.name }} -
-        {{ comment.comment_date }}
-    </strong>
-    {{ comment.body }}
+    <div class="row">
+        <div class="col-4">
+            <a href="{% url 'add_blog_comment' post.pk %}">Add Comment</a>
+            {% for comment in post.comments.all %}
+            <strong>
+                {{ comment.name }} -
+                {{ comment.comment_date }}
+            </strong>
+            {{ comment.body }}
 
-    {% endfor %}
+            {% endfor %}
 
-    {% endif %}
-    <hr>
+            {% endif %}
+            <hr>
+        </div>
+    </div>
 </div>
 <div class="col-12 col-lg-7 text-right">
     <a href="{% url 'products' %}" class="btn btn-dark rounded-0 my-2">

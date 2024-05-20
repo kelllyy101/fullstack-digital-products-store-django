@@ -32,7 +32,7 @@ class Post(models.Model):
     def get_absolute_url(self):
         return f'/blog/post/{self.pk}'
 
-    def total_blog_likes(self):
+    def total_post_likes(self):
         return self.likes.count()
 
 class Comment(models.Model):
